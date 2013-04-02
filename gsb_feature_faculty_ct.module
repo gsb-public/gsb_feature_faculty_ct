@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the gsb_feature_faculty_ct feature.
+ */
+
+include_once 'gsb_feature_faculty_ct.features.inc';

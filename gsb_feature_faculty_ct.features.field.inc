@@ -480,7 +480,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
   $fields['node-faculty-field_affilitations'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_affilitations',
@@ -489,7 +489,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
       'locked' => '0',
       'module' => 'field_collection',
       'settings' => array(
-        'hide_blank_items' => 1,
+        'hide_blank_items' => 0,
         'path' => '',
       ),
       'translatable' => '0',
@@ -540,6 +540,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'weight' => 0,
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_affilitations',
       'label' => 'Affilitations',

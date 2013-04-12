@@ -21,7 +21,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Name wrapper',
-    'weight' => '0',
+    'weight' => '1',
     'children' => array(
       0 => 'field_first_name',
       1 => 'field_last_name',
@@ -54,7 +54,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Position wrapper',
-    'weight' => '1',
+    'weight' => '2',
     'children' => array(
       0 => 'field_academic_area_single',
       1 => 'field_title_position_unlimited',

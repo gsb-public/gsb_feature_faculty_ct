@@ -350,10 +350,13 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'hs_taxonomy',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'hs_taxonomy_term_reference_hierarchical_links',
+          'weight' => '36',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -447,7 +450,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '30',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -531,7 +534,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '31',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -621,7 +624,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '29',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -715,7 +718,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '28',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -818,7 +821,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '26',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -895,7 +898,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '27',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -985,7 +988,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '32',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1082,7 +1085,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '33',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1173,7 +1176,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '35',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1264,10 +1267,13 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '2',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1362,10 +1368,15 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'conditions' => array(),
+            'image_link' => 'content',
+            'image_style' => '170x170',
+          ),
+          'type' => 'image',
+          'weight' => '0',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1461,10 +1472,13 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '4',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1557,7 +1571,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '34',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1648,7 +1662,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '25',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1758,7 +1772,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '24',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1868,7 +1882,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '16',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1974,10 +1988,13 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '3',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -2060,7 +2077,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '15',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -2150,7 +2167,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '14',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -2251,7 +2268,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '12',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -2359,7 +2376,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '13',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -2448,7 +2465,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '17',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -2542,7 +2559,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '18',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -2640,7 +2657,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '22',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -2736,7 +2753,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '23',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -2833,7 +2850,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '21',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -2939,10 +2956,13 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '5',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -3038,7 +3058,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '19',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -3134,7 +3154,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '20',
         ),
         'tiny' => array(
           'label' => 'above',

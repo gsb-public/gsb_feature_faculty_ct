@@ -63,6 +63,7 @@ features[field][] = node-faculty-field_title_position_unlimited
 features[field][] = node-faculty-field_topics_of_expertise
 features[field][] = node-faculty-field_twitter_search
 features[field_group][] = group_wrapper_name|node|faculty|teaser
+features[field_group][] = group_wrapper_position|node|faculty|teaser
 features[node][] = faculty
 features[variable][] = auto_entitylabel_node_faculty
 features[variable][] = auto_entitylabel_pattern_node_faculty

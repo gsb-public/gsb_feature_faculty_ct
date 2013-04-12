@@ -21,7 +21,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Name wrapper',
-    'weight' => '1',
+    'weight' => '0',
     'children' => array(
       0 => 'field_first_name',
       1 => 'field_last_name',
@@ -42,6 +42,38 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
   );
   $export['group_wrapper_name|node|faculty|teaser'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_position|node|faculty|teaser';
+  $field_group->group_name = 'group_wrapper_position';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'teaser';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Position wrapper',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_academic_area_single',
+      1 => 'field_title_position_unlimited',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Position wrapper',
+      'instance_settings' => array(
+        'classes' => 'person-position',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_position|node|faculty|teaser'] = $field_group;
 
   return $export;
 }

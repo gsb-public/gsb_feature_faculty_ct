@@ -60,6 +60,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'research_pager' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'tiny' => array(
           'label' => 'above',
           'settings' => array(),
@@ -140,6 +146,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'weight' => 1,
         ),
         'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'research_pager' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -249,6 +261,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'research_pager' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'tiny' => array(
           'label' => 'above',
           'settings' => array(),
@@ -335,7 +353,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 28,
+          'weight' => '28',
         ),
         'featured' => array(
           'label' => 'above',
@@ -348,6 +366,15 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'inline',
+          'module' => 'hs_taxonomy',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'hs_taxonomy_term_reference_hierarchical_links',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'inline',
@@ -432,7 +459,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 29,
+          'weight' => '29',
         ),
         'featured' => array(
           'label' => 'above',
@@ -445,6 +472,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '32',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -516,7 +549,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'view_mode' => 'full',
           ),
           'type' => 'field_collection_view',
-          'weight' => 27,
+          'weight' => '27',
         ),
         'featured' => array(
           'label' => 'above',
@@ -529,6 +562,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '33',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -606,7 +645,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 20,
+          'weight' => '20',
         ),
         'featured' => array(
           'label' => 'above',
@@ -619,6 +658,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '31',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -700,7 +745,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 5,
+          'weight' => '5',
         ),
         'featured' => array(
           'label' => 'above',
@@ -713,6 +758,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '30',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -803,7 +854,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 30,
+          'weight' => '30',
         ),
         'featured' => array(
           'label' => 'above',
@@ -816,6 +867,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '28',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -880,7 +937,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'email_default',
-          'weight' => 7,
+          'weight' => '7',
         ),
         'featured' => array(
           'label' => 'above',
@@ -893,6 +950,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '29',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -970,7 +1033,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 15,
+          'weight' => '15',
         ),
         'featured' => array(
           'label' => 'above',
@@ -983,6 +1046,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '34',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1067,7 +1136,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'list_default',
-          'weight' => 21,
+          'weight' => '21',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1080,6 +1149,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '35',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1158,7 +1233,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'file_default',
-          'weight' => 4,
+          'weight' => '4',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1171,6 +1246,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '37',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1252,7 +1333,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 2,
+          'weight' => '2',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1265,6 +1346,15 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -1353,7 +1443,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'image_style' => '',
           ),
           'type' => 'image',
-          'weight' => 6,
+          'weight' => '6',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1366,6 +1456,17 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'conditions' => array(),
+            'image_link' => 'content',
+            'image_style' => '170x170',
+          ),
+          'type' => 'image',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -1457,7 +1558,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 3,
+          'weight' => '3',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1470,6 +1571,15 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -1553,7 +1663,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'list_default',
-          'weight' => 23,
+          'weight' => '23',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1566,6 +1676,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '36',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1644,7 +1760,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'link_default',
-          'weight' => 18,
+          'weight' => '18',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1657,6 +1773,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '27',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1754,7 +1876,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'link_default',
-          'weight' => 25,
+          'weight' => '25',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1767,6 +1889,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '26',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1864,7 +1992,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'link_default',
-          'weight' => 16,
+          'weight' => '16',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1877,6 +2005,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '18',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1973,7 +2107,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 8,
+          'weight' => '8',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1986,6 +2120,15 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -2054,12 +2197,13 @@ function gsb_feature_faculty_ct_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
+          'module' => 'telephone',
           'settings' => array(
             'conditions' => array(),
+            'title' => '',
           ),
-          'type' => 'text_plain',
-          'weight' => 26,
+          'type' => 'telephone_link',
+          'weight' => '26',
         ),
         'featured' => array(
           'label' => 'above',
@@ -2072,6 +2216,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '17',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2149,7 +2299,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 19,
+          'weight' => '19',
         ),
         'featured' => array(
           'label' => 'above',
@@ -2162,6 +2312,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '16',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2250,7 +2406,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 31,
+          'weight' => '31',
         ),
         'featured' => array(
           'label' => 'above',
@@ -2263,6 +2419,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '14',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2358,7 +2520,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'list_default',
-          'weight' => 11,
+          'weight' => '11',
         ),
         'featured' => array(
           'label' => 'above',
@@ -2371,6 +2533,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '15',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2447,7 +2615,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 13,
+          'weight' => '13',
         ),
         'featured' => array(
           'label' => 'above',
@@ -2460,6 +2628,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '19',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2541,7 +2715,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 12,
+          'weight' => '12',
         ),
         'featured' => array(
           'label' => 'above',
@@ -2554,6 +2728,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '20',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2639,7 +2819,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 17,
+          'weight' => '17',
         ),
         'featured' => array(
           'label' => 'above',
@@ -2652,6 +2832,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '24',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2735,7 +2921,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 1,
+          'weight' => '1',
         ),
         'featured' => array(
           'label' => 'above',
@@ -2748,6 +2934,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '25',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2832,7 +3024,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'link_default',
-          'weight' => 24,
+          'weight' => '24',
         ),
         'featured' => array(
           'label' => 'above',
@@ -2845,6 +3037,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '23',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2941,7 +3139,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 10,
+          'weight' => '10',
         ),
         'featured' => array(
           'label' => 'above',
@@ -2954,6 +3152,15 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -3040,7 +3247,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 22,
+          'weight' => '22',
         ),
         'featured' => array(
           'label' => 'above',
@@ -3053,6 +3260,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '21',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -3136,7 +3349,7 @@ function gsb_feature_faculty_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 14,
+          'weight' => '14',
         ),
         'featured' => array(
           'label' => 'above',
@@ -3149,6 +3362,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'people_fpp' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '22',
         ),
         'teaser' => array(
           'label' => 'above',

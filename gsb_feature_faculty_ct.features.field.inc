@@ -377,12 +377,12 @@ function gsb_feature_faculty_ct_field_default_fields() {
           'weight' => '3',
         ),
         'teaser' => array(
-          'label' => 'inline',
-          'module' => 'hs_taxonomy',
+          'label' => 'hidden',
+          'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
-          'type' => 'hs_taxonomy_term_reference_hierarchical_links',
+          'type' => 'taxonomy_term_reference_link',
           'weight' => '4',
         ),
         'tiny' => array(

@@ -76,6 +76,9 @@ function gsb_feature_faculty_ct_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'business_insight' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

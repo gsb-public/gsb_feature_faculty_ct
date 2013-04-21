@@ -108,7 +108,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_link_single',
-    'label' => 'Oraganization',
+    'label' => 'Organization',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -485,7 +485,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_affilitations',
-    'label' => 'Affilitations',
+    'label' => 'Affiliations',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -2523,7 +2523,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Academic Degrees');
-  t('Affilitations');
+  t('Affiliations');
   t('Awards and Honors');
   t('Bio');
   t('Blog Link');
@@ -2537,7 +2537,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Last Name');
   t('Middle Name');
   t('On Leave');
-  t('Oraganization');
+  t('Organization');
   t('Other Academic Areas');
   t('Personal Website Link');
   t('Phone');

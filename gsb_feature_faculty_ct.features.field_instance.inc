@@ -430,6 +430,81 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-faculty-field_addthis'
+  $field_instances['node-faculty-field_addthis'] = array(
+    'bundle' => 'faculty',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'addthis_displays',
+        'settings' => array(
+          'buttons_size' => 'addthis_16x16_style',
+          'conditions' => array(
+            0 => array(
+              'condition' => '',
+            ),
+          ),
+          'counter_orientation' => 'horizontal',
+          'extra_css' => '',
+          'share_services' => 'twitter, linkedin, facebook, google_plusone_share, email',
+        ),
+        'type' => 'addthis_basic_toolbox',
+        'weight' => 23,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'people_fpp' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'tiny' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_addthis',
+    'label' => 'AddThis',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'addthis',
+      'settings' => array(
+        'maxlength_js_label' => '',
+      ),
+      'type' => 'addthis_button_widget',
+      'weight' => 33,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-faculty-field_affilitations'
   $field_instances['node-faculty-field_affilitations'] = array(
     'bundle' => 'faculty',
@@ -449,7 +524,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 24,
+        'weight' => 21,
       ),
       'featured' => array(
         'label' => 'above',
@@ -516,7 +591,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 20,
+        'weight' => 17,
       ),
       'featured' => array(
         'label' => 'above',
@@ -589,7 +664,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 25,
+        'weight' => 22,
       ),
       'featured' => array(
         'label' => 'above',
@@ -877,7 +952,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'list_default',
-        'weight' => 21,
+        'weight' => 18,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1256,7 +1331,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 32,
+        'weight' => 30,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1728,7 +1803,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 19,
+        'weight' => 16,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1866,7 +1941,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'list_default',
-        'weight' => 17,
+        'weight' => 14,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1932,7 +2007,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 12,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2005,7 +2080,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 11,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2080,7 +2155,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 18,
+        'weight' => 15,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2150,7 +2225,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 33,
+        'weight' => 31,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2223,7 +2298,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 23,
+        'weight' => 20,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2309,7 +2384,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 16,
+        'weight' => 13,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2388,7 +2463,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 22,
+        'weight' => 19,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2523,6 +2598,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Academic Degrees');
+  t('AddThis');
   t('Affiliations');
   t('Awards and Honors');
   t('Bio');

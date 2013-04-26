@@ -83,13 +83,13 @@ function gsb_feature_faculty_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '35',
+          'weight' => '34',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '34',
+          'weight' => '33',
         ),
         'workbench_access' => array(
           'weight' => '1',

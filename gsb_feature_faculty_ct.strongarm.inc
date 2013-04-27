@@ -138,5 +138,12 @@ function gsb_feature_faculty_ct_strongarm() {
   $strongarm->value = 0;
   $export['node_submitted_faculty'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_faculty_pattern';
+  $strongarm->value = 'faculty-research/faculty/[node:title]';
+  $export['pathauto_node_faculty_pattern'] = $strongarm;
+
   return $export;
 }

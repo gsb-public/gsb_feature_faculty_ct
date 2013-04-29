@@ -51,7 +51,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Name wrapper',
-    'weight' => '10',
+    'weight' => '11',
     'children' => array(
       0 => 'field_first_name',
       1 => 'field_last_name',

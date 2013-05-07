@@ -121,6 +121,11 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_image_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
     'field_last_name' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -147,13 +152,13 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_title_position_unlimited' => array(
+    'field_rank' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'span',
-          'ow-cl' => 'person-title',
+          'ow-cl' => 'person-position',
           'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
@@ -176,8 +181,8 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'span',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
+          'ow-cl' => 'person-area',
+          'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
@@ -189,11 +194,16 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'span',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
+          'ow-cl' => 'name-first',
+          'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
+      ),
+    ),
+    'field_image_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
       ),
     ),
     'field_last_name' => array(
@@ -202,8 +212,8 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'span',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
+          'ow-cl' => 'name-last',
+          'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
@@ -215,8 +225,21 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'span',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
+          'ow-cl' => 'name-middle',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_rank' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'person-position',
+          'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
@@ -333,25 +356,25 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'group_wrapper_name',
+        0 => 'field_image_single_public',
         1 => 'field_first_name',
-        2 => 'field_title_position_unlimited',
-        3 => 'field_middle_name',
-        4 => 'field_academic_area_single',
+        2 => 'group_wrapper_name',
+        3 => 'group_wrapper_position',
+        4 => 'field_middle_name',
         5 => 'field_last_name',
-        6 => 'group_wrapper_position',
-        7 => 'field_image_single_public',
+        6 => 'field_rank',
+        7 => 'field_academic_area_single',
       ),
     ),
     'fields' => array(
-      'group_wrapper_name' => 'ds_content',
-      'field_first_name' => 'ds_content',
-      'field_title_position_unlimited' => 'ds_content',
-      'field_middle_name' => 'ds_content',
-      'field_academic_area_single' => 'ds_content',
-      'field_last_name' => 'ds_content',
-      'group_wrapper_position' => 'ds_content',
       'field_image_single_public' => 'ds_content',
+      'field_first_name' => 'ds_content',
+      'group_wrapper_name' => 'ds_content',
+      'group_wrapper_position' => 'ds_content',
+      'field_middle_name' => 'ds_content',
+      'field_last_name' => 'ds_content',
+      'field_rank' => 'ds_content',
+      'field_academic_area_single' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

@@ -97,7 +97,7 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'lb' => 'of',
+          'lb' => ',',
           'lb-col' => TRUE,
           'ow' => TRUE,
           'ow-el' => 'span',

@@ -97,8 +97,6 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'lb' => ',',
-          'lb-col' => TRUE,
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => 'person-area',
@@ -398,8 +396,8 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'field_image_single_public',
         1 => 'group_wrapper_name',
-        2 => 'field_rank',
-        3 => 'field_first_name',
+        2 => 'field_first_name',
+        3 => 'field_rank',
         4 => 'field_academic_area_single',
         5 => 'field_middle_name',
         6 => 'field_last_name',
@@ -408,8 +406,8 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
     'fields' => array(
       'field_image_single_public' => 'ds_content',
       'group_wrapper_name' => 'ds_content',
-      'field_rank' => 'ds_content',
       'field_first_name' => 'ds_content',
+      'field_rank' => 'ds_content',
       'field_academic_area_single' => 'ds_content',
       'field_middle_name' => 'ds_content',
       'field_last_name' => 'ds_content',

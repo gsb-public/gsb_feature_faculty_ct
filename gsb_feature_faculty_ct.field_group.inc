@@ -181,10 +181,9 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Position wrapper',
-    'weight' => '2',
+    'weight' => '10',
     'children' => array(
-      0 => 'field_academic_area_single',
-      1 => 'field_title_position_unlimited',
+      0 => 'field_title_position_unlimited',
     ),
     'format_type' => 'div',
     'format_settings' => array(

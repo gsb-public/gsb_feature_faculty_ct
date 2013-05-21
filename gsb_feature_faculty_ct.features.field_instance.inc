@@ -2222,6 +2222,106 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-faculty-field_search_field'
+  $field_instances['node-faculty-field_search_field'] = array(
+    'bundle' => 'faculty',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'concat_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'concat_field_blank',
+        'weight' => 35,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'people_fpp' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'tiny' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_search_field',
+    'label' => 'Search field',
+    'required' => 0,
+    'settings' => array(
+      'selected_fields' => array(
+        'field_academic_area_single' => 'field_academic_area_single',
+        'field_academic_area_unlimited' => 'field_academic_area_unlimited',
+        'field_academic_degrees' => 'field_academic_degrees',
+        'field_addthis' => 0,
+        'field_affilitations' => 'field_affilitations',
+        'field_awards_honors' => 'field_awards_honors',
+        'field_body' => 'field_body',
+        'field_centers_research_programs' => 'field_centers_research_programs',
+        'field_email' => 'field_email',
+        'field_facebook' => 'field_facebook',
+        'field_faculty_expert' => 'field_faculty_expert',
+        'field_file_single_public' => 0,
+        'field_first_name' => 'field_first_name',
+        'field_image_single_public' => 0,
+        'field_last_name' => 'field_last_name',
+        'field_leave_status' => 0,
+        'field_link_blog' => 'field_link_blog',
+        'field_link_google_scholar' => 'field_link_google_scholar',
+        'field_link_website' => 'field_link_website',
+        'field_middle_name' => 'field_middle_name',
+        'field_phone' => 'field_phone',
+        'field_professional_experience' => 'field_professional_experience',
+        'field_program' => 'field_program',
+        'field_rank' => 'field_rank',
+        'field_research_interests' => 'field_research_interests',
+        'field_research_statement' => 'field_research_statement',
+        'field_salutation' => 0,
+        'field_sunetid' => 0,
+        'field_talks_conferences' => 'field_talks_conferences',
+        'field_title_position_unlimited' => 'field_title_position_unlimited',
+        'field_topics_of_expertise' => 'field_topics_of_expertise',
+        'field_twitter_search' => 'field_twitter_search',
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'concat_field',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'concat_field_default',
+      'weight' => 36,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-faculty-field_sunetid'
   $field_instances['node-faculty-field_sunetid'] = array(
     'bundle' => 'faculty',
@@ -2629,6 +2729,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Research Statement');
   t('SUNetID');
   t('Salutation');
+  t('Search field');
   t('Talks and Conferences');
   t('Title/Position');
   t('Topics of Expertise');

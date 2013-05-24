@@ -1159,7 +1159,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   $field_instances['node-faculty-field_image_single_public'] = array(
     'bundle' => 'faculty',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Recommended size for uploaded images is 600x440.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1213,6 +1213,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_image_single_public',
     'label' => 'Photo',
@@ -2725,6 +2726,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Professional Experience');
   t('Program Participation');
   t('Rank');
+  t('Recommended size for uploaded images is 600x440.');
   t('Research Interests');
   t('Research Statement');
   t('SUNetID');

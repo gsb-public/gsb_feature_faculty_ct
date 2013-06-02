@@ -2276,6 +2276,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'selected_fields' => array(
+        'concat_field_entity_label' => 'concat_field_entity_label',
         'field_academic_area_single' => 'field_academic_area_single',
         'field_academic_area_unlimited' => 'field_academic_area_unlimited',
         'field_academic_degrees' => 'field_academic_degrees',

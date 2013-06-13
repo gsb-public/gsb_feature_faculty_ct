@@ -1106,21 +1106,15 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'people_fpp' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
-        'weight' => 2,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -1273,21 +1267,15 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'people_fpp' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
-        'weight' => 4,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -1674,21 +1662,15 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'people_fpp' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
-        'weight' => 3,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
       ),
       'tiny' => array(
         'label' => 'above',

@@ -150,7 +150,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       0 => 'field_academic_area_single',
       1 => 'field_rank',
     ),
-    'format_type' => 'div',
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
       'label' => 'Position wrapper',
       'instance_settings' => array(

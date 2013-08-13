@@ -450,7 +450,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           ),
           'counter_orientation' => 'horizontal',
           'extra_css' => '',
-          'share_services' => 'twitter, linkedin, facebook, google_plusone_share, email',
+          'share_services' => 'twitter, linkedin, facebook, google_plusone_share, compact',
         ),
         'type' => 'addthis_basic_toolbox',
         'weight' => 10,

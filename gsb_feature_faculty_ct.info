@@ -92,6 +92,7 @@ features[variable][] = node_options_faculty
 features[variable][] = node_preview_faculty
 features[variable][] = node_submitted_faculty
 features[variable][] = pathauto_node_faculty_pattern
+features[variable][] = workbench_access_node_type_faculty
 features_exclude[field][node-faculty-field_addthis] = node-faculty-field_addthis
 features_exclude[field][field_collection_item-field_affilitations-field_affiliations_position] = field_collection_item-field_affilitations-field_affiliations_position
 features_exclude[field][field_collection_item-field_affilitations-field_link_single] = field_collection_item-field_affilitations-field_link_single

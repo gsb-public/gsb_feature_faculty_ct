@@ -95,13 +95,13 @@ function gsb_feature_faculty_ct_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '47',
+          'weight' => '46',
         ),
         'workbench_access' => array(
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '46',
+          'weight' => '47',
         ),
       ),
       'display' => array(),

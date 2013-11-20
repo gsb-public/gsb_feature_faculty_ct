@@ -92,7 +92,7 @@ function gsb_feature_faculty_ct_strongarm() {
           'weight' => '18',
         ),
         'title' => array(
-          'weight' => '0',
+          'weight' => '3',
         ),
         'path' => array(
           'weight' => '17',

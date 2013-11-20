@@ -246,6 +246,102 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'field_collection_item-field_stanford_gsb_affiliation-field_center_affiliations'
+  $field_instances['field_collection_item-field_stanford_gsb_affiliation-field_center_affiliations'] = array(
+    'bundle' => 'field_stanford_gsb_affiliation',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_center_affiliations',
+    'label' => 'Center Affiliations',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'select_or_other',
+      'settings' => array(
+        'available_options' => 'CSI|CSI: Center for Social Innovation
+CES|CES: Center for Entrepreneurial Studies
+CLDR|CLDR: Center for Leadership Development and Research
+CGBE|CGBE: Center for Global Business and the Economy
+SC Forum|SC Forum: Global Supply Chain Management Forum
+SEED|SEED: Stanford Institute for Innovation in Developing Economies
+STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance',
+        'available_options_php' => '',
+        'markup_available_options_php' => '&lt;none&gt;',
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'other' => 'Other',
+        'other_size' => 60,
+        'other_title' => '',
+        'other_unknown_defaults' => 'other',
+        'sort_options' => 0,
+      ),
+      'type' => 'select_or_other',
+      'weight' => 1,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'field_collection_item-field_stanford_gsb_affiliation-field_position_year'
+  $field_instances['field_collection_item-field_stanford_gsb_affiliation-field_position_year'] = array(
+    'bundle' => 'field_stanford_gsb_affiliation',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_position_year',
+    'label' => 'Position/Year',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-faculty-field_academic_aptmts_unlimited'
   $field_instances['node-faculty-field_academic_aptmts_unlimited'] = array(
     'bundle' => 'faculty',
@@ -4236,6 +4332,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Photo');
   t('Podcasts');
   t('Position');
+  t('Position/Year');
   t('Prefix');
   t('Professional Experience');
   t('Program Participation');

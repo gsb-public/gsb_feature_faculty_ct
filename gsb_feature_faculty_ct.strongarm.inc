@@ -89,19 +89,19 @@ function gsb_feature_faculty_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '34',
+          'weight' => '18',
         ),
         'title' => array(
-          'weight' => '3',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '33',
+          'weight' => '17',
         ),
         'workbench_access' => array(
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '30',
+          'weight' => '16',
         ),
       ),
       'display' => array(),

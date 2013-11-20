@@ -27,7 +27,7 @@ dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = telephone
 dependencies[] = text
-datestamp = 1384963801
+datestamp = 1384905953
 features[ctools][] = ds:ds:1
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
@@ -159,3 +159,4 @@ features_exclude[field][node-faculty-field_search_field] = node-faculty-field_se
 features_exclude[taxonomy][academic_area] = academic_area
 features_exclude[taxonomy][centers_research_programs] = centers_research_programs
 features_exclude[taxonomy][program] = program
+

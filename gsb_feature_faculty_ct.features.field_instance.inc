@@ -251,7 +251,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'bundle' => 'field_stanford_gsb_affiliation',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Do not include "Stanford Graduate School of Business" or "Stanford" in the organization name. Format: POSITION, ORGANIZATION | e.g. Co-director, Directors\' Consortium Executive Program',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -269,13 +269,17 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Center Affiliations',
     'required' => 0,
     'settings' => array(
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'select_or_other',
-      'settings' => array(
+       'settings' => array(
         'available_options' => 'CSI|CSI: Center for Social Innovation
 CES|CES: Center for Entrepreneurial Studies
 CLDR|CLDR: Center for Leadership Development and Research
@@ -290,7 +294,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'other_size' => 60,
         'other_title' => '',
         'other_unknown_defaults' => 'other',
-        'sort_options' => 0,
+        'sort_options' => 0,    
       ),
       'type' => 'select_or_other',
       'weight' => 1,
@@ -347,7 +351,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Drag and drop entries in reverse chronological order. Format: POSITION, UNIVERSITY, DATE | e.g. Visiting Professor, University of Southern California, Fall 2006',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -405,7 +409,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
@@ -415,7 +419,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Select the faculty member\'s primary academic area. Lecturers without a selection will be listed as "Lecturer in Management."',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -510,7 +514,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => '',
       ),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
@@ -520,7 +524,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'CTRL + click to select multiple academic areas. Selections do not display on the faculty profile.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -574,6 +578,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_academic_area_unlimited',
     'label' => 'Other Academic Areas',
@@ -588,7 +593,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => '',
       ),
       'type' => 'options_select',
-      'weight' => 5,
+      'weight' => 11,
     ),
     'workbench_access_field' => 0,
   );
@@ -670,7 +675,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 17,
+      'weight' => 13,
     ),
     'workbench_access_field' => 0,
   );
@@ -680,7 +685,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Drag and drop entries in reverse chronological order, placing PhD degrees first. Format: DEGREE, UNIVERSITY, YYYY | e.g. PhD in Marketing, University of Georgia, 1996',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -823,7 +828,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => '',
       ),
       'type' => 'addthis_button_widget',
-      'weight' => 18,
+      'weight' => 14,
     ),
     'workbench_access_field' => 0,
   );
@@ -905,7 +910,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => '',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 16,
+      'weight' => 12,
     ),
     'workbench_access_field' => 0,
   );
@@ -915,7 +920,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Drag and drop entries in reverse chronological order. Format: AWARD, SOURCE, DATE | e.g. Distinguished Service Award, Stanford GSB, 2013',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -999,7 +1004,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Click the "Paste as plain text" icon <strong>first</strong> to enter content copied from an application or website. Use third-person narrative. | e.g. Mr. Connor has more than 20 years\' experience in corporate finance.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1051,6 +1056,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_body',
     'label' => 'Bio',
@@ -1153,7 +1159,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_buttons',
-      'weight' => 15,
+      'weight' => 11,
     ),
     'workbench_access_field' => 0,
   );
@@ -1163,7 +1169,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Email address does not display on the faculty profile. Users will be able to send inquiries to the address via a webform submission.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1215,12 +1221,13 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_email',
     'label' => 'Email',
     'required' => 0,
     'settings' => array(
-      'allow_without_formatter' => FALSE,
+      'allow_without_formatter' => 0,
       'form_title' => 'Contact person by email',
       'user_register_form' => FALSE,
     ),
@@ -1232,7 +1239,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 9,
+      'weight' => 8,
     ),
     'workbench_access_field' => 0,
   );
@@ -1315,7 +1322,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
@@ -1396,7 +1403,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => '',
       ),
       'type' => 'options_onoff',
-      'weight' => 12,
+      'weight' => 8,
     ),
     'workbench_access_field' => 0,
   );
@@ -1405,7 +1412,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
   $field_instances['node-faculty-field_file_single_public'] = array(
     'bundle' => 'faculty',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Follow <a href="URL" target="_blank">PDF best practices</a> before uploading the CV.',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -1457,6 +1464,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_file_single_public',
     'label' => 'CV',
@@ -1559,7 +1567,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 3,
     ),
     'workbench_access_field' => 0,
   );
@@ -1636,7 +1644,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
   $field_instances['node-faculty-field_image_single_public'] = array(
     'bundle' => 'faculty',
     'deleted' => 0,
-    'description' => 'Recommended size for uploaded images is 600x440.',
+    'description' => 'Size: 270 x 270 px | Follow <a href="URL" target="_blank">instructions for optimizing photos</a> before uploading the file.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1828,7 +1836,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 5,
     ),
     'workbench_access_field' => 0,
   );
@@ -1906,7 +1914,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 4,
+      'weight' => 1,
     ),
     'workbench_access_field' => 0,
   );
@@ -1916,7 +1924,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter a concise statement using third-person narrative. | e.g. Professor Smith is on sabbatical.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1974,7 +1982,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 2,
     ),
     'workbench_access_field' => 0,
   );
@@ -2038,7 +2046,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => '',
       ),
       'type' => 'options_onoff',
-      'weight' => 3,
+      'weight' => 0,
     ),
     'workbench_access_field' => 0,
   );
@@ -2048,7 +2056,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'e.g. http://www.myblog.com',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -2100,6 +2108,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_link_blog',
     'label' => 'Blog Link',
@@ -2120,6 +2129,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'enable' => 0,
         'insert_plugin' => '',
       ),
+      'rel_remove' => 'default',
       'title' => 'none',
       'title_maxlength' => 128,
       'title_value' => '',
@@ -2144,7 +2154,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Drag and drop entries in reverse chronological order. Enter the formal conference name and site address. | e.g. 2013 Conference on Research in Income and Wealth, http://www.nber.org/CRIW/',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2226,7 +2236,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Use the public profile link. | e.g. http://scholar.google.com/citations?user=WfWmJV0AAAAJ&hl=en&oi=sra',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -2278,6 +2288,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_link_google_scholar',
     'label' => 'Google Scholar Link',
@@ -2298,6 +2309,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'enable' => 0,
         'insert_plugin' => '',
       ),
+      'rel_remove' => 'default',
       'title' => 'none',
       'title_maxlength' => 128,
       'title_value' => '',
@@ -2322,7 +2334,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Go to <a href="http://www.linkedin.com/profile/public-profile-settings?utm_source=faculty-content-type&utm_medium=web&utm_campaign=help-text" target="_blank">Public Profile Settings</a> to copy the faculty member\'s profile link.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2404,7 +2416,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the formal name of the social site and link to the faculty member\'s profile. | e.g. Tumblr (not Tumbler), http://www.tumblr.com/username',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2558,7 +2570,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 5,
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
@@ -2650,7 +2662,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'View <a href="URL" target="_blank">process for adding videos</a> to Stanford GSB\'s YouTube channel. ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2722,7 +2734,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 4,
+      'weight' => 5,
     ),
     'workbench_access_field' => 0,
   );
@@ -2732,7 +2744,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'e.g. http://www.mysite.com',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -2784,6 +2796,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_link_website',
     'label' => 'Personal Website Link',
@@ -2804,6 +2817,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'enable' => 0,
         'insert_plugin' => '',
       ),
+      'rel_remove' => 'default',
       'title' => 'none',
       'title_maxlength' => 128,
       'title_value' => '',
@@ -2828,7 +2842,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Include a period after the middle initial. | e.g. A. or Andrew',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -2880,6 +2894,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_middle_name',
     'label' => 'Middle Name',
@@ -2901,7 +2916,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 4,
     ),
     'workbench_access_field' => 0,
   );
@@ -2979,7 +2994,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'placeholder' => '',
       ),
       'type' => 'telephone_default',
-      'weight' => 8,
+      'weight' => 7,
     ),
     'workbench_access_field' => 0,
   );
@@ -2989,7 +3004,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Drag and drop entries in reverse chronological order. Format: POSITION, ORGANIZATION, DATE | e.g. Vice President of Client Services, ABC Trading Company, 2003-2013',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -3138,7 +3153,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 11,
+      'weight' => 7,
     ),
   );
 
@@ -3250,7 +3265,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Use sentence case without periods. | e.g. Evolution of cooperation and norms of collective action',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -3334,7 +3349,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter a concise statement using third-person narrative. | e.g. Professor White conducts research in corporate finance.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -3494,7 +3509,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 2,
     ),
     'workbench_access_field' => 0,
   );
@@ -3605,7 +3620,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'concat_field_default',
-      'weight' => 19,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -3615,7 +3630,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter activities such as conferences organized, positions on boards, and professional memberships. Use subheads to group similar activities and bullet lists to make activities easier to scan. Format: POSITION, ORGANIZATION, DATE | e.g. Associate Editor, Journal of Finance, 1990 - present',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3675,7 +3690,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 9,
+      'weight' => 8,
     ),
     'workbench_access_field' => 0,
   );
@@ -3685,7 +3700,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Do not include "Stanford Graduate School of Business" or "Stanford" in the organization name. Format: POSITION, ORGANIZATION | e.g. Co-director, Directors\' Consortium Executive Program',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3809,7 +3824,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
@@ -3819,7 +3834,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => '<a href="http://stnfd.biz/qWYIN" target="_blank">Look up SUNetID</a>',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3858,6 +3873,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_sunetid',
     'label' => 'SUNetID',
@@ -3879,7 +3895,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 1,
     ),
     'workbench_access_field' => 0,
   );
@@ -3975,7 +3991,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => '',
       ),
       'type' => 'link_field',
-      'weight' => 14,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
@@ -3985,7 +4001,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter a concise statement using third-person narrative. | e.g. Professor Greer uses an interactive approach in the courses he teaches.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4055,7 +4071,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Drag and drop entries into the desired order.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -4107,6 +4123,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_title_position_unlimited',
     'label' => 'Title/Position',
@@ -4211,7 +4228,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -4221,7 +4238,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'bundle' => 'faculty',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'e.g. https://twitter.com/username',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -4273,6 +4290,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_twitter_search',
     'label' => 'Twitter Username',
@@ -4301,6 +4319,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('<a href="http://stnfd.biz/qWYIN" target="_blank">Look up SUNetID</a>');
   t('Academic Appointments');
   t('Academic Area');
   t('Academic Degrees');
@@ -4309,15 +4328,33 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
   t('Awards and Honors');
   t('Bio');
   t('Blog Link');
+  t('CTRL + click to select multiple academic areas. Selections do not display on the faculty profile.');
   t('CV');
   t('Center Affiliations');
+  t('Click the "Paste as plain text" icon <strong>first</strong> to enter content copied from an application or website. Use third-person narrative. | e.g. Mr. Connor has more than 20 years\' experience in corporate finance.');
   t('Conferences and Presentations');
+  t('Do not include "Stanford Graduate School of Business" or "Stanford" in the organization name. Format: POSITION, ORGANIZATION | e.g. Co-director, Directors\' Consortium Executive Program');
+  t('Drag and drop entries in reverse chronological order, placing PhD degrees first. Format: DEGREE, UNIVERSITY, YYYY | e.g. PhD in Marketing, University of Georgia, 1996');
+  t('Drag and drop entries in reverse chronological order. Enter the formal conference name and site address. | e.g. 2013 Conference on Research in Income and Wealth, http://www.nber.org/CRIW/');
+  t('Drag and drop entries in reverse chronological order. Format: AWARD, SOURCE, DATE | e.g. Distinguished Service Award, Stanford GSB, 2013');
+  t('Drag and drop entries in reverse chronological order. Format: POSITION, ORGANIZATION, DATE | e.g. Vice President of Client Services, ABC Trading Company, 2003-2013');
+  t('Drag and drop entries in reverse chronological order. Format: POSITION, UNIVERSITY, DATE | e.g. Visiting Professor, University of Southern California, Fall 2006');
+  t('Drag and drop entries into the desired order.');
   t('Email');
+  t('Email address does not display on the faculty profile. Users will be able to send inquiries to the address via a webform submission.');
+  t('Enter a concise statement using third-person narrative. | e.g. Professor Greer uses an interactive approach in the courses he teaches.');
+  t('Enter a concise statement using third-person narrative. | e.g. Professor Smith is on sabbatical.');
+  t('Enter a concise statement using third-person narrative. | e.g. Professor White conducts research in corporate finance.');
+  t('Enter activities such as conferences organized, positions on boards, and professional memberships. Use subheads to group similar activities and bullet lists to make activities easier to scan. Format: POSITION, ORGANIZATION, DATE | e.g. Associate Editor, Journal of Finance, 1990 - present');
+  t('Enter the formal name of the social site and link to the faculty member\'s profile. | e.g. Tumblr (not Tumbler), http://www.tumblr.com/username');
   t('Facebook Username');
   t('Faculty Expert');
   t('First Name');
+  t('Follow <a href="URL" target="_blank">PDF best practices</a> before uploading the CV.');
+  t('Go to <a href="http://www.linkedin.com/profile/public-profile-settings?utm_source=faculty-content-type&utm_medium=web&utm_campaign=help-text" target="_blank">Public Profile Settings</a> to copy the faculty member\'s profile link.');
   t('Google Scholar Link');
   t('Greater University Affiliation');
+  t('Include a period after the middle initial. | e.g. A. or Andrew');
   t('Last Name');
   t('LinkedIn');
   t('Middle Name');
@@ -4337,12 +4374,13 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
   t('Professional Experience');
   t('Program Participation');
   t('Rank');
-  t('Recommended size for uploaded images is 600x440.');
   t('Research Interests');
   t('Research Statement');
   t('SUNetID');
   t('Search field');
+  t('Select the faculty member\'s primary academic area. Lecturers without a selection will be listed as "Lecturer in Management."');
   t('Service to the Profession');
+  t('Size: 270 x 270 px | Follow <a href="URL" target="_blank">instructions for optimizing photos</a> before uploading the file.');
   t('Stanford GSB Affiliation');
   t('Suffix');
   t('Talks and Conferences');
@@ -4351,8 +4389,14 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
   t('Title/Position');
   t('Topics of Expertise');
   t('Twitter Username');
+  t('Use sentence case without periods. | e.g. Evolution of cooperation and norms of collective action');
+  t('Use the public profile link. | e.g. http://scholar.google.com/citations?user=WfWmJV0AAAAJ&hl=en&oi=sra');
   t('Videos');
+  t('View <a href="URL" target="_blank">process for adding videos</a> to Stanford GSB\'s YouTube channel. ');
   t('Years');
+  t('e.g. http://www.myblog.com');
+  t('e.g. http://www.mysite.com');
+  t('e.g. https://twitter.com/username');
 
   return $field_instances;
 }

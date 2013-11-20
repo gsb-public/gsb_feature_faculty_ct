@@ -49,7 +49,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Academic Information',
-    'weight' => '1',
+    'weight' => '4',
     'children' => array(
       0 => 'field_awards_honors',
       1 => 'field_body',
@@ -86,7 +86,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Personal Information',
-    'weight' => '0',
+    'weight' => '3',
     'children' => array(
       0 => 'field_email',
       1 => 'field_file_single_public',
@@ -130,7 +130,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Professional Information',
-    'weight' => '2',
+    'weight' => '5',
     'children' => array(
       0 => 'field_link_conf_pres_unlimited',
       1 => 'field_link_podcast_unlimited',
@@ -161,7 +161,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_professional_information';
   $field_group->data = array(
     'label' => 'Stanford GSB Affiliations',
-    'weight' => '6',
+    'weight' => '7',
     'children' => array(
       0 => 'field_greater_univ_aff_unlimited',
       1 => 'field_stanford_gsb_affiliation',

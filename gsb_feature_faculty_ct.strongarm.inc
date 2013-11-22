@@ -85,6 +85,12 @@ function gsb_feature_faculty_ct_strongarm() {
       'media_contact' => array(
         'custom_settings' => FALSE,
       ),
+      'event_upcoming' => array(
+        'custom_settings' => FALSE,
+      ),
+      'phd_job_market_candidate' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

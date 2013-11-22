@@ -17,12 +17,27 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'faculty';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
+    'faculty_rank_academic_area' => array(
+      'weight' => '2',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
     'field_file_single_public' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'lb' => 'Download CV',
-          'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'div',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => TRUE,
+          'fi-odd-even' => FALSE,
         ),
       ),
     ),
@@ -32,7 +47,7 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'span',
-          'ow-cl' => 'name-first',
+          'ow-cl' => '',
           'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
@@ -45,7 +60,7 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'span',
-          'ow-cl' => 'name-last',
+          'ow-cl' => '',
           'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
@@ -55,18 +70,42 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
     'field_link_blog' => array(
       'formatter_settings' => array(
         'ft' => array(
-          'func' => 'theme_ds_field_minimal',
-          'lb' => 'Visit',
-          'lb-col' => TRUE,
+          'func' => 'theme_ds_field_expert',
+          'lb' => 'Blog',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_google_scholar' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb' => 'Google Scholar',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
     'field_link_website' => array(
       'formatter_settings' => array(
         'ft' => array(
-          'func' => 'theme_ds_field_minimal',
-          'lb' => 'Visit',
-          'lb-col' => TRUE,
+          'func' => 'theme_ds_field_expert',
+          'lb' => 'Personal Website',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -76,8 +115,79 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'span',
-          'ow-cl' => 'name-middle',
+          'ow-cl' => '',
           'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_salutation' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_linkedin' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_suffix_name' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_other_social' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'div',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_twitter' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
@@ -186,6 +296,33 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
 }
 
 /**
+ * Implements hook_ds_custom_fields_info().
+ */
+function gsb_feature_faculty_ct_ds_custom_fields_info() {
+  $export = array();
+
+  $ds_field = new stdClass();
+  $ds_field->api_version = 1;
+  $ds_field->field = 'faculty_rank_academic_area';
+  $ds_field->label = 'Faculty rank and academic area';
+  $ds_field->field_type = 5;
+  $ds_field->entities = array(
+    'node' => 'node',
+  );
+  $ds_field->ui_limit = 'faculty|default';
+  $ds_field->properties = array(
+    'code' => array(
+      'value' => '[node:field_rank], [node:field_academic_area_single]',
+      'format' => 'full_html',
+    ),
+    'use_token' => 1,
+  );
+  $export['faculty_rank_academic_area'] = $ds_field;
+
+  return $export;
+}
+
+/**
  * Implements hook_ds_layout_settings_info().
  */
 function gsb_feature_faculty_ct_ds_layout_settings_info() {
@@ -202,72 +339,90 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
     'regions' => array(
       'left' => array(
         0 => 'field_image_single_public',
-        1 => 'field_phone',
-        2 => 'field_email',
-        3 => 'field_twitter_search',
-        4 => 'field_facebook',
-        5 => 'field_link_website',
-        6 => 'field_link_blog',
-        7 => 'field_file_single_public',
-        8 => 'field_link_google_scholar',
-        9 => 'group_tags_wrapper',
-        11 => 'field_academic_area_single',
-        12 => 'field_academic_area_unlimited',
-        17 => 'field_centers_research_programs',
-        18 => 'field_program',
+        1 => 'faculty_rank_academic_area',
+        2 => 'group_wrapper_information',
+        28 => 'group_wrapper_contact',
+        29 => 'field_phone',
+        30 => 'field_email',
+        31 => 'group_wrapper_scholar',
+        32 => 'field_file_single_public',
+        33 => 'field_link_website',
+        34 => 'field_link_google_scholar',
+        35 => 'group_wrapper_social',
+        36 => 'field_link_linkedin',
+        37 => 'field_link_twitter',
+        38 => 'field_link_other_social',
+        39 => 'field_link_blog',
       ),
       'right' => array(
-        10 => 'field_addthis',
-        13 => 'field_first_name',
-        14 => 'group_wrapper_name',
-        15 => 'field_research_statement',
-        16 => 'field_middle_name',
-        19 => 'field_last_name',
-        20 => 'field_research_interests',
-        21 => 'field_title_position_unlimited',
-        22 => 'field_rank',
-        23 => 'field_salutation',
-        24 => 'field_professional_experience',
-        25 => 'field_awards_honors',
-        26 => 'field_faculty_expert',
-        27 => 'field_topics_of_expertise',
-        28 => 'field_talks_conferences',
-        29 => 'field_affilitations',
-        30 => 'field_body',
+        3 => 'group_wrapper_name',
+        4 => 'field_leave_statement',
+        5 => 'field_title_position_unlimited',
+        6 => 'field_academic_area_single',
+        7 => 'field_research_statement',
+        8 => 'field_research_interests',
+        9 => 'field_teaching_statement',
+        10 => 'field_body',
+        11 => 'field_academic_degrees_unlimited',
+        12 => 'field_academic_degrees',
+        13 => 'field_academic_aptmts_unlimited',
+        14 => 'field_professional_experience',
+        15 => 'field_awards_honors',
+        16 => 'field_link_unlimited',
+        17 => 'field_salutation',
+        18 => 'field_first_name',
+        19 => 'field_link_conf_pres_unlimited',
+        20 => 'field_middle_name',
+        21 => 'field_link_video_unlimited',
+        22 => 'field_link_podcast_unlimited',
+        23 => 'field_last_name',
+        24 => 'field_stanford_gsb_affiliation',
+        25 => 'field_suffix_name',
+        26 => 'field_greater_univ_aff_unlimited',
+        27 => 'field_service_profession',
       ),
     ),
     'fields' => array(
       'field_image_single_public' => 'left',
-      'field_phone' => 'left',
-      'field_email' => 'left',
-      'field_twitter_search' => 'left',
-      'field_facebook' => 'left',
-      'field_link_website' => 'left',
-      'field_link_blog' => 'left',
-      'field_file_single_public' => 'left',
-      'field_link_google_scholar' => 'left',
-      'group_tags_wrapper' => 'left',
-      'field_addthis' => 'right',
-      'field_academic_area_single' => 'left',
-      'field_academic_area_unlimited' => 'left',
-      'field_first_name' => 'right',
+      'faculty_rank_academic_area' => 'left',
+      'group_wrapper_information' => 'left',
       'group_wrapper_name' => 'right',
-      'field_research_statement' => 'right',
-      'field_middle_name' => 'right',
-      'field_centers_research_programs' => 'left',
-      'field_program' => 'left',
-      'field_last_name' => 'right',
-      'field_research_interests' => 'right',
+      'field_leave_statement' => 'right',
       'field_title_position_unlimited' => 'right',
-      'field_rank' => 'right',
-      'field_salutation' => 'right',
+      'field_academic_area_single' => 'right',
+      'field_research_statement' => 'right',
+      'field_research_interests' => 'right',
+      'field_teaching_statement' => 'right',
+      'field_body' => 'right',
+      'field_academic_degrees_unlimited' => 'right',
+      'field_academic_degrees' => 'right',
+      'field_academic_aptmts_unlimited' => 'right',
       'field_professional_experience' => 'right',
       'field_awards_honors' => 'right',
-      'field_faculty_expert' => 'right',
-      'field_topics_of_expertise' => 'right',
-      'field_talks_conferences' => 'right',
-      'field_affilitations' => 'right',
-      'field_body' => 'right',
+      'field_link_unlimited' => 'right',
+      'field_salutation' => 'right',
+      'field_first_name' => 'right',
+      'field_link_conf_pres_unlimited' => 'right',
+      'field_middle_name' => 'right',
+      'field_link_video_unlimited' => 'right',
+      'field_link_podcast_unlimited' => 'right',
+      'field_last_name' => 'right',
+      'field_stanford_gsb_affiliation' => 'right',
+      'field_suffix_name' => 'right',
+      'field_greater_univ_aff_unlimited' => 'right',
+      'field_service_profession' => 'right',
+      'group_wrapper_contact' => 'left',
+      'field_phone' => 'left',
+      'field_email' => 'left',
+      'group_wrapper_scholar' => 'left',
+      'field_file_single_public' => 'left',
+      'field_link_website' => 'left',
+      'field_link_google_scholar' => 'left',
+      'group_wrapper_social' => 'left',
+      'field_link_linkedin' => 'left',
+      'field_link_twitter' => 'left',
+      'field_link_other_social' => 'left',
+      'field_link_blog' => 'left',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -277,6 +432,8 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['node|faculty|default'] = $ds_layout;
 

@@ -51,16 +51,16 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Academic Information',
     'weight' => '4',
     'children' => array(
-      0 => 'field_academic_aptmts_unlimited',
-      1 => 'field_academic_degrees_unlimited',
-      2 => 'field_awards_honors',
-      3 => 'field_body',
-      4 => 'field_link_unlimited',
-      5 => 'field_professional_experience',
-      6 => 'field_research_interests',
-      7 => 'field_research_statement',
-      8 => 'field_teaching_statement',
-      9 => 'field_title_position_unlimited',
+      0 => 'field_awards_honors',
+      1 => 'field_body',
+      2 => 'field_professional_experience',
+      3 => 'field_research_interests',
+      4 => 'field_research_statement',
+      5 => 'field_title_position_unlimited',
+      6 => 'field_link_unlimited',
+      7 => 'field_teaching_statement',
+      8 => 'field_academic_aptmts_unlimited',
+      9 => 'field_academic_degrees_unlimited',
       10 => 'group_academic_areas',
     ),
     'format_type' => 'fieldset',
@@ -93,22 +93,23 @@ function gsb_feature_faculty_ct_field_group_info() {
       2 => 'field_first_name',
       3 => 'field_image_single_public',
       4 => 'field_last_name',
-      5 => 'field_leave_date',
-      6 => 'field_leave_statement',
-      7 => 'field_leave_status',
-      8 => 'field_link_blog',
-      9 => 'field_link_google_scholar',
-      10 => 'field_link_linkedin',
-      11 => 'field_link_other_social',
-      12 => 'field_link_website',
-      13 => 'field_middle_name',
-      14 => 'field_phone',
-      15 => 'field_rank',
-      16 => 'field_salutation',
-      17 => 'field_suffix_name',
-      18 => 'field_sunetid',
-      19 => 'field_twitter_search',
-      20 => 'title',
+      5 => 'field_leave_status',
+      6 => 'field_link_blog',
+      7 => 'field_link_google_scholar',
+      8 => 'field_link_website',
+      9 => 'field_middle_name',
+      10 => 'field_phone',
+      11 => 'field_rank',
+      12 => 'field_salutation',
+      13 => 'field_sunetid',
+      14 => 'field_twitter_search',
+      15 => 'field_link_linkedin',
+      16 => 'field_suffix_name',
+      17 => 'field_leave_date',
+      18 => 'field_leave_statement',
+      19 => 'field_link_other_social',
+      20 => 'field_link_twitter',
+      21 => 'title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -192,12 +193,10 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
-    'weight' => '9',
+    'weight' => '36',
     'children' => array(
-      0 => 'field_academic_area_single',
-      1 => 'field_academic_area_unlimited',
-      2 => 'field_centers_research_programs',
-      3 => 'field_program',
+      0 => 'field_academic_area_unlimited',
+      1 => 'field_centers_research_programs',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
@@ -214,6 +213,71 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_contact|node|faculty|default';
+  $field_group->group_name = 'group_wrapper_contact';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_wrapper_information';
+  $field_group->data = array(
+    'label' => 'Contact wrapper',
+    'weight' => '53',
+    'children' => array(
+      0 => 'field_email',
+      1 => 'field_phone',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Contact wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_contact|node|faculty|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_information|node|faculty|default';
+  $field_group->group_name = 'group_wrapper_information';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Information wrapper',
+    'weight' => '3',
+    'children' => array(
+      0 => 'group_wrapper_contact',
+      1 => 'group_wrapper_scholar',
+      2 => 'group_wrapper_social',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Information wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_information|node|faculty|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_name|node|faculty|default';
   $field_group->group_name = 'group_wrapper_name';
   $field_group->entity_type = 'node';
@@ -222,23 +286,26 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Name wrapper',
-    'weight' => '11',
+    'weight' => '4',
     'children' => array(
       0 => 'field_first_name',
       1 => 'field_last_name',
       2 => 'field_middle_name',
+      3 => 'field_salutation',
+      4 => 'field_suffix_name',
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Name wrapper',
       'instance_settings' => array(
+        'classes' => '',
         'description' => '',
-        'show_label' => 1,
+        'show_label' => '0',
         'label_element' => 'h3',
         'effect' => 'none',
-        'speed' => 'fast',
-        'classes' => '',
+        'speed' => 'none',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_wrapper_name|node|faculty|default'] = $field_group;
@@ -367,6 +434,73 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
   );
   $export['group_wrapper_position|node|faculty|teaser'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_scholar|node|faculty|default';
+  $field_group->group_name = 'group_wrapper_scholar';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_wrapper_information';
+  $field_group->data = array(
+    'label' => 'Scholar wrapper',
+    'weight' => '56',
+    'children' => array(
+      0 => 'field_file_single_public',
+      1 => 'field_link_google_scholar',
+      2 => 'field_link_website',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Scholar wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_scholar|node|faculty|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_social|node|faculty|default';
+  $field_group->group_name = 'group_wrapper_social';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_wrapper_information';
+  $field_group->data = array(
+    'label' => 'Social wrapper',
+    'weight' => '60',
+    'children' => array(
+      0 => 'field_link_blog',
+      1 => 'field_link_linkedin',
+      2 => 'field_link_other_social',
+      3 => 'field_link_twitter',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Social wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_social|node|faculty|default'] = $field_group;
 
   return $export;
 }

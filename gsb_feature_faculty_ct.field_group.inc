@@ -193,10 +193,9 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
-    'weight' => '36',
+    'weight' => '29',
     'children' => array(
       0 => 'field_academic_area_unlimited',
-      1 => 'field_centers_research_programs',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
@@ -209,6 +208,41 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
   );
   $export['group_tags_wrapper|node|faculty|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_academic|node|faculty|default';
+  $field_group->group_name = 'group_wrapper_academic';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Academic wrapper',
+    'weight' => '8',
+    'children' => array(
+      0 => 'field_awards_honors',
+      1 => 'field_body',
+      2 => 'field_professional_experience',
+      3 => 'field_academic_aptmts_unlimited',
+      4 => 'field_academic_degrees_unlimited',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Academic wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_academic|node|faculty|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -253,7 +287,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Information wrapper',
-    'weight' => '3',
+    'weight' => '2',
     'children' => array(
       0 => 'group_wrapper_contact',
       1 => 'group_wrapper_scholar',
@@ -286,7 +320,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Name wrapper',
-    'weight' => '4',
+    'weight' => '3',
     'children' => array(
       0 => 'field_first_name',
       1 => 'field_last_name',
@@ -434,6 +468,39 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
   );
   $export['group_wrapper_position|node|faculty|teaser'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_research|node|faculty|default';
+  $field_group->group_name = 'group_wrapper_research';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Research wrapper',
+    'weight' => '7',
+    'children' => array(
+      0 => 'field_research_interests',
+      1 => 'field_research_statement',
+      2 => 'field_teaching_statement',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Research wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_research|node|faculty|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */

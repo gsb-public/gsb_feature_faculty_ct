@@ -193,7 +193,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
-    'weight' => '29',
+    'weight' => '25',
     'children' => array(
       0 => 'field_academic_area_unlimited',
     ),
@@ -243,6 +243,38 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
   );
   $export['group_wrapper_academic|node|faculty|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_affiliation|node|faculty|default';
+  $field_group->group_name = 'group_wrapper_affiliation';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Stanford University Affiliations',
+    'weight' => '13',
+    'children' => array(
+      0 => 'field_greater_univ_aff_unlimited',
+      1 => 'field_stanford_gsb_affiliation',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Stanford University Affiliations',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h2',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_affiliation|node|faculty|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */

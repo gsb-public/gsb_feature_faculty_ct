@@ -12,6 +12,42 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'field_collection_item|field_stanford_gsb_affiliation|default';
+  $ds_fieldsetting->entity_type = 'field_collection_item';
+  $ds_fieldsetting->bundle = 'field_stanford_gsb_affiliation';
+  $ds_fieldsetting->view_mode = 'default';
+  $ds_fieldsetting->settings = array(
+    'field_center_affiliations' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_position_year' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+  );
+  $export['field_collection_item|field_stanford_gsb_affiliation|default'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|faculty|default';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'faculty';
@@ -397,6 +433,33 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_greater_univ_aff_unlimited' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb' => 'Greater Stanford University',
+          'lb-el' => 'h3',
+          'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fis' => TRUE,
+          'fis-el' => 'ul',
+          'fis-cl' => '',
+          'fis-at' => '',
+          'fis-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'li',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+        ),
+      ),
+    ),
     'field_leave_statement' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -494,6 +557,54 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'lb-el' => 'h2',
+          'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fis' => TRUE,
+          'fis-el' => 'ul',
+          'fis-cl' => '',
+          'fis-at' => '',
+          'fis-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'li',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+        ),
+      ),
+    ),
+    'field_service_profession' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb-el' => 'h2',
+          'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'p',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+        ),
+      ),
+    ),
+    'field_stanford_gsb_affiliation' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb' => 'Stanford GSB',
+          'lb-el' => 'h3',
           'lb-col' => TRUE,
           'ow' => TRUE,
           'ow-el' => 'div',
@@ -665,6 +776,36 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'field_collection_item|field_stanford_gsb_affiliation|default';
+  $ds_layout->entity_type = 'field_collection_item';
+  $ds_layout->bundle = 'field_stanford_gsb_affiliation';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'field_center_affiliations',
+        1 => 'field_position_year',
+      ),
+    ),
+    'fields' => array(
+      'field_center_affiliations' => 'ds_content',
+      'field_position_year' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['field_collection_item|field_stanford_gsb_affiliation|default'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'node|faculty|default';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'faculty';
@@ -676,18 +817,18 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
         0 => 'field_image_single_public',
         1 => 'faculty_rank_academic_area',
         2 => 'group_wrapper_information',
-        29 => 'group_wrapper_contact',
-        30 => 'field_phone',
-        31 => 'field_email',
-        32 => 'group_wrapper_scholar',
-        33 => 'field_file_single_public',
-        34 => 'field_link_website',
-        35 => 'field_link_google_scholar',
-        36 => 'group_wrapper_social',
-        37 => 'field_link_linkedin',
-        38 => 'field_link_twitter',
-        39 => 'field_link_other_social',
-        40 => 'field_link_blog',
+        30 => 'group_wrapper_contact',
+        31 => 'field_phone',
+        32 => 'field_email',
+        33 => 'group_wrapper_scholar',
+        34 => 'field_file_single_public',
+        35 => 'field_link_website',
+        36 => 'field_link_google_scholar',
+        37 => 'group_wrapper_social',
+        38 => 'field_link_linkedin',
+        39 => 'field_link_twitter',
+        40 => 'field_link_other_social',
+        41 => 'field_link_blog',
       ),
       'right' => array(
         3 => 'group_wrapper_name',
@@ -697,25 +838,26 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
         7 => 'group_wrapper_research',
         8 => 'field_research_statement',
         9 => 'group_wrapper_academic',
-        10 => 'field_body',
-        11 => 'field_research_interests',
-        12 => 'field_teaching_statement',
-        13 => 'field_academic_degrees_unlimited',
-        14 => 'field_academic_aptmts_unlimited',
-        15 => 'field_professional_experience',
-        16 => 'field_awards_honors',
-        17 => 'field_link_unlimited',
-        18 => 'field_link_conf_pres_unlimited',
-        19 => 'field_link_video_unlimited',
-        20 => 'field_salutation',
-        21 => 'field_link_podcast_unlimited',
+        10 => 'field_link_unlimited',
+        11 => 'field_body',
+        12 => 'field_research_interests',
+        13 => 'field_link_conf_pres_unlimited',
+        14 => 'field_teaching_statement',
+        15 => 'field_academic_degrees_unlimited',
+        16 => 'field_link_video_unlimited',
+        17 => 'field_academic_aptmts_unlimited',
+        18 => 'field_professional_experience',
+        19 => 'field_link_podcast_unlimited',
+        20 => 'field_awards_honors',
+        21 => 'group_wrapper_affiliation',
         22 => 'field_stanford_gsb_affiliation',
-        23 => 'field_first_name',
-        24 => 'field_middle_name',
-        25 => 'field_greater_univ_aff_unlimited',
-        26 => 'field_last_name',
-        27 => 'field_service_profession',
-        28 => 'field_suffix_name',
+        23 => 'field_greater_univ_aff_unlimited',
+        24 => 'field_service_profession',
+        25 => 'field_salutation',
+        26 => 'field_first_name',
+        27 => 'field_middle_name',
+        28 => 'field_last_name',
+        29 => 'field_suffix_name',
       ),
     ),
     'fields' => array(
@@ -729,24 +871,25 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
       'group_wrapper_research' => 'right',
       'field_research_statement' => 'right',
       'group_wrapper_academic' => 'right',
+      'field_link_unlimited' => 'right',
       'field_body' => 'right',
       'field_research_interests' => 'right',
+      'field_link_conf_pres_unlimited' => 'right',
       'field_teaching_statement' => 'right',
       'field_academic_degrees_unlimited' => 'right',
+      'field_link_video_unlimited' => 'right',
       'field_academic_aptmts_unlimited' => 'right',
       'field_professional_experience' => 'right',
-      'field_awards_honors' => 'right',
-      'field_link_unlimited' => 'right',
-      'field_link_conf_pres_unlimited' => 'right',
-      'field_link_video_unlimited' => 'right',
-      'field_salutation' => 'right',
       'field_link_podcast_unlimited' => 'right',
+      'field_awards_honors' => 'right',
+      'group_wrapper_affiliation' => 'right',
       'field_stanford_gsb_affiliation' => 'right',
+      'field_greater_univ_aff_unlimited' => 'right',
+      'field_service_profession' => 'right',
+      'field_salutation' => 'right',
       'field_first_name' => 'right',
       'field_middle_name' => 'right',
-      'field_greater_univ_aff_unlimited' => 'right',
       'field_last_name' => 'right',
-      'field_service_profession' => 'right',
       'field_suffix_name' => 'right',
       'group_wrapper_contact' => 'left',
       'field_phone' => 'left',

@@ -629,7 +629,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'module' => 'email',
         'settings' => array(
           'conditions' => array(),
-          'text' => 'Email [node:field-salutation] [node:field_first_name] [node:field_middle_name] [node:field_last_name] [node:field_suffix_name]',
+          'text' => 'Email',
           'title' => 'Email Contact Form',
         ),
         'type' => 'email_contact',

@@ -122,6 +122,11 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_email' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
     'field_file_single_public' => array(
       'formatter_settings' => array(
         'ft' => array(

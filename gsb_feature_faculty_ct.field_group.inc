@@ -21,7 +21,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_academic_information';
   $field_group->data = array(
     'label' => 'Academic Area(s)',
-    'weight' => '3',
+    'weight' => '20',
     'children' => array(
       0 => 'field_academic_area_single',
       1 => 'field_academic_area_unlimited',
@@ -49,7 +49,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Academic Information',
-    'weight' => '4',
+    'weight' => '1',
     'children' => array(
       0 => 'field_awards_honors',
       1 => 'field_body',
@@ -57,10 +57,10 @@ function gsb_feature_faculty_ct_field_group_info() {
       3 => 'field_research_interests',
       4 => 'field_research_statement',
       5 => 'field_title_position_unlimited',
-      6 => 'field_link_unlimited',
-      7 => 'field_teaching_statement',
-      8 => 'field_academic_aptmts_unlimited',
-      9 => 'field_academic_degrees_unlimited',
+      6 => 'field_academic_aptmts_unlimited',
+      7 => 'field_academic_degrees_unlimited',
+      8 => 'field_link_unlimited',
+      9 => 'field_teaching_statement',
       10 => 'group_academic_areas',
     ),
     'format_type' => 'fieldset',
@@ -86,7 +86,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Personal Information',
-    'weight' => '3',
+    'weight' => '0',
     'children' => array(
       0 => 'field_email',
       1 => 'field_file_single_public',
@@ -102,14 +102,13 @@ function gsb_feature_faculty_ct_field_group_info() {
       11 => 'field_rank',
       12 => 'field_salutation',
       13 => 'field_sunetid',
-      14 => 'field_twitter_search',
-      15 => 'field_link_linkedin',
-      16 => 'field_suffix_name',
-      17 => 'field_leave_date',
-      18 => 'field_leave_statement',
-      19 => 'field_link_other_social',
-      20 => 'field_link_twitter',
-      21 => 'title',
+      14 => 'field_leave_date',
+      15 => 'field_leave_statement',
+      16 => 'field_link_linkedin',
+      17 => 'field_link_other_social',
+      18 => 'field_link_twitter',
+      19 => 'field_suffix_name',
+      20 => 'title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -134,12 +133,12 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Professional Information',
-    'weight' => '5',
+    'weight' => '2',
     'children' => array(
-      0 => 'field_link_conf_pres_unlimited',
-      1 => 'field_link_podcast_unlimited',
-      2 => 'field_link_video_unlimited',
-      3 => 'field_service_profession',
+      0 => 'field_link_podcast_unlimited',
+      1 => 'field_link_video_unlimited',
+      2 => 'field_service_profession_section',
+      3 => 'field_conf_presentations_section',
       4 => 'group_stanford_gsb_affiliations',
     ),
     'format_type' => 'fieldset',
@@ -165,7 +164,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_professional_information';
   $field_group->data = array(
     'label' => 'Stanford GSB Affiliations',
-    'weight' => '7',
+    'weight' => '27',
     'children' => array(
       0 => 'field_greater_univ_aff_unlimited',
       1 => 'field_stanford_gsb_affiliation',

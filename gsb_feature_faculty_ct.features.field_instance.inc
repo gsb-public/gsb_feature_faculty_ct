@@ -10,50 +10,80 @@
 function gsb_feature_faculty_ct_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'field_collection_item-field_conf_presentations_section-field_file_conf_presentation'
-  $field_instances['field_collection_item-field_conf_presentations_section-field_file_conf_presentation'] = array(
-    'bundle' => 'field_conf_presentations_section',
+  // Exported field_instance: 'field_collection_item-field_affilitations-field_affiliations_position'
+  $field_instances['field_collection_item-field_affilitations-field_affiliations_position'] = array(
+    'bundle' => 'field_affilitations',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'file',
+        'module' => 'text',
         'settings' => array(
           'conditions' => array(),
+          'custom_link_to_entity' => '',
+          'custom_prefix' => '',
+          'custom_reverse' => '',
+          'custom_strip_preserve' => '',
+          'custom_strip_tags' => '',
+          'custom_strtolower' => '',
+          'custom_strtoupper' => '',
+          'custom_suffix' => '',
+          'custom_trim' => '',
+          'custom_ucfirst' => '',
         ),
-        'type' => 'file_default',
-        'weight' => 1,
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'research_pager' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'tiny' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
-    'ds_extras_field_template' => '',
     'entity_type' => 'field_collection_item',
-    'field_name' => 'field_file_conf_presentation',
-    'label' => 'PDF',
+    'field_name' => 'field_affiliations_position',
+    'label' => 'Position',
     'required' => 0,
     'settings' => array(
-      'description_field' => 0,
-      'file_directory' => 'conf_presentations',
-      'file_extensions' => 'pdf',
-      'max_filesize' => '',
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'file',
+      'module' => 'text',
       'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'progress_indicator' => 'throbber',
+        'maxlength_js' => 0,
+        'maxlength_js_label' => '',
+        'size' => 60,
       ),
-      'type' => 'file_generic',
-      'weight' => 33,
+      'type' => 'text_textfield',
+      'weight' => 1,
     ),
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'field_collection_item-field_conf_presentations_section-field_link_conf_pres_unlimited'
-  $field_instances['field_collection_item-field_conf_presentations_section-field_link_conf_pres_unlimited'] = array(
-    'bundle' => 'field_conf_presentations_section',
+  // Exported field_instance: 'field_collection_item-field_affilitations-field_link_single'
+  $field_instances['field_collection_item-field_affilitations-field_link_single'] = array(
+    'bundle' => 'field_affilitations',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -63,37 +93,63 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(
           'conditions' => array(),
+          'custom_link_to_entity' => '',
+          'custom_prefix' => '',
+          'custom_reverse' => '',
+          'custom_strip_preserve' => '',
+          'custom_strip_tags' => '',
+          'custom_strtolower' => '',
+          'custom_strtoupper' => '',
+          'custom_suffix' => '',
+          'custom_trim' => '',
+          'custom_ucfirst' => '',
         ),
         'type' => 'link_default',
+        'weight' => 1,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'research_pager' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'tiny' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
-    'ds_extras_field_template' => '',
     'entity_type' => 'field_collection_item',
-    'field_name' => 'field_link_conf_pres_unlimited',
-    'label' => 'Conferences and Presentations',
+    'field_name' => 'field_link_single',
+    'label' => 'Organization',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'default',
+        'target' => 'user',
         'title' => '',
       ),
       'display' => array(
         'url_cutoff' => 80,
       ),
-      'enable_tokens' => 1,
+      'enable_tokens' => 0,
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
       ),
-      'rel_remove' => 'default',
       'title' => 'optional',
       'title_maxlength' => 128,
       'title_value' => '',
-      'url' => 0,
+      'url' => 'optional',
       'user_register_form' => FALSE,
       'validate_url' => 1,
     ),
@@ -101,98 +157,91 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       'active' => 0,
       'module' => 'link',
       'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_label' => '',
       ),
       'type' => 'link_field',
-      'weight' => 32,
+      'weight' => 3,
     ),
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'field_collection_item-field_service_profession_section-field_service_prof_category'
-  $field_instances['field_collection_item-field_service_profession_section-field_service_prof_category'] = array(
-    'bundle' => 'field_service_profession_section',
-    'default_value' => NULL,
+  // Exported field_instance: 'field_collection_item-field_affilitations-field_year_range'
+  $field_instances['field_collection_item-field_affilitations-field_year_range'] = array(
+    'bundle' => 'field_affilitations',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'date',
         'settings' => array(
           'conditions' => array(),
+          'custom_link_to_entity' => '',
+          'custom_prefix' => '',
+          'custom_reverse' => '',
+          'custom_strip_preserve' => '',
+          'custom_strip_tags' => '',
+          'custom_strtolower' => '',
+          'custom_strtoupper' => '',
+          'custom_suffix' => '',
+          'custom_trim' => '',
+          'custom_ucfirst' => '',
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_repeat_rule' => 'show',
         ),
-        'type' => 'text_default',
+        'type' => 'date_default',
+        'weight' => 2,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'research_pager' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'tiny' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
-    'ds_extras_field_template' => '',
     'entity_type' => 'field_collection_item',
-    'field_name' => 'field_service_prof_category',
-    'label' => 'Category',
+    'field_name' => 'field_year_range',
+    'label' => 'Years',
     'required' => 0,
     'settings' => array(
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'text_processing' => 0,
+      'default_value' => 'blank',
+      'default_value2' => 'blank',
+      'default_value_code' => '',
+      'default_value_code2' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'text',
+      'module' => 'date',
       'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'size' => 60,
+        'display_all_day' => 0,
+        'increment' => 15,
+        'input_format' => 'Y-m-d H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'none',
+        'maxlength_js_label' => '',
+        'repeat_collapsed' => 0,
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
       ),
-      'type' => 'text_textfield',
-      'weight' => 31,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'field_collection_item-field_service_profession_section-field_service_unlimited'
-  $field_instances['field_collection_item-field_service_profession_section-field_service_unlimited'] = array(
-    'bundle' => 'field_service_profession_section',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_service_unlimited',
-    'label' => 'Service',
-    'required' => 0,
-    'settings' => array(
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 32,
+      'type' => 'date_text',
+      'weight' => 4,
     ),
     'workbench_access_field' => 0,
   );
@@ -1043,72 +1092,6 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
       ),
       'type' => 'options_select',
       'weight' => 7,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-faculty-field_conf_presentations_section'
-  $field_instances['node-faculty-field_conf_presentations_section'] = array(
-    'bundle' => 'faculty',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => 'Add',
-          'conditions' => array(),
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 71,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_conf_presentations_section',
-    'label' => 'Conferences and Presentations',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'field_collection_embed',
-      'weight' => 24,
     ),
     'workbench_access_field' => 0,
   );
@@ -3403,72 +3386,6 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_service_profession_section'
-  $field_instances['node-faculty-field_service_profession_section'] = array(
-    'bundle' => 'faculty',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => 'Add',
-          'conditions' => array(),
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 70,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_service_profession_section',
-    'label' => 'Service to the Profession Section',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'field_collection_embed',
-      'weight' => 28,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-faculty-field_stanford_gsb_affiliation'
   $field_instances['node-faculty-field_stanford_gsb_affiliation'] = array(
     'bundle' => 'faculty',
@@ -4076,6 +3993,71 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-student-field_academic_degrees'
+  $field_instances['node-student-field_academic_degrees'] = array(
+    'bundle' => 'student',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'conditions' => array(),
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 10,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'tiny' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_academic_degrees',
+    'label' => 'Academic Degrees',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(
+        'maxlength_js_label' => '',
+      ),
+      'type' => 'field_collection_embed',
+      'weight' => 12,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('<a href="http://stnfd.biz/qWYIN" target="_blank">Look up SUNetID</a>');
@@ -4089,11 +4071,9 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
   t('Blog Link');
   t('CTRL + click to select multiple academic areas. Selections do not display on the faculty profile.');
   t('CV');
-  t('Category');
   t('Center Affiliations');
   t('Centers and Research Programs');
   t('Click the "Paste as plain text" icon <strong>first</strong> to enter content copied from an application or website. Use third-person narrative. | e.g. Mr. Connor has more than 20 years\' experience in corporate finance.');
-  t('Conferences and Presentations');
   t('Do not include "Stanford Graduate School of Business" or "Stanford" in the organization name. Format: POSITION, ORGANIZATION | e.g. Co-director, Directors\' Consortium Executive Program');
   t('Drag and drop entries in reverse chronological order, placing PhD degrees first. Format: DEGREE, UNIVERSITY, YYYY | e.g. PhD in Marketing, University of Georgia, 1996');
   t('Drag and drop entries in reverse chronological order. Format: AWARD, SOURCE, DATE | e.g. Distinguished Service Award, Stanford GSB, 2013');
@@ -4120,13 +4100,14 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
   t('On Leave');
   t('On Leave - Date Range');
   t('On Leave - Statement');
+  t('Organization');
   t('Other Academic Areas');
   t('Other Social Profile(s)');
-  t('PDF');
   t('Personal Website Link');
   t('Phone');
   t('Photo');
   t('Podcasts');
+  t('Position');
   t('Position/Year');
   t('Prefix');
   t('Professional Experience');
@@ -4137,8 +4118,6 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
   t('SUNetID');
   t('Search field');
   t('Select the faculty member\'s primary academic area. Lecturers without a selection will be listed as "Lecturer in Management."');
-  t('Service');
-  t('Service to the Profession Section');
   t('Size: 270 x 270 px | Follow <a href="URL" target="_blank">instructions for optimizing photos</a> before uploading the file.');
   t('Stanford GSB Affiliation');
   t('Suffix');
@@ -4153,6 +4132,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
   t('Use the public profile link. | e.g. http://scholar.google.com/citations?user=WfWmJV0AAAAJ&hl=en&oi=sra');
   t('Videos');
   t('View <a href="URL" target="_blank">process for adding videos</a> to Stanford GSB\'s YouTube channel. ');
+  t('Years');
   t('e.g. http://www.myblog.com');
   t('e.g. http://www.mysite.com');
   t('e.g. https://twitter.com/username');

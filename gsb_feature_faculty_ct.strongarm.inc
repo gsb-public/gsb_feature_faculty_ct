@@ -95,29 +95,22 @@ function gsb_feature_faculty_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '11',
+          'weight' => '12',
         ),
         'title' => array(
-          'weight' => '3',
+          'weight' => '17',
         ),
         'path' => array(
-          'weight' => '10',
+          'weight' => '11',
         ),
         'workbench_access' => array(
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '9',
+          'weight' => '10',
         ),
       ),
-      'display' => array(
-        'gsb_case_listing_case_listing_entity_view' => array(
-          'default' => array(
-            'weight' => '10',
-            'visible' => TRUE,
-          ),
-        ),
-      ),
+      'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__faculty'] = $strongarm;

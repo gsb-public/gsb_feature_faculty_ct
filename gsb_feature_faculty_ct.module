@@ -19,17 +19,17 @@ function gsb_feature_faculty_ct_form_faculty_node_form_alter(&$form, &$form_stat
         $form['field_conf_presentations_section'][$language][$key]['field_link_conf_pres_unlimited'][$language][0]['#title'] = '';
       }
     }
-  }	
+  }
 
-  $form['field_leave_statement']['#states'] = array(
-    'visible' => array(
-      ':input[name="field_leave_status[' . $language . ']"]' => array('checked' => TRUE),
+  $form['field_leave_date']['#states'] = array(
+    'required' => array(
+      ':input[name="field_leave_status[' . $language . ']"]' => array('value' => '1'),
     ),
   );
 
-  $form['field_leave_date']['#states'] = array(
-    'visible' => array(
-      ':input[name="field_leave_status[' . $language . ']"]' => array('checked' => TRUE),
+  $form['field_leave_statement']['#states'] = array(
+    'required' => array(
+      ':input[name="field_leave_status[' . $language . ']"]' => array('value' => '1'),
     ),
   );
 
@@ -41,7 +41,22 @@ function gsb_feature_faculty_ct_form_faculty_node_validate($form, &$form_state) 
 
   $language = $form['language']['#value'];
 
-  if ($form_state['values']['field_leave_status'][$language][0]['value'] != 1) {
+  if ($form_state['values']['field_leave_status'][$language][0]['value'] == 1) {
+
+    if ($form_state['values']['field_leave_date'][$language][0]['value']  == null ||
+        $form_state['values']['field_leave_date'][$language][0]['value2'] == null) {
+      $errors = form_get_errors();
+      if (empty($errors)) {
+        form_set_error('field_leave_date', 'Please set a start and an end date for field On Leave');
+      }
+    }
+
+    if ($form_state['values']['field_leave_statement'][$language][0]['value'] == '') {
+      form_set_error('field_leave_statement', 'Leave Statement is required.');
+    }
+
+
+  } else {
 
     $leave_date_error_keys = array(
       'field_leave_date][und][0',
@@ -82,7 +97,7 @@ function gsb_feature_faculty_ct_form_faculty_node_validate($form, &$form_state) 
       foreach (array_diff($error_messages['error'], $removed_messages) as $message) {
         drupal_set_message($message, 'error');
       }
-  
+
     }
   }
 
@@ -100,7 +115,7 @@ function gsb_feature_faculty_ct_node_view_alter(&$build, $entity_type) {
   }
   $build['field_leave_statement']['#access'] = FALSE;
   $leave_date = $wrapper->field_leave_date->value();
-  if ($leave_date != null) {
+  if ($leave_date != null && $wrapper->field_leave_status->value()) {
     $today = new DateTime();
     $start_date = new DateTime($leave_date['value']);
     $end_date = new DateTime($leave_date['value2']);

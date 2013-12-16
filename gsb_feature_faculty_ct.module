@@ -11,7 +11,15 @@ include_once 'gsb_feature_faculty_ct.features.inc';
  */
 function gsb_feature_faculty_ct_form_faculty_node_form_alter(&$form, &$form_state) {
 
-	$language = $form['language']['#value'];
+  $language = $form['language']['#value'];
+	
+  if (isset($form['field_conf_presentations_section'][$language])) {
+    foreach ($form['field_conf_presentations_section'][$language] as $key => $value) {
+      if (is_numeric($key)) {
+        $form['field_conf_presentations_section'][$language][$key]['field_link_conf_pres_unlimited'][$language][0]['#title'] = '';
+      }
+    }
+  }	
 
   $form['field_leave_statement']['#states'] = array(
     'visible' => array(

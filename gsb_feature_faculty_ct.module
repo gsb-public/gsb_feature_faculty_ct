@@ -55,7 +55,6 @@ function gsb_feature_faculty_ct_form_faculty_node_validate($form, &$form_state) 
       form_set_error('field_leave_statement', 'Leave Statement is required.');
     }
 
-
   } else {
 
     $leave_date_error_keys = array(

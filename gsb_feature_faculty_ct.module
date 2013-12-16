@@ -88,7 +88,12 @@ function gsb_feature_faculty_ct_form_faculty_node_validate($form, &$form_state) 
 
 }
 
+/**
+ * Implements hook_node_view_alter
+ */
 function gsb_feature_faculty_ct_node_view_alter(&$build, $entity_type) {
+  // Only show the leave statement if the node is being viewed 
+  // between the leave dates.
   $wrapper = entity_metadata_wrapper($entity_type, $build["#$entity_type"]);
   if ($wrapper->getBundle() != 'faculty') {
     return;

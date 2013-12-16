@@ -21,7 +21,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_academic_information';
   $field_group->data = array(
     'label' => 'Academic Area(s)',
-    'weight' => '20',
+    'weight' => '21',
     'children' => array(
       0 => 'field_academic_area_single',
       1 => 'field_academic_area_unlimited',
@@ -78,6 +78,35 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_leave_information|node|faculty|form';
+  $field_group->group_name = 'group_leave_information';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_personal_information';
+  $field_group->data = array(
+    'label' => 'Leave Information',
+    'weight' => '16',
+    'children' => array(
+      0 => 'field_leave_status',
+      1 => 'field_leave_date',
+      2 => 'field_leave_statement',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_leave_information|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_personal_information|node|faculty|form';
   $field_group->group_name = 'group_personal_information';
   $field_group->entity_type = 'node';
@@ -93,22 +122,20 @@ function gsb_feature_faculty_ct_field_group_info() {
       2 => 'field_first_name',
       3 => 'field_image_single_public',
       4 => 'field_last_name',
-      5 => 'field_leave_status',
-      6 => 'field_link_blog',
-      7 => 'field_link_google_scholar',
-      8 => 'field_link_website',
-      9 => 'field_middle_name',
-      10 => 'field_phone',
-      11 => 'field_rank',
-      12 => 'field_salutation',
-      13 => 'field_sunetid',
-      14 => 'field_leave_date',
-      15 => 'field_leave_statement',
-      16 => 'field_link_linkedin',
-      17 => 'field_link_other_social',
-      18 => 'field_link_twitter',
-      19 => 'field_suffix_name',
-      20 => 'title',
+      5 => 'field_link_blog',
+      6 => 'field_link_google_scholar',
+      7 => 'field_link_website',
+      8 => 'field_middle_name',
+      9 => 'field_phone',
+      10 => 'field_rank',
+      11 => 'field_salutation',
+      12 => 'field_sunetid',
+      13 => 'field_link_linkedin',
+      14 => 'field_link_other_social',
+      15 => 'field_link_twitter',
+      16 => 'field_suffix_name',
+      17 => 'title',
+      18 => 'group_leave_information',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -135,10 +162,10 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Professional Information',
     'weight' => '2',
     'children' => array(
-      0 => 'field_link_podcast_unlimited',
-      1 => 'field_link_video_unlimited',
-      2 => 'field_service_profession_section',
-      3 => 'field_conf_presentations_section',
+      0 => 'field_conf_presentations_section',
+      1 => 'field_service_profession_section',
+      2 => 'field_link_podcast_unlimited',
+      3 => 'field_link_video_unlimited',
       4 => 'group_stanford_gsb_affiliations',
     ),
     'format_type' => 'fieldset',

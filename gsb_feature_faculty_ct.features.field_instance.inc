@@ -1310,7 +1310,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
-      'file_directory' => 'CV',
+      'file_directory' => 'faculty-cv',
       'file_extensions' => 'pdf',
       'max_filesize' => '',
       'user_register_form' => FALSE,

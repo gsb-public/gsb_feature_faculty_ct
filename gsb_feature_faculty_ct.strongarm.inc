@@ -110,7 +110,20 @@ function gsb_feature_faculty_ct_strongarm() {
           'weight' => '10',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'gsb_case_listing_case_listing_entity_view' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+        ),
+        'gsb_working_paper_listing_case_listing_entity_view' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__faculty'] = $strongarm;

@@ -119,7 +119,7 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_working_paper_listing_case_listing_entity_view' => array(
           'default' => array(
-            'weight' => '10',
+            'weight' => '9',
             'visible' => TRUE,
           ),
         ),

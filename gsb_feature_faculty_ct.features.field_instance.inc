@@ -553,6 +553,68 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-faculty-field_conf_presentations_section'
+  $field_instances['node-faculty-field_conf_presentations_section'] = array(
+    'bundle' => 'faculty',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'conditions' => array(),
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_fields',
+        'weight' => 71,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'people_fpp' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_conf_presentations_section',
+    'label' => 'Conferences and Presentations',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'field_collection_embed',
+      'weight' => 24,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-faculty-field_email'
   $field_instances['node-faculty-field_email'] = array(
     'bundle' => 'faculty',
@@ -2613,6 +2675,68 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-faculty-field_service_profession_section'
+  $field_instances['node-faculty-field_service_profession_section'] = array(
+    'bundle' => 'faculty',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'conditions' => array(),
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_fields',
+        'weight' => 70,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'people_fpp' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_service_profession_section',
+    'label' => 'Service to the Profession Section',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'field_collection_embed',
+      'weight' => 28,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-faculty-field_stanford_gsb_affiliation'
   $field_instances['node-faculty-field_stanford_gsb_affiliation'] = array(
     'bundle' => 'faculty',
@@ -3036,6 +3160,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
   t('CV');
   t('Center Affiliations');
   t('Click the "Paste as plain text" icon <strong>first</strong> to enter content copied from an application or website. Use third-person narrative. | e.g. Mr. Connor has more than 20 years\' experience in corporate finance.');
+  t('Conferences and Presentations');
   t('Do not include "Stanford Graduate School of Business" or "Stanford" in the organization name. Format: POSITION, ORGANIZATION | e.g. Co-director, Directors\' Consortium Executive Program');
   t('Drag and drop entries in reverse chronological order, placing PhD degrees first. Format: DEGREE, UNIVERSITY, YYYY | e.g. PhD in Marketing, University of Georgia, 1996');
   t('Drag and drop entries in reverse chronological order. Format: AWARD, SOURCE, DATE | e.g. Distinguished Service Award, Stanford GSB, 2013');
@@ -3075,6 +3200,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
   t('SUNetID');
   t('Search field');
   t('Select the faculty member\'s primary academic area. Lecturers without a selection will be listed as "Lecturer in Management."');
+  t('Service to the Profession Section');
   t('Size: 270 x 270 px | Follow <a href="URL" target="_blank">instructions for optimizing photos</a> before uploading the file.');
   t('Stanford GSB Affiliation');
   t('Suffix');

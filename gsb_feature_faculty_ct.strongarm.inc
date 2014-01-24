@@ -91,6 +91,9 @@ function gsb_feature_faculty_ct_strongarm() {
       'phd_job_market_candidate' => array(
         'custom_settings' => FALSE,
       ),
+      'teaser_listing' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

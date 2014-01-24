@@ -21,7 +21,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_academic_information';
   $field_group->data = array(
     'label' => 'Academic Area(s)',
-    'weight' => '21',
+    'weight' => '20',
     'children' => array(
       0 => 'field_academic_area_single',
       1 => 'field_academic_area_unlimited',
@@ -61,7 +61,8 @@ function gsb_feature_faculty_ct_field_group_info() {
       7 => 'field_academic_degrees_unlimited',
       8 => 'field_link_unlimited',
       9 => 'field_teaching_statement',
-      10 => 'group_academic_areas',
+      10 => 'field_non_degree_course',
+      11 => 'group_academic_areas',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -191,7 +192,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_professional_information';
   $field_group->data = array(
     'label' => 'Stanford GSB Affiliations',
-    'weight' => '27',
+    'weight' => '7',
     'children' => array(
       0 => 'field_greater_univ_aff_unlimited',
       1 => 'field_stanford_gsb_affiliation',
@@ -219,7 +220,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
-    'weight' => '25',
+    'weight' => '28',
     'children' => array(
       0 => 'field_academic_area_unlimited',
     ),
@@ -281,7 +282,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Stanford University Affiliations',
-    'weight' => '15',
+    'weight' => '17',
     'children' => array(
       0 => 'field_greater_univ_aff_unlimited',
       1 => 'field_stanford_gsb_affiliation',

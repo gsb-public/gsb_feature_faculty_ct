@@ -98,25 +98,25 @@ function gsb_feature_faculty_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '12',
+          'weight' => '7',
         ),
         'title' => array(
           'weight' => '17',
         ),
         'path' => array(
-          'weight' => '11',
+          'weight' => '6',
         ),
         'workbench_access' => array(
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '10',
+          'weight' => '5',
         ),
       ),
       'display' => array(
         'gsb_case_listing_case_listing_entity_view' => array(
           'default' => array(
-            'weight' => '10',
+            'weight' => '12',
             'visible' => TRUE,
           ),
         ),
@@ -128,7 +128,7 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_book_listing_entity_view_1' => array(
           'default' => array(
-            'weight' => '10',
+            'weight' => '27',
             'visible' => FALSE,
           ),
         ),

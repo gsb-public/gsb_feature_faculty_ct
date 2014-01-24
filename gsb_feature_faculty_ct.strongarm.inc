@@ -126,6 +126,18 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => TRUE,
           ),
         ),
+        'gsb_book_listing_entity_view_1' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+        ),
+        'gsb_course_listing_entity_view_1' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+        ),
       ),
     ),
   );

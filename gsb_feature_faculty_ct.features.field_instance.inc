@@ -568,7 +568,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 71,
+        'weight' => 12,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1092,7 +1092,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 27,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1238,7 +1238,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 37,
+        'weight' => 28,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1645,7 +1645,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1891,7 +1891,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2274,7 +2274,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 34,
+        'weight' => 26,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2587,7 +2587,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 30,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2696,7 +2696,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 70,
+        'weight' => 16,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2884,7 +2884,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 29,
       ),
       'featured' => array(
         'label' => 'above',

@@ -79,6 +79,33 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_courses_taught|node|faculty|default';
+  $field_group->group_name = 'group_courses_taught';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Courses Taught',
+    'weight' => '10',
+    'children' => array(
+      0 => 'field_non_degree_course',
+      1 => 'gsb_course_listing_entity_view_1',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_courses_taught|node|faculty|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_leave_information|node|faculty|form';
   $field_group->group_name = 'group_leave_information';
   $field_group->entity_type = 'node';
@@ -220,7 +247,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
-    'weight' => '28',
+    'weight' => '29',
     'children' => array(
       0 => 'field_academic_area_unlimited',
     ),
@@ -282,7 +309,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Stanford University Affiliations',
-    'weight' => '17',
+    'weight' => '18',
     'children' => array(
       0 => 'field_greater_univ_aff_unlimited',
       1 => 'field_stanford_gsb_affiliation',

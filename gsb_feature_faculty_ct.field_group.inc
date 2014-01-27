@@ -62,7 +62,8 @@ function gsb_feature_faculty_ct_field_group_info() {
       8 => 'field_link_unlimited',
       9 => 'field_teaching_statement',
       10 => 'field_non_degree_course',
-      11 => 'group_academic_areas',
+      11 => 'field_featured_publication_ref',
+      12 => 'group_academic_areas',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -87,7 +88,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Courses Taught',
-    'weight' => '10',
+    'weight' => '11',
     'children' => array(
       0 => 'field_non_degree_course',
       1 => 'gsb_course_listing_entity_view_1',
@@ -211,6 +212,33 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_publications|node|faculty|default';
+  $field_group->group_name = 'group_publications';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Publications',
+    'weight' => '9',
+    'children' => array(
+      0 => 'field_featured_publication_ref',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Publications',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_publications|node|faculty|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_stanford_gsb_affiliations|node|faculty|form';
   $field_group->group_name = 'group_stanford_gsb_affiliations';
   $field_group->entity_type = 'node';
@@ -247,7 +275,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
-    'weight' => '29',
+    'weight' => '28',
     'children' => array(
       0 => 'field_academic_area_unlimited',
     ),
@@ -309,7 +337,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Stanford University Affiliations',
-    'weight' => '18',
+    'weight' => '17',
     'children' => array(
       0 => 'field_greater_univ_aff_unlimited',
       1 => 'field_stanford_gsb_affiliation',

@@ -48,6 +48,42 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'field_collection_item|field_non_degree_course|default';
+  $ds_fieldsetting->entity_type = 'field_collection_item';
+  $ds_fieldsetting->bundle = 'field_non_degree_course';
+  $ds_fieldsetting->view_mode = 'default';
+  $ds_fieldsetting->settings = array(
+    'field_description' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_single' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+  );
+  $export['field_collection_item|field_non_degree_course|default'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'field_collection_item|field_service_profession_section|default';
   $ds_fieldsetting->entity_type = 'field_collection_item';
   $ds_fieldsetting->bundle = 'field_service_profession_section';
@@ -721,10 +757,17 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_featured_publication_ref' => array(
+    'field_non_degree_course' => array(
       'formatter_settings' => array(
         'ft' => array(
-          'lb' => 'Featured Journals',
+          'func' => 'theme_ds_field_expert',
+          'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'show-more-less show-more-less-num-3 show-more-less-min-5',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -895,6 +938,36 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'field_collection_item|field_non_degree_course|default';
+  $ds_layout->entity_type = 'field_collection_item';
+  $ds_layout->bundle = 'field_non_degree_course';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'field_link_single',
+        1 => 'field_description',
+      ),
+    ),
+    'fields' => array(
+      'field_link_single' => 'ds_content',
+      'field_description' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['field_collection_item|field_non_degree_course|default'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'field_collection_item|field_service_profession_section|default';
   $ds_layout->entity_type = 'field_collection_item';
   $ds_layout->bundle = 'field_service_profession_section';
@@ -1029,6 +1102,7 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
       'field_research_statement' => 'right',
       'group_wrapper_academic' => 'right',
       'group_publications' => 'right',
+      'field_body' => 'right',
       'field_research_interests' => 'right',
       'field_body' => 'right',
       'gsb_book_listing_entity_view_1' => 'right',
@@ -1038,20 +1112,20 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
       'field_academic_aptmts_unlimited' => 'right',
       'gsb_course_listing_entity_view_1' => 'right',
       'group_courses_taught' => 'right',
-      'field_non_degree_course' => 'right',
-      'field_professional_experience' => 'right',
       'gsb_case_listing_case_listing_entity_view' => 'right',
-      'field_awards_honors' => 'right',
+      'field_professional_experience' => 'right',
+      'field_non_degree_course' => 'right',
       'field_link_unlimited' => 'right',
+      'field_awards_honors' => 'right',
       'field_stanford_gsb_affiliation' => 'right',
       'field_greater_univ_aff_unlimited' => 'right',
       'field_conf_presentations_section' => 'right',
       'field_link_video_unlimited' => 'right',
       'field_link_podcast_unlimited' => 'right',
-      'field_salutation' => 'right',
       'group_wrapper_affiliation' => 'right',
-      'field_first_name' => 'right',
+      'field_salutation' => 'right',
       'field_service_profession_section' => 'right',
+      'field_first_name' => 'right',
       'field_middle_name' => 'right',
       'field_last_name' => 'right',
       'field_suffix_name' => 'right',

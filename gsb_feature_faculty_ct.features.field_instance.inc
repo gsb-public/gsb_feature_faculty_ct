@@ -18,7 +18,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
@@ -64,7 +64,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(
           'conditions' => array(),
@@ -2336,7 +2336,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_non_degree_course',
-    'label' => 'Non-degree Course',
+    'label' => 'Non-Degree Courses',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -3423,7 +3423,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
   t('Last Name');
   t('LinkedIn');
   t('Middle Name');
-  t('Non-degree Course');
+  t('Non-Degree Courses');
   t('On Leave');
   t('On Leave - Date Range');
   t('On Leave - Statement');

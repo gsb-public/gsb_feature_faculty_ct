@@ -95,11 +95,16 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Courses Taught',
       'instance_settings' => array(
-        'description' => '',
         'classes' => '',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h2',
+        'effect' => 'none',
+        'speed' => 'none',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_courses_taught|node|faculty|default'] = $field_group;
@@ -230,6 +235,10 @@ function gsb_feature_faculty_ct_field_group_info() {
       'instance_settings' => array(
         'classes' => '',
         'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
       ),
       'formatter' => 'open',
     ),

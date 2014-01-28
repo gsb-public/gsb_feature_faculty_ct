@@ -88,7 +88,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Courses Taught',
-    'weight' => '11',
+    'weight' => '12',
     'children' => array(
       0 => 'field_non_degree_course',
       1 => 'gsb_course_listing_entity_view_1',
@@ -337,7 +337,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Stanford University Affiliations',
-    'weight' => '17',
+    'weight' => '18',
     'children' => array(
       0 => 'field_greater_univ_aff_unlimited',
       1 => 'field_stanford_gsb_affiliation',

@@ -116,20 +116,20 @@ function gsb_feature_faculty_ct_strongarm() {
       'display' => array(
         'gsb_case_listing_case_listing_entity_view' => array(
           'default' => array(
-            'weight' => '12',
+            'weight' => '13',
             'visible' => TRUE,
           ),
         ),
         'gsb_working_paper_listing_case_listing_entity_view' => array(
           'default' => array(
-            'weight' => '10',
+            'weight' => '11',
             'visible' => TRUE,
           ),
         ),
         'gsb_book_listing_entity_view_1' => array(
           'default' => array(
-            'weight' => '27',
-            'visible' => FALSE,
+            'weight' => '10',
+            'visible' => TRUE,
           ),
         ),
         'gsb_course_listing_entity_view_1' => array(

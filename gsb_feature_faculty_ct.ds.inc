@@ -890,7 +890,7 @@ function gsb_feature_faculty_ct_ds_custom_fields_info() {
   $ds_field->ui_limit = 'faculty|default';
   $ds_field->properties = array(
     'code' => array(
-      'value' => '[node:field_rank], [node:field_academic_area_single]',
+      'value' => '[node:field_rank][node:field_academic_area_single]',
       'format' => 'full_html',
     ),
     'use_token' => 1,
@@ -1104,7 +1104,6 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
       'group_publications' => 'right',
       'field_body' => 'right',
       'field_research_interests' => 'right',
-      'field_body' => 'right',
       'gsb_book_listing_entity_view_1' => 'right',
       'field_teaching_statement' => 'right',
       'field_academic_degrees_unlimited' => 'right',

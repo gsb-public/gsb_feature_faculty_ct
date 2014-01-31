@@ -905,7 +905,7 @@ function gsb_feature_faculty_ct_ds_custom_fields_info() {
   $ds_field->ui_limit = 'faculty|default';
   $ds_field->properties = array(
     'code' => array(
-      'value' => '[node:field_rank], [node:field_academic_area_single]',
+      'value' => '[node:field_rank][node:field_academic_area_single]',
       'format' => 'full_html',
     ),
     'use_token' => 1,

@@ -94,6 +94,9 @@ function gsb_feature_faculty_ct_strongarm() {
       'teaser_listing' => array(
         'custom_settings' => FALSE,
       ),
+      'views_content_pane' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -135,6 +138,12 @@ function gsb_feature_faculty_ct_strongarm() {
         'gsb_course_listing_entity_view_1' => array(
           'default' => array(
             'weight' => '11',
+            'visible' => TRUE,
+          ),
+        ),
+        'gsb_publications_listing_publications_listing_entity_view' => array(
+          'default' => array(
+            'weight' => '10',
             'visible' => TRUE,
           ),
         ),

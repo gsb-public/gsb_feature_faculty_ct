@@ -88,7 +88,11 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Courses Taught',
+<<<<<<< HEAD
     'weight' => '14',
+=======
+    'weight' => '15',
+>>>>>>> WP-2639: remove comma when there is not an academic area.
     'children' => array(
       0 => 'field_non_degree_course',
       1 => 'gsb_course_listing_entity_view_1',
@@ -225,7 +229,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Publications',
-    'weight' => '9',
+    'weight' => '11',
     'children' => array(
       0 => 'field_featured_publication_ref',
       1 => 'gsb_book_listing_entity_view_1',
@@ -287,7 +291,11 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
+<<<<<<< HEAD
     'weight' => '30',
+=======
+    'weight' => '31',
+>>>>>>> WP-2639: remove comma when there is not an academic area.
     'children' => array(
       0 => 'field_academic_area_unlimited',
     ),
@@ -314,7 +322,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Academic wrapper',
-    'weight' => '8',
+    'weight' => '10',
     'children' => array(
       0 => 'field_awards_honors',
       1 => 'field_body',
@@ -349,7 +357,11 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Stanford University Affiliations',
+<<<<<<< HEAD
     'weight' => '20',
+=======
+    'weight' => '21',
+>>>>>>> WP-2639: remove comma when there is not an academic area.
     'children' => array(
       0 => 'field_greater_univ_aff_unlimited',
       1 => 'field_stanford_gsb_affiliation',
@@ -413,7 +425,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Information wrapper',
-    'weight' => '2',
+    'weight' => '4',
     'children' => array(
       0 => 'group_wrapper_contact',
       1 => 'group_wrapper_scholar',
@@ -446,7 +458,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Name wrapper',
-    'weight' => '3',
+    'weight' => '5',
     'children' => array(
       0 => 'field_first_name',
       1 => 'field_last_name',
@@ -535,6 +547,38 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_photolabel|node|faculty|default';
+  $field_group->group_name = 'group_wrapper_photolabel';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Photo label',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_rank',
+      1 => 'faculty_rank_academic_area',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Photo label',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_photolabel|node|faculty|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_position|node|faculty|people_fpp';
   $field_group->group_name = 'group_wrapper_position';
   $field_group->entity_type = 'node';
@@ -606,7 +650,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Research wrapper',
-    'weight' => '7',
+    'weight' => '9',
     'children' => array(
       0 => 'field_research_interests',
       1 => 'field_research_statement',

@@ -64,6 +64,7 @@ features[field_group][] = group_wrapper_information|node|faculty|default
 features[field_group][] = group_wrapper_name|node|faculty|default
 features[field_group][] = group_wrapper_name|node|faculty|people_fpp
 features[field_group][] = group_wrapper_name|node|faculty|teaser
+features[field_group][] = group_wrapper_photolabel|node|faculty|default
 features[field_group][] = group_wrapper_position|node|faculty|people_fpp
 features[field_group][] = group_wrapper_position|node|faculty|teaser
 features[field_group][] = group_wrapper_research|node|faculty|default

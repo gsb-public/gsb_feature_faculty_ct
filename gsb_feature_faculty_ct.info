@@ -80,6 +80,7 @@ features[field_instance][] = node-faculty-field_academic_area_unlimited
 features[field_instance][] = node-faculty-field_academic_degrees_unlimited
 features[field_instance][] = node-faculty-field_awards_honors
 features[field_instance][] = node-faculty-field_body
+features[field_instance][] = node-faculty-field_centers_research_programs
 features[field_instance][] = node-faculty-field_conf_presentations_section
 features[field_instance][] = node-faculty-field_email
 features[field_instance][] = node-faculty-field_featured_publication_ref

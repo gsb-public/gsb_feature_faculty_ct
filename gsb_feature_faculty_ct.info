@@ -114,6 +114,7 @@ features[field_instance][] = node-faculty-field_service_profession_section
 features[field_instance][] = node-faculty-field_stanford_gsb_affiliation
 features[field_instance][] = node-faculty-field_suffix_name
 features[field_instance][] = node-faculty-field_sunetid
+features[field_instance][] = node-faculty-field_tag
 features[field_instance][] = node-faculty-field_teaching_statement
 features[field_instance][] = node-faculty-field_title_position_unlimited
 features[field_instance][] = node-student-field_academic_degrees

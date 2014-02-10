@@ -295,7 +295,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'settings' => array(
           'conditions' => array(),
           'limit_depth' => 0,
-          'path_prefix' => '/faculty-research/faculty/academic-areas',
+          'path_prefix' => 'faculty-research/faculty/academic-areas/',
           'separator' => ', ',
           'tid_or_name' => 'name',
         ),

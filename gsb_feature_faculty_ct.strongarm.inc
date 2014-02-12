@@ -164,6 +164,14 @@ function gsb_feature_faculty_ct_strongarm() {
             'weight' => '11',
             'visible' => TRUE,
           ),
+          'people_fpp' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_publications_listing_publications_listing_entity_view' => array(
           'default' => array(

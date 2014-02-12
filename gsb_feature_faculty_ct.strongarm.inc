@@ -122,17 +122,41 @@ function gsb_feature_faculty_ct_strongarm() {
             'weight' => '15',
             'visible' => TRUE,
           ),
+          'people_fpp' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_working_paper_listing_case_listing_entity_view' => array(
           'default' => array(
             'weight' => '14',
             'visible' => TRUE,
           ),
+          'people_fpp' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_book_listing_entity_view_1' => array(
           'default' => array(
             'weight' => '12',
             'visible' => TRUE,
+          ),
+          'people_fpp' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
           ),
         ),
         'gsb_course_listing_entity_view_1' => array(
@@ -145,6 +169,14 @@ function gsb_feature_faculty_ct_strongarm() {
           'default' => array(
             'weight' => '13',
             'visible' => TRUE,
+          ),
+          'people_fpp' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
           ),
         ),
       ),

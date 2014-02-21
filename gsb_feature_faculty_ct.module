@@ -123,3 +123,100 @@ function gsb_feature_faculty_ct_node_view_alter(&$build, $entity_type) {
     }
   }
 }
+
+/**
+ * Implements hook_node_presave().
+ */
+function gsb_feature_faculty_ct_node_presave($node) {
+  if (isset($node->workbench_moderation_state_new)) {
+    _gsb_feature_faculty_ct_update_academic_areas($node, $node->workbench_moderation_state_new);
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for workbench_moderation_moderate_form().
+ */
+function gsb_feature_faculty_ct_form_workbench_moderation_moderate_form_alter(&$form, &$form_state, $form_id) {
+  // Add our submit function in front of workbench, since it will redirect and
+  // prevent other submit functions from running.
+  array_unshift($form['#submit'], 'gsb_feature_faculty_ct_workbench_moderation_moderate_form_submit');
+}
+
+/**
+ * Form submission handler for workbench_moderation_moderate_form().
+ */
+function gsb_feature_faculty_ct_workbench_moderation_moderate_form_submit(&$form, &$form_state) {
+  $node = node_load($form_state['values']['node']->nid, $form_state['values']['node']->vid);
+  _gsb_feature_faculty_ct_update_academic_areas($node, $form_state['values']['state']);
+}
+
+/**
+ * Updates the academic area via an external service.
+ *
+ * @param object $node
+ *   The faculty node.
+ * @param string $state
+ *   The state of the node, e.g., 'draft', 'published'.
+ */
+function _gsb_feature_faculty_ct_update_academic_areas($node, $state) {
+  if (!$service_url = variable_get('gsb_feature_faculty_ct_service_url', '')) {
+    watchdog('gsb_feature_faculty_ct', 'No external service URL is set.');
+    return;
+  }
+
+  // Only published faculty nodes should be updated.
+  if ($node->type != 'faculty' || $state != workbench_moderation_state_published()) {
+    return;
+  }
+
+  $wrapper = entity_metadata_wrapper('node', $node);
+
+  $query = array();
+  // Pass the SUNet ID.
+  $query['uid'] = $wrapper->field_sunetid->value();
+
+  // Gather the secondary academic areas.
+  $secondary_areas = array();
+  foreach ($wrapper->field_academic_area_unlimited as $secondary_area) {
+    $secondary_areas[] = _gsb_feature_faculty_ct_adjust_academic_area_names($secondary_area->label());
+  }
+  $query['secondaryAcadArea'] = implode('|', $secondary_areas);
+
+  // Check for the primary academic area.
+  if ($primary_area = $wrapper->field_academic_area_single->label()) {
+    $query['primaryAcadArea'] = _gsb_feature_faculty_ct_adjust_academic_area_names($primary_area);
+  }
+  else {
+    // Provide an invalid primary academic area to unset the value.
+    $query['primaryAcadArea'] = 'none';
+  }
+
+  // Build the URL.
+  $url = url($service_url . '/ManageAcademicAreas', array('query' => $query));
+  $result = drupal_http_request($url);
+
+  // Parse the result status.
+  $xml = @simplexml_load_string($result->data);
+  if ($result->code !== '200' || (string) $xml !== '1') {
+    watchdog('gsb_feature_faculty_ct', 'Faculty update failed with status @status for user: @user', array('@user' => $query['uid'], '@status' => $result->code), WATCHDOG_WARNING);
+  }
+}
+
+/**
+ * Adjusts the academic area to match the destination value.
+ *
+ * @param string $name
+ *   The academic area name.
+ *
+ * @return string
+ *   The academic area name expected by the external service.
+ */
+function _gsb_feature_faculty_ct_adjust_academic_area_names($name) {
+  $map = array(
+    'Operations, Information & Technology' => 'Operations, Information and Technology',
+  );
+  if (isset($map[$name])) {
+    $name = $map[$name];
+  }
+  return $name;
+}

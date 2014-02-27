@@ -25,12 +25,18 @@ function gsb_feature_faculty_ct_form_faculty_node_form_alter(&$form, &$form_stat
     'required' => array(
       ':input[name="field_leave_status[' . $language . ']"]' => array('value' => '1'),
     ),
+    'visible' => array(
+      ':input[name="field_leave_status[' . $language . ']"]' => array('value' => '1'),
+    ),    
   );
 
   $form['field_leave_statement']['#states'] = array(
     'required' => array(
       ':input[name="field_leave_status[' . $language . ']"]' => array('value' => '1'),
     ),
+    'visible' => array(
+      ':input[name="field_leave_status[' . $language . ']"]' => array('value' => '1'),
+    ),    
   );
 
   $form['#validate'][] = 'gsb_feature_faculty_ct_form_faculty_node_validate';

@@ -230,6 +230,7 @@ function _gsb_feature_faculty_ct_adjust_academic_area_names($name) {
 }
 
 /**
+
  * Updates the faculty to copernicus via an external web service.
  *
  * @param object $node

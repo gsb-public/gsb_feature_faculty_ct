@@ -136,6 +136,7 @@ function gsb_feature_faculty_ct_node_view_alter(&$build, $entity_type) {
 function gsb_feature_faculty_ct_node_presave($node) {
   if (isset($node->workbench_moderation_state_new)) {
     _gsb_feature_faculty_ct_update_academic_areas($node, $node->workbench_moderation_state_new);
+    _gsb_feature_faculty_ct_update_faculty_by_sunet($node, $node->workbench_moderation_state_new);
   }
 }
 
@@ -154,6 +155,7 @@ function gsb_feature_faculty_ct_form_workbench_moderation_moderate_form_alter(&$
 function gsb_feature_faculty_ct_workbench_moderation_moderate_form_submit(&$form, &$form_state) {
   $node = node_load($form_state['values']['node']->nid, $form_state['values']['node']->vid);
   _gsb_feature_faculty_ct_update_academic_areas($node, $form_state['values']['state']);
+  _gsb_feature_faculty_ct_update_faculty_by_sunet($node, $form_state['values']['state']);
 }
 
 /**
@@ -165,11 +167,11 @@ function gsb_feature_faculty_ct_workbench_moderation_moderate_form_submit(&$form
  *   The state of the node, e.g., 'draft', 'published'.
  */
 function _gsb_feature_faculty_ct_update_academic_areas($node, $state) {
+
   if (!$service_url = variable_get('gsb_feature_faculty_ct_service_url', '')) {
     watchdog('gsb_feature_faculty_ct', 'No external service URL is set.');
     return;
   }
-
   // Only published faculty nodes should be updated.
   if ($node->type != 'faculty' || $state != workbench_moderation_state_published()) {
     return;
@@ -225,4 +227,61 @@ function _gsb_feature_faculty_ct_adjust_academic_area_names($name) {
     $name = $map[$name];
   }
   return $name;
+}
+
+/**
+ * Updates the faculty to copernicus via an external web service.
+ *
+ * @param object $node
+ *   The faculty node.
+ * @param string $state
+ *   The state of the node, e.g., 'draft', 'published'.
+ */
+function _gsb_feature_faculty_ct_update_faculty_by_sunet($node, $state) {
+  if (!$service_url = variable_get('gsb_feature_faculty_ct_service_url', '')) {
+    watchdog('gsb_feature_faculty_ct', 'No external service URL is set.');
+    return;
+  }
+
+  // Only faculty nodes should be updated.
+  if ($node->type != 'faculty') {
+    return;
+  }
+
+  $wrapper = entity_metadata_wrapper('node', $node);
+
+  $query = array();
+  // Pass the SUNet ID.
+  $query['sunet'] = $wrapper->field_sunetid->value();
+
+  // Published status = 1 if published and 0 when it is un-published
+  $query['bioPublished'] = 0;
+  if ($state == 'published') {
+    $query['bioPublished'] = 1;
+  }
+
+  // Show email =0 if the field is empty 1 if it is not empty
+  $email = $wrapper->field_email->value();
+  $query['showEmail'] = 0;
+  if (!empty($email)) {
+    $query['showEmail'] = 1;
+  }
+
+  // Show phone =0 if the field is empty 1 if it is not empty
+  $phone = $wrapper->field_phone->value();
+  $query['showPhone'] = 0;
+  if (!empty($phone)) {
+    $query['showPhone'] = 1;
+  }
+  $query['rank'] = $wrapper->field_rank->value();
+
+  // Build the URL.
+  $url = url($service_url . '/UpdateFacultyBySunet', array('query' => $query));
+  $result = drupal_http_request($url);
+
+  // Parse the result status.
+  $xml = @simplexml_load_string($result->data);
+  if ($result->code !== '200' || (string) $xml !== '1') {
+    watchdog('gsb_feature_faculty_ct', 'Faculty update failed with status @status for sunet: @sunet', array('@sunet' => $query['sunet'], '@status' => $result->code), WATCHDOG_WARNING);
+  }
 }

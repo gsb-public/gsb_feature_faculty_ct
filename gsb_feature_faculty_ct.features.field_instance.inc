@@ -277,7 +277,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 26,
+      'weight' => 51,
     ),
     'workbench_access_field' => 0,
   );
@@ -374,7 +374,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => '',
       ),
       'type' => 'options_select',
-      'weight' => 10,
+      'weight' => 63,
     ),
     'workbench_access_field' => 0,
   );
@@ -438,7 +438,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => '',
       ),
       'type' => 'options_select',
-      'weight' => 11,
+      'weight' => 65,
     ),
     'workbench_access_field' => 0,
   );
@@ -506,7 +506,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 25,
+      'weight' => 50,
     ),
     'workbench_access_field' => 0,
   );
@@ -580,7 +580,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 28,
+      'weight' => 53,
     ),
     'workbench_access_field' => 0,
   );
@@ -656,7 +656,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 24,
+      'weight' => 69,
     ),
     'workbench_access_field' => 0,
   );
@@ -714,7 +714,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 36,
+      'weight' => 67,
     ),
     'workbench_access_field' => 0,
   );
@@ -776,7 +776,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 4,
+      'weight' => 28,
     ),
     'workbench_access_field' => 0,
   );
@@ -848,7 +848,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 25,
+      'weight' => 58,
     ),
     'workbench_access_field' => 0,
   );
@@ -914,7 +914,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 29,
+      'weight' => 64,
     ),
     'workbench_access_field' => 0,
   );
@@ -987,7 +987,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 26,
+      'weight' => 65,
     ),
     'workbench_access_field' => 0,
   );
@@ -1060,7 +1060,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 20,
+      'weight' => 54,
     ),
     'workbench_access_field' => 0,
   );
@@ -1236,7 +1236,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 33,
+      'weight' => 58,
     ),
     'workbench_access_field' => 0,
   );
@@ -1309,7 +1309,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 22,
+      'weight' => 56,
     ),
     'workbench_access_field' => 0,
   );
@@ -1378,7 +1378,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 13,
+      'weight' => 50,
     ),
     'workbench_access_field' => 0,
   );
@@ -1450,7 +1450,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 51,
     ),
     'workbench_access_field' => 0,
   );
@@ -1518,7 +1518,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => '',
       ),
       'type' => 'options_buttons',
-      'weight' => 12,
+      'weight' => 49,
     ),
     'workbench_access_field' => 0,
   );
@@ -1606,7 +1606,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => '',
       ),
       'type' => 'link_field',
-      'weight' => 32,
+      'weight' => 60,
     ),
     'workbench_access_field' => 0,
   );
@@ -1694,7 +1694,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => '',
       ),
       'type' => 'link_field',
-      'weight' => 28,
+      'weight' => 61,
     ),
     'workbench_access_field' => 0,
   );
@@ -1776,7 +1776,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 29,
+      'weight' => 62,
     ),
     'workbench_access_field' => 0,
   );
@@ -1858,7 +1858,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 31,
+      'weight' => 64,
     ),
     'workbench_access_field' => 0,
   );
@@ -1940,7 +1940,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 6,
+      'weight' => 30,
     ),
     'workbench_access_field' => 0,
   );
@@ -2022,7 +2022,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 30,
+      'weight' => 63,
     ),
     'workbench_access_field' => 0,
   );
@@ -2104,7 +2104,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 31,
+      'weight' => 27,
     ),
     'workbench_access_field' => 0,
   );
@@ -2186,7 +2186,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 5,
+      'weight' => 29,
     ),
     'workbench_access_field' => 0,
   );
@@ -2274,7 +2274,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => '',
       ),
       'type' => 'link_field',
-      'weight' => 27,
+      'weight' => 59,
     ),
     'workbench_access_field' => 0,
   );
@@ -2348,7 +2348,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 21,
+      'weight' => 55,
     ),
     'workbench_access_field' => 0,
   );
@@ -2410,7 +2410,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 30,
+      'weight' => 26,
     ),
     'workbench_access_field' => 0,
   );
@@ -2478,7 +2478,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'placeholder' => '',
       ),
       'type' => 'telephone_default',
-      'weight' => 24,
+      'weight' => 57,
     ),
     'workbench_access_field' => 0,
   );
@@ -2552,7 +2552,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 27,
+      'weight' => 52,
     ),
     'workbench_access_field' => 0,
   );
@@ -2645,7 +2645,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => '',
       ),
       'type' => 'options_select',
-      'weight' => 34,
+      'weight' => 62,
     ),
     'workbench_access_field' => 0,
   );
@@ -2719,7 +2719,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 22,
+      'weight' => 67,
     ),
     'workbench_access_field' => 0,
   );
@@ -2795,7 +2795,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 21,
+      'weight' => 66,
     ),
     'workbench_access_field' => 0,
   );
@@ -2869,7 +2869,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 19,
+      'weight' => 53,
     ),
     'workbench_access_field' => 0,
   );
@@ -2973,7 +2973,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'concat_field_default',
-      'weight' => 4,
+      'weight' => 2,
     ),
     'workbench_access_field' => 0,
   );
@@ -3035,7 +3035,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 8,
+      'weight' => 39,
     ),
     'workbench_access_field' => 0,
   );
@@ -3165,7 +3165,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 23,
+      'weight' => 57,
     ),
     'workbench_access_field' => 0,
   );
@@ -3236,7 +3236,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 18,
+      'weight' => 61,
     ),
     'workbench_access_field' => 0,
   );
@@ -3296,7 +3296,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 39,
+      'weight' => 68,
     ),
     'workbench_access_field' => 0,
   );
@@ -3366,7 +3366,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 23,
+      'weight' => 68,
     ),
     'workbench_access_field' => 0,
   );
@@ -3440,7 +3440,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 19,
+      'weight' => 66,
     ),
     'workbench_access_field' => 0,
   );

@@ -13,19 +13,49 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_about|node|faculty|form';
+  $field_group->group_name = 'group_about';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main';
+  $field_group->data = array(
+    'label' => 'About',
+    'weight' => '46',
+    'children' => array(
+      0 => 'field_body',
+      1 => 'field_file_single_public',
+      2 => 'field_research_interests',
+      3 => 'field_research_statement',
+      4 => 'field_teaching_statement',
+      5 => 'group_personal_information',
+      6 => 'group_contact_info',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_about|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_academic_areas|node|faculty|form';
   $field_group->group_name = 'group_academic_areas';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'faculty';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_academic_information';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Academic Area(s)',
-    'weight' => '20',
-    'children' => array(
-      0 => 'field_academic_area_single',
-      1 => 'field_academic_area_unlimited',
-    ),
+    'weight' => '8',
+    'children' => array(),
     'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -49,22 +79,8 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Academic Information',
-    'weight' => '1',
-    'children' => array(
-      0 => 'field_awards_honors',
-      1 => 'field_body',
-      2 => 'field_professional_experience',
-      3 => 'field_research_interests',
-      4 => 'field_research_statement',
-      5 => 'field_title_position_unlimited',
-      6 => 'field_academic_aptmts_unlimited',
-      7 => 'field_academic_degrees_unlimited',
-      8 => 'field_link_unlimited',
-      9 => 'field_teaching_statement',
-      10 => 'field_non_degree_course',
-      11 => 'field_featured_publication_ref',
-      12 => 'group_academic_areas',
-    ),
+    'weight' => '6',
+    'children' => array(),
     'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -76,6 +92,153 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
   );
   $export['group_academic_information|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_administration|node|faculty|form';
+  $field_group->group_name = 'group_administration';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main';
+  $field_group->data = array(
+    'label' => 'Administration',
+    'weight' => '57',
+    'children' => array(
+      0 => 'field_academic_area_single',
+      1 => 'field_academic_area_unlimited',
+      2 => 'field_rank',
+      3 => 'field_sunetid',
+      4 => 'field_title_position_unlimited',
+      5 => 'field_centers_research_programs',
+      6 => 'field_tag',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_administration|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_affiliations|node|faculty|form';
+  $field_group->group_name = 'group_affiliations';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main';
+  $field_group->data = array(
+    'label' => 'Affiliations',
+    'weight' => '54',
+    'children' => array(
+      0 => 'field_service_profession_section',
+      1 => 'field_greater_univ_aff_unlimited',
+      2 => 'field_stanford_gsb_affiliation',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_affiliations|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_books|node|faculty|form';
+  $field_group->group_name = 'group_books';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main_publications';
+  $field_group->data = array(
+    'label' => 'Books',
+    'weight' => '10',
+    'children' => array(),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_books|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_cases|node|faculty|form';
+  $field_group->group_name = 'group_cases';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main_publications';
+  $field_group->data = array(
+    'label' => 'Cases',
+    'weight' => '12',
+    'children' => array(),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_cases|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_contact_info|node|faculty|form';
+  $field_group->group_name = 'group_contact_info';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_about';
+  $field_group->data = array(
+    'label' => 'Contact Info',
+    'weight' => '64',
+    'children' => array(
+      0 => 'field_email',
+      1 => 'field_link_blog',
+      2 => 'field_link_google_scholar',
+      3 => 'field_link_website',
+      4 => 'field_phone',
+      5 => 'field_link_linkedin',
+      6 => 'field_link_other_social',
+      7 => 'field_link_twitter',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Contact Info',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $export['group_contact_info|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -112,6 +275,36 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_experience|node|faculty|form';
+  $field_group->group_name = 'group_experience';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main';
+  $field_group->data = array(
+    'label' => 'Experience',
+    'weight' => '52',
+    'children' => array(
+      0 => 'field_awards_honors',
+      1 => 'field_professional_experience',
+      2 => 'field_academic_aptmts_unlimited',
+      3 => 'field_academic_degrees_unlimited',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_experience|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_leave_information|node|faculty|form';
   $field_group->group_name = 'group_leave_information';
   $field_group->entity_type = 'node';
@@ -120,7 +313,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_personal_information';
   $field_group->data = array(
     'label' => 'Leave Information',
-    'weight' => '16',
+    'weight' => '59',
     'children' => array(
       0 => 'field_leave_status',
       1 => 'field_leave_date',
@@ -141,44 +334,196 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_personal_information|node|faculty|form';
-  $field_group->group_name = 'group_personal_information';
+  $field_group->identifier = 'group_main_news|node|faculty|form';
+  $field_group->group_name = 'group_main_news';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_manage_news';
+  $field_group->data = array(
+    'label' => 'Main News',
+    'weight' => '65',
+    'children' => array(
+      0 => 'group_media_mentions',
+    ),
+    'format_type' => 'tabs',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_main_news|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_main_publications|node|faculty|form';
+  $field_group->group_name = 'group_main_publications';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_manage_publications';
+  $field_group->data = array(
+    'label' => 'Main Publications',
+    'weight' => '8',
+    'children' => array(
+      0 => 'group_publications',
+      1 => 'group_books',
+      2 => 'group_working_papers',
+      3 => 'group_cases',
+    ),
+    'format_type' => 'tabs',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_main_publications|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_main|node|faculty|form';
+  $field_group->group_name = 'group_main';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'faculty';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Personal Information',
-    'weight' => '0',
+    'label' => 'Main',
+    'weight' => '1',
     'children' => array(
-      0 => 'field_email',
-      1 => 'field_file_single_public',
-      2 => 'field_first_name',
-      3 => 'field_image_single_public',
-      4 => 'field_last_name',
-      5 => 'field_link_blog',
-      6 => 'field_link_google_scholar',
-      7 => 'field_link_website',
-      8 => 'field_middle_name',
-      9 => 'field_phone',
-      10 => 'field_rank',
-      11 => 'field_salutation',
-      12 => 'field_sunetid',
-      13 => 'field_link_linkedin',
-      14 => 'field_link_other_social',
-      15 => 'field_link_twitter',
-      16 => 'field_suffix_name',
-      17 => 'title',
-      18 => 'group_leave_information',
+      0 => 'group_about',
+      1 => 'group_experience',
+      2 => 'group_teaching_and_talks',
+      3 => 'group_affiliations',
+      4 => 'group_manage_publications',
+      5 => 'group_manage_news',
+      6 => 'group_administration',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'htabs',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_main|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_manage_news|node|faculty|form';
+  $field_group->group_name = 'group_manage_news';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main';
+  $field_group->data = array(
+    'label' => 'Manage News',
+    'weight' => '56',
+    'children' => array(
+      0 => 'group_main_news',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
       'instance_settings' => array(
         'description' => '',
         'classes' => '',
         'required_fields' => 1,
       ),
+    ),
+  );
+  $export['group_manage_news|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_manage_publications|node|faculty|form';
+  $field_group->group_name = 'group_manage_publications';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main';
+  $field_group->data = array(
+    'label' => 'Manage Publications',
+    'weight' => '55',
+    'children' => array(
+      0 => 'group_main_publications',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_manage_publications|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_media_mentions|node|faculty|form';
+  $field_group->group_name = 'group_media_mentions';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main_news';
+  $field_group->data = array(
+    'label' => 'Media Mentions',
+    'weight' => '65',
+    'children' => array(),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_media_mentions|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_personal_information|node|faculty|form';
+  $field_group->group_name = 'group_personal_information';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_about';
+  $field_group->data = array(
+    'label' => 'Personal Information',
+    'weight' => '63',
+    'children' => array(
+      0 => 'field_first_name',
+      1 => 'field_image_single_public',
+      2 => 'field_last_name',
+      3 => 'field_middle_name',
+      4 => 'field_salutation',
+      5 => 'field_suffix_name',
+      6 => 'group_leave_information',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Personal Information',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
     ),
   );
   $export['group_personal_information|node|faculty|form'] = $field_group;
@@ -194,14 +539,8 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Professional Information',
-    'weight' => '2',
-    'children' => array(
-      0 => 'field_conf_presentations_section',
-      1 => 'field_service_profession_section',
-      2 => 'field_link_podcast_unlimited',
-      3 => 'field_link_video_unlimited',
-      4 => 'group_stanford_gsb_affiliations',
-    ),
+    'weight' => '7',
+    'children' => array(),
     'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -250,19 +589,43 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_publications|node|faculty|form';
+  $field_group->group_name = 'group_publications';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main_publications';
+  $field_group->data = array(
+    'label' => 'Publications',
+    'weight' => '9',
+    'children' => array(
+      0 => 'field_featured_publication_ref',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_publications|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_stanford_gsb_affiliations|node|faculty|form';
   $field_group->group_name = 'group_stanford_gsb_affiliations';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'faculty';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_professional_information';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Stanford GSB Affiliations',
-    'weight' => '7',
-    'children' => array(
-      0 => 'field_greater_univ_aff_unlimited',
-      1 => 'field_stanford_gsb_affiliation',
-    ),
+    'weight' => '9',
+    'children' => array(),
     'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -301,6 +664,62 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
   );
   $export['group_tags_wrapper|node|faculty|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_teaching_and_talks|node|faculty|form';
+  $field_group->group_name = 'group_teaching_and_talks';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main';
+  $field_group->data = array(
+    'label' => 'Teaching & Talks',
+    'weight' => '53',
+    'children' => array(
+      0 => 'field_conf_presentations_section',
+      1 => 'field_link_podcast_unlimited',
+      2 => 'field_link_unlimited',
+      3 => 'field_link_video_unlimited',
+      4 => 'field_non_degree_course',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_teaching_and_talks|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_working_papers|node|faculty|form';
+  $field_group->group_name = 'group_working_papers';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main_publications';
+  $field_group->data = array(
+    'label' => 'Working Papers',
+    'weight' => '11',
+    'children' => array(),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_working_papers|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */

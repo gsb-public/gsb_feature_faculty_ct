@@ -229,6 +229,124 @@ function _gsb_feature_faculty_ct_adjust_academic_area_names($name) {
   return $name;
 }
 
+/**
+ * Updates the faculty to copernicus via an external web service.
+ *
+ * @param object $node
+ *   The faculty node.
+ * @param string $state
+ *   The state of the node, e.g., 'draft', 'published'.
+ */
+function _gsb_feature_faculty_ct_update_faculty_by_sunet($node, $state) {
+  if (!$service_url = variable_get('gsb_feature_faculty_ct_service_url', '')) {
+    watchdog('gsb_feature_faculty_ct', 'No external service URL is set.');
+    return;
+  }
+
+  // Only published faculty nodes should be updated.
+  if ($node->type != 'faculty' || $state != workbench_moderation_state_published()) {
+    return;
+  }
+
+  $wrapper = entity_metadata_wrapper('node', $node);
+
+  $query = array();
+  // Pass the SUNet ID.
+  $query['sunet'] = $wrapper->field_sunetid->value();
+
+  // Published status = 1 if published and 0 when it is un-published
+  $query['bioPublished'] = $node->status;
+
+  // Show email =0 if the field is empty 1 if it is not empty
+  $email = $wrapper->field_email->value();
+  $query['showEmail'] = 0;
+  if (!empty($email)) {
+    $query['showEmail'] = 1;
+  }
+
+  // Show phone =0 if the field is empty 1 if it is not empty
+  $phone = $wrapper->field_phone->value();
+  $query['showPhone'] = 0;
+  if (!empty($phone)) {
+    $query['showPhone'] = 1;
+  }
+  $query['rank'] = $wrapper->field_rank->value();
+
+  // Build the URL.
+  $url = url($service_url . '/UpdateFacultyBySunet', array('query' => $query));
+  $result = drupal_http_request($url);
+
+  // Parse the result status.
+  $xml = @simplexml_load_string($result->data);
+  if ($result->code !== '200' || (string) $xml !== '1') {
+    watchdog('gsb_feature_faculty_ct', 'Faculty update failed with status @status for sunet: @sunet', array('@sunet' => $query['sunet'], '@status' => $result->code), WATCHDOG_WARNING);
+  }
+}
+
+/**
+ * Provides a _to_arg callback for faculty nodes.
+ */
+if (!function_exists('node_to_arg')) {
+  function node_to_arg($arg) {
+    static $result;
+    if (!$result && (empty($arg) || $arg == '%')) {
+      // If the user is anonymous, don't look anything up.
+      if (user_is_anonymous()) {
+        $result = $arg;
+      }
+      // Look for a sunetid field on faculty nodes that matches the user name.
+      elseif (field_info_instance('node', 'field_sunetid', 'faculty')) {
+        $query = new EntityFieldQuery('node');
+        $results = $query
+          ->entityCondition('bundle', 'faculty')
+          ->fieldCondition('field_sunetid', 'value', $GLOBALS['user']->name)
+          ->execute();
+        if (!empty($results['node'])) {
+          $result = key($results['node']);
+        }
+      }
+      $arg = $result;
+    }
+    return $arg;
+  }
+}
+
+/** 
+ * Implements hook_menu_alter().
+ */
+function gsb_feature_faculty_ct_menu_alter(&$items) {
+  if (isset($items['node/%node'])) {
+    $items['node/%gsb_feature_faculty_ct_node_menu'] = $items['node/%node'];
+    unset($items['node/%node']);
+  }
+}
+
+/**
+ * Provides a menu loader for nodes.
+ */
+function gsb_feature_faculty_ct_node_menu_load($nid) {
+  return node_load($nid);
+}
+
+/**
+ * Provides a _to_arg callback for faculty nodes.
+ */
+function gsb_feature_faculty_ct_node_menu_to_arg($arg) {
+  if (empty($arg) || $arg == '%') {
+    if (field_info_instance('node', 'field_sunetid', 'faculty')) {
+      $query = new EntityFieldQuery('node');
+      $results = $query
+        ->entityCondition('bundle', 'faculty')
+        ->fieldCondition('field_sunetid', 'value', $GLOBALS['user']->name)
+        ->execute();
+      if (!empty($results['node'])) {
+        $arg = key($results['node']);
+      }
+    }
+  }
+  return $arg;
+}
+
 /** 
  * Updates the faculty to copernicus via an external web service.
  *
@@ -283,33 +401,5 @@ function _gsb_feature_faculty_ct_update_faculty_by_sunet($node, $state) {
   $xml = @simplexml_load_string($result->data);
   if ($result->code !== '200' || (string) $xml !== '1') {
     watchdog('gsb_feature_faculty_ct', 'Faculty update failed with status @status for sunet: @sunet', array('@sunet' => $query['sunet'], '@status' => $result->code), WATCHDOG_WARNING);
-  }
-}
-
-/**
- * Provides a _to_arg callback for faculty nodes.
- */
-if (!function_exists('node_to_arg')) {
-  function node_to_arg($arg) {
-    static $result;
-    if (!$result && (empty($arg) || $arg == '%')) {
-      // If the user is anonymous, don't look anything up.
-      if (user_is_anonymous()) {
-        $result = $arg;
-      }
-      // Look for a sunetid field on faculty nodes that matches the user name.
-      elseif (field_info_instance('node', 'field_sunetid', 'faculty')) {
-        $query = new EntityFieldQuery('node');
-        $results = $query
-          ->entityCondition('bundle', 'faculty')
-          ->fieldCondition('field_sunetid', 'value', $GLOBALS['user']->name)
-          ->execute();
-        if (!empty($results['node'])) {
-          $result = key($results['node']);
-        }
-      }
-      $arg = $result;
-    }
-    return $arg;
   }
 }

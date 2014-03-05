@@ -243,8 +243,8 @@ function _gsb_feature_faculty_ct_update_faculty_by_sunet($node, $state) {
     return;
   }
 
-  // Only faculty nodes should be updated.
-  if ($node->type != 'faculty') {
+  // Only published faculty nodes should be updated.
+  if ($node->type != 'faculty' || $state != workbench_moderation_state_published()) {
     return;
   }
 
@@ -255,10 +255,7 @@ function _gsb_feature_faculty_ct_update_faculty_by_sunet($node, $state) {
   $query['sunet'] = $wrapper->field_sunetid->value();
 
   // Published status = 1 if published and 0 when it is un-published
-  $query['bioPublished'] = 0;
-  if ($state == 'published') {
-    $query['bioPublished'] = 1;
-  }
+  $query['bioPublished'] = $node->status;
 
   // Show email =0 if the field is empty 1 if it is not empty
   $email = $wrapper->field_email->value();

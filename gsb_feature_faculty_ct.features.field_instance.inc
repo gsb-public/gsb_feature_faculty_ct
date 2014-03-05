@@ -914,7 +914,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 64,
+      'weight' => 66,
     ),
     'workbench_access_field' => 0,
   );

@@ -310,39 +310,3 @@ if (!function_exists('node_to_arg')) {
     return $arg;
   }
 }
-
-/** 
- * Implements hook_menu_alter().
- */
-function gsb_feature_faculty_ct_menu_alter(&$items) {
-  if (isset($items['node/%node'])) {
-    $items['node/%gsb_feature_faculty_ct_node_menu'] = $items['node/%node'];
-    unset($items['node/%node']);
-  }
-}
-
-/**
- * Provides a menu loader for nodes.
- */
-function gsb_feature_faculty_ct_node_menu_load($nid) {
-  return node_load($nid);
-}
-
-/**
- * Provides a _to_arg callback for faculty nodes.
- */
-function gsb_feature_faculty_ct_node_menu_to_arg($arg) {
-  if (empty($arg) || $arg == '%') {
-    if (field_info_instance('node', 'field_sunetid', 'faculty')) {
-      $query = new EntityFieldQuery('node');
-      $results = $query
-        ->entityCondition('bundle', 'faculty')
-        ->fieldCondition('field_sunetid', 'value', $GLOBALS['user']->name)
-        ->execute();
-      if (!empty($results['node'])) {
-        $arg = key($results['node']);
-      }
-    }
-  }
-  return $arg;
-}

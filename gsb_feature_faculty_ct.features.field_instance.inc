@@ -1573,7 +1573,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_link_blog',
-    'label' => 'Blog Link',
+    'label' => 'Blog',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -2078,7 +2078,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'class' => '',
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'user',
+        'target' => '_blank',
         'title' => '',
       ),
       'display' => array(
@@ -3518,7 +3518,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
   t('Academic Degrees');
   t('Awards and Honors');
   t('Bio');
-  t('Blog Link');
+  t('Blog');
   t('CTRL + click to select multiple academic areas. Selections do not display on the faculty profile.');
   t('CV');
   t('Center Affiliations');

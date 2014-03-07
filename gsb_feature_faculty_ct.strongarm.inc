@@ -199,6 +199,18 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
         ),
+        'gsb_publications_listing_eva_field_form' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+        ),
+        'gsb_publications_listing_entity_view_1' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+        ),
       ),
     ),
   );

@@ -591,12 +591,13 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
     'format_type' => 'htab',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Teaching & Talks',
       'instance_settings' => array(
-        'description' => '',
+        'required_fields' => 0,
         'classes' => '',
-        'required_fields' => 1,
+        'description' => '',
       ),
+      'formatter' => 'closed',
     ),
   );
   $export['group_teaching_and_talks|node|faculty|form'] = $field_group;

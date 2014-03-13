@@ -10,6 +10,7 @@ include_once 'gsb_feature_faculty_ct.features.inc';
  * Implements hook_form_FORM_ID_alter() for faculty node edit form.
  */
 function gsb_feature_faculty_ct_form_faculty_node_form_alter(&$form, &$form_state) {
+  $form['#process'][] = 'gsb_feature_faculty_ct_faculty_node_form_process';
 
   $language = $form['language']['#value'];
 	
@@ -41,6 +42,16 @@ function gsb_feature_faculty_ct_form_faculty_node_form_alter(&$form, &$form_stat
 
   $form['#validate'][] = 'gsb_feature_faculty_ct_form_faculty_node_validate';
 
+}
+
+/**
+ * #process callback: Hide elements on the faculty form.
+ */
+function gsb_feature_faculty_ct_faculty_node_form_process($form) {
+  // Hide the 'Administration' group.
+  if (!user_access('create faculty content')) {
+    unset($form['#fieldgroups']['group_administration'], $form['#groups']['group_administration']);
+  }
 }
 
 function gsb_feature_faculty_ct_form_faculty_node_validate($form, &$form_state) {

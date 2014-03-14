@@ -52,6 +52,7 @@ function gsb_feature_faculty_ct_faculty_node_form_process($form) {
   if (!user_access('create faculty content')) {
     unset($form['#fieldgroups']['group_administration'], $form['#groups']['group_administration']);
   }
+  return $form;
 }
 
 function gsb_feature_faculty_ct_form_faculty_node_validate($form, &$form_state) {

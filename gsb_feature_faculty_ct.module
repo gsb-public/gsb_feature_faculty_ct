@@ -296,31 +296,3 @@ function _gsb_feature_faculty_ct_update_faculty_by_sunet($node, $state) {
   }
 }
 
-/**
- * Provides a _to_arg callback for faculty nodes.
- */
-if (!function_exists('node_to_arg')) {
-  function node_to_arg($arg) {
-    static $result;
-    if (!$result && (empty($arg) || $arg == '%')) {
-      // If the user is anonymous, don't look anything up.
-      if (user_is_anonymous()) {
-        $result = $arg;
-      }
-      // Look for a sunetid field on faculty nodes that matches the user name.
-      elseif (field_info_instance('node', 'field_sunetid', 'faculty')) {
-        $query = new EntityFieldQuery('node');
-        $results = $query
-          ->entityCondition('bundle', 'faculty')
-          ->fieldCondition('field_sunetid', 'value', $GLOBALS['user']->name)
-          ->execute();
-        if (!empty($results['node'])) {
-          $result = key($results['node']);
-        }
-      }
-      $arg = $result;
-    }
-    return $arg;
-  }
-}
-

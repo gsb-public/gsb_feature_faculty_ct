@@ -435,7 +435,9 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->data = array(
     'label' => 'Media Mentions',
     'weight' => '65',
-    'children' => array(),
+    'children' => array(
+      0 => 'gsb_media_mentions_eva_field_form',
+    ),
     'format_type' => 'tab',
     'format_settings' => array(
       'formatter' => 'closed',
@@ -554,7 +556,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
-    'weight' => '26',
+    'weight' => '27',
     'children' => array(
       0 => 'field_academic_area_unlimited',
     ),
@@ -675,7 +677,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Stanford University Affiliations',
-    'weight' => '17',
+    'weight' => '18',
     'children' => array(
       0 => 'field_greater_univ_aff_unlimited',
       1 => 'field_stanford_gsb_affiliation',

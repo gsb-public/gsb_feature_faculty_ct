@@ -127,6 +127,9 @@ function gsb_feature_faculty_ct_strongarm() {
         'gsb_working_paper_listing_eva_field_form' => array(
           'weight' => '53',
         ),
+        'gsb_media_mentions_eva_field_form' => array(
+          'weight' => '10',
+        ),
       ),
       'display' => array(
         'gsb_case_listing_case_listing_entity_view' => array(
@@ -208,6 +211,12 @@ function gsb_feature_faculty_ct_strongarm() {
         'gsb_publications_listing_entity_view_1' => array(
           'default' => array(
             'weight' => '10',
+            'visible' => TRUE,
+          ),
+        ),
+        'gsb_media_mentions_media_mention_listing_entity_view' => array(
+          'default' => array(
+            'weight' => '15',
             'visible' => TRUE,
           ),
         ),

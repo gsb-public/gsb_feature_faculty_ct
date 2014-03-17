@@ -267,8 +267,9 @@ function _gsb_feature_faculty_ct_update_faculty_by_sunet($node, $state) {
   // Pass the SUNet ID.
   $query['sunet'] = $wrapper->field_sunetid->value();
 
-  // Published status = 1 if published and 0 when it is un-published
-  $query['bioPublished'] = $node->status;
+  // The node status is not updated at this point, but if the workbench state is
+  // published, then this will always be true.
+  $query['bioPublished'] = 1;
 
   // Show email =0 if the field is empty 1 if it is not empty
   $email = $wrapper->field_email->value();

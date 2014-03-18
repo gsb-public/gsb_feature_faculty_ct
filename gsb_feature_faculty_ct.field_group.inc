@@ -349,7 +349,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Main',
-    'weight' => '1',
+    'weight' => '2',
     'children' => array(
       0 => 'group_about',
       1 => 'group_administration',
@@ -530,8 +530,7 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Publications',
     'weight' => '9',
     'children' => array(
-      0 => 'field_featured_publication_ref',
-      1 => 'gsb_publications_listing_eva_field_form',
+      0 => 'gsb_publications_listing_eva_field_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

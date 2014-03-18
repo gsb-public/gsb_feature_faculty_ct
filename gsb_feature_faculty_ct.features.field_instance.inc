@@ -2907,7 +2907,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'concat_field_default',
-      'weight' => 2,
+      'weight' => 3,
     ),
     'workbench_access_field' => 0,
   );
@@ -3032,6 +3032,64 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
       ),
       'type' => 'field_collection_embed',
       'weight' => 36,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-faculty-field_submit'
+  $field_instances['node-faculty-field_submit'] = array(
+    'bundle' => 'faculty',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => NULL,
+        'settings' => array(),
+        'type' => 'submit_field_default',
+        'weight' => 70,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'people_fpp' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_submit',
+    'label' => 'Submit',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'submit_field',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'submit_field',
+      'weight' => 1,
     ),
     'workbench_access_field' => 0,
   );
@@ -3438,6 +3496,7 @@ STEYER-TAYLOR|STEYER-TAYLOR: Steyer-Taylor Center for Energy Policy and Finance'
   t('Service to the Profession Section');
   t('Size: 270 x 270 px | Follow <a href="URL" target="_blank">instructions for optimizing photos</a> before uploading the file.');
   t('Stanford GSB Affiliation');
+  t('Submit');
   t('Suffix');
   t('Tag');
   t('Teaching Materials');

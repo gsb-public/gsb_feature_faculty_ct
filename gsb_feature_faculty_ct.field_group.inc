@@ -556,7 +556,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
-    'weight' => '27',
+    'weight' => '28',
     'children' => array(
       0 => 'field_academic_area_unlimited',
     ),
@@ -677,7 +677,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Stanford University Affiliations',
-    'weight' => '18',
+    'weight' => '17',
     'children' => array(
       0 => 'field_greater_univ_aff_unlimited',
       1 => 'field_stanford_gsb_affiliation',

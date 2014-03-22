@@ -92,6 +92,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       0 => 'field_service_profession_section',
       1 => 'field_greater_univ_aff_unlimited',
       2 => 'field_stanford_gsb_affiliation',
+      3 => 'field_greater_university_affil',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -589,6 +590,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       2 => 'field_link_unlimited',
       3 => 'field_link_video_unlimited',
       4 => 'field_non_degree_course',
+      5 => 'field_teaching_materials',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

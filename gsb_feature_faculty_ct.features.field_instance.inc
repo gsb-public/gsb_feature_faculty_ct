@@ -57,6 +57,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Academic Appointments',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -161,6 +163,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Academic Area',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -225,6 +229,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Other Academic Areas',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -286,6 +292,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Academic Degrees',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -360,6 +368,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Awards and Honors',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -434,6 +444,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Bio',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -501,6 +513,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Center Affiliations',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -563,6 +577,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Conferences and Presentations',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -633,6 +649,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'allow_without_formatter' => 0,
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'form_title' => 'Contact person by email',
       'user_register_form' => FALSE,
     ),
@@ -703,6 +721,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'CV',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'description_field' => 0,
       'file_directory' => 'faculty-cv',
       'file_extensions' => 'pdf',
@@ -774,6 +794,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'First Name',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -804,11 +826,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_plain',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 15,
       ),
       'featured' => array(
@@ -842,6 +861,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Greater University Affiliation',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -874,14 +895,10 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'module' => 'field_collection',
         'settings' => array(
-          'add' => 'Add',
           'conditions' => array(),
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
           'view_mode' => 'full',
         ),
-        'type' => 'field_collection_view',
+        'type' => 'field_collection_fields',
         'weight' => 71,
       ),
       'featured' => array(
@@ -915,6 +932,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Greater Stanford University Affiliations',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1014,6 +1033,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'alt_field' => 0,
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'default_image' => 0,
       'file_directory' => 'person_photos',
       'file_extensions' => 'png gif jpg jpeg',
@@ -1089,6 +1110,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Last Name',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1153,6 +1176,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'On Leave - Date Range',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'default_value' => 'now',
       'default_value2' => 'same',
       'default_value_code' => '',
@@ -1230,6 +1255,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'On Leave - Statement',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1305,6 +1332,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'On Leave',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1379,6 +1408,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'target' => '_blank',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1467,6 +1498,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'target' => '_blank',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1549,6 +1582,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'target' => '_blank',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1631,6 +1666,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'target' => '_blank',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1713,6 +1750,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'target' => '_blank',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1795,6 +1834,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'target' => '_blank',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1877,6 +1918,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'target' => '_blank',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1959,6 +2002,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'target' => '_blank',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -2047,6 +2092,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'target' => '_blank',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -2128,6 +2175,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Middle Name',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -2197,6 +2246,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Non-Degree Courses',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2264,6 +2315,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Phone',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2332,6 +2385,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Professional Experience',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -2432,6 +2487,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Rank',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2499,6 +2556,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Research Interests',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -2573,6 +2632,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Research Statement',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -2649,6 +2710,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Prefix',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -2719,6 +2782,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Search field',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'selected_fields' => array(
         'concat_field_entity_label' => 'concat_field_entity_label',
         'field_academic_aptmts_unlimited' => 0,
@@ -2822,6 +2887,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Service to the Profession Section',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2884,6 +2951,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Stanford GSB Affiliation',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2906,9 +2975,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => NULL,
         'settings' => array(),
-        'type' => 'submit_field_default',
+        'type' => 'hidden',
         'weight' => 70,
       ),
       'featured' => array(
@@ -2942,6 +3010,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Submit',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3003,6 +3073,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Suffix',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -3074,6 +3146,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'SUNetID',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -3139,6 +3213,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Tag',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3164,16 +3240,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => 'Add',
-          'conditions' => array(),
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 72,
       ),
       'featured' => array(
@@ -3207,6 +3275,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Teaching Materials',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3268,6 +3338,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Teaching Statement',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -3344,6 +3416,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Title/Position',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',

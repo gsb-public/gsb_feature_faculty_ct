@@ -680,8 +680,8 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Stanford University Affiliations',
     'weight' => '17',
     'children' => array(
-      0 => 'field_greater_univ_aff_unlimited',
-      1 => 'field_stanford_gsb_affiliation',
+      0 => 'field_stanford_gsb_affiliation',
+      1 => 'field_greater_university_affil',
     ),
     'format_type' => 'div',
     'format_settings' => array(

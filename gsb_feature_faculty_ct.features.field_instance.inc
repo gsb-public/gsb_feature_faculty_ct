@@ -176,7 +176,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'options_select',
-      'weight' => 63,
+      'weight' => 55,
     ),
     'workbench_access_field' => 0,
   );
@@ -244,7 +244,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 64,
+      'weight' => 56,
     ),
     'workbench_access_field' => 0,
   );
@@ -394,7 +394,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 240,
       ),
       'type' => 'text_textfield',
-      'weight' => 53,
+      'weight' => 54,
     ),
     'workbench_access_field' => 0,
   );
@@ -472,7 +472,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 65,
+      'weight' => 70,
     ),
     'workbench_access_field' => 0,
   );
@@ -532,7 +532,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 66,
+      'weight' => 58,
     ),
     'workbench_access_field' => 0,
   );
@@ -598,7 +598,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 29,
+      'weight' => 30,
     ),
     'workbench_access_field' => 0,
   );
@@ -672,7 +672,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 58,
+      'weight' => 68,
     ),
     'workbench_access_field' => 0,
   );
@@ -747,7 +747,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 58,
+      'weight' => 64,
     ),
     'workbench_access_field' => 0,
   );
@@ -825,7 +825,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 40,
       ),
       'type' => 'text_textfield',
-      'weight' => 54,
+      'weight' => 60,
     ),
     'workbench_access_field' => 0,
   );
@@ -1070,7 +1070,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 59,
+      'weight' => 65,
     ),
     'workbench_access_field' => 0,
   );
@@ -1148,7 +1148,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 40,
       ),
       'type' => 'text_textfield',
-      'weight' => 56,
+      'weight' => 62,
     ),
     'workbench_access_field' => 0,
   );
@@ -1454,7 +1454,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'link_field',
-      'weight' => 60,
+      'weight' => 70,
     ),
     'workbench_access_field' => 0,
   );
@@ -1545,7 +1545,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'link_field',
-      'weight' => 61,
+      'weight' => 71,
     ),
     'workbench_access_field' => 0,
   );
@@ -1630,7 +1630,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 62,
+      'weight' => 72,
     ),
     'workbench_access_field' => 0,
   );
@@ -1718,7 +1718,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 64,
+      'weight' => 74,
     ),
     'workbench_access_field' => 0,
   );
@@ -1803,7 +1803,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 31,
+      'weight' => 32,
     ),
     'workbench_access_field' => 0,
   );
@@ -1888,7 +1888,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 63,
+      'weight' => 73,
     ),
     'workbench_access_field' => 0,
   );
@@ -2058,7 +2058,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 30,
+      'weight' => 31,
     ),
     'workbench_access_field' => 0,
   );
@@ -2149,7 +2149,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'link_field',
-      'weight' => 59,
+      'weight' => 69,
     ),
     'workbench_access_field' => 0,
   );
@@ -2227,7 +2227,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 40,
       ),
       'type' => 'text_textfield',
-      'weight' => 55,
+      'weight' => 61,
     ),
     'workbench_access_field' => 0,
   );
@@ -2363,7 +2363,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'placeholder' => '',
       ),
       'type' => 'telephone_default',
-      'weight' => 57,
+      'weight' => 67,
     ),
     'workbench_access_field' => 0,
   );
@@ -2441,7 +2441,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 240,
       ),
       'type' => 'text_textfield',
-      'weight' => 52,
+      'weight' => 53,
     ),
     'workbench_access_field' => 0,
   );
@@ -2536,7 +2536,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'options_select',
-      'weight' => 62,
+      'weight' => 54,
     ),
     'workbench_access_field' => 0,
   );
@@ -2614,7 +2614,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 240,
       ),
       'type' => 'text_textfield',
-      'weight' => 63,
+      'weight' => 68,
     ),
     'workbench_access_field' => 0,
   );
@@ -2692,7 +2692,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 62,
+      'weight' => 67,
     ),
     'workbench_access_field' => 0,
   );
@@ -2770,7 +2770,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 10,
       ),
       'type' => 'text_textfield',
-      'weight' => 53,
+      'weight' => 59,
     ),
     'workbench_access_field' => 0,
   );
@@ -3139,7 +3139,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 10,
       ),
       'type' => 'text_textfield',
-      'weight' => 57,
+      'weight' => 63,
     ),
     'workbench_access_field' => 0,
   );
@@ -3212,7 +3212,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 61,
+      'weight' => 53,
     ),
     'workbench_access_field' => 0,
   );
@@ -3274,7 +3274,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 67,
+      'weight' => 59,
     ),
     'workbench_access_field' => 0,
   );
@@ -3406,7 +3406,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 64,
+      'weight' => 69,
     ),
     'workbench_access_field' => 0,
   );
@@ -3482,7 +3482,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 65,
+      'weight' => 57,
     ),
     'workbench_access_field' => 0,
   );

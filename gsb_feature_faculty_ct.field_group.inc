@@ -59,7 +59,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_main';
   $field_group->data = array(
     'label' => 'Administration',
-    'weight' => '52',
+    'weight' => '53',
     'children' => array(
       0 => 'field_academic_area_single',
       1 => 'field_academic_area_unlimited',
@@ -183,7 +183,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_about';
   $field_group->data = array(
     'label' => 'Contact Info',
-    'weight' => '61',
+    'weight' => '66',
     'children' => array(
       0 => 'field_email',
       1 => 'field_link_blog',
@@ -280,7 +280,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_administration';
   $field_group->data = array(
     'label' => 'Leave Information',
-    'weight' => '60',
+    'weight' => '52',
     'children' => array(
       0 => 'field_leave_status',
       1 => 'field_leave_date',
@@ -393,7 +393,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_main';
   $field_group->data = array(
     'label' => 'Manage News',
-    'weight' => '51',
+    'weight' => '52',
     'children' => array(
       0 => 'group_main_news',
     ),
@@ -463,40 +463,6 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
   );
   $export['group_media_mentions|node|faculty|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_personal_information|node|faculty|form';
-  $field_group->group_name = 'group_personal_information';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'faculty';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_about';
-  $field_group->data = array(
-    'label' => 'Personal Information',
-    'weight' => '63',
-    'children' => array(
-      0 => 'field_first_name',
-      1 => 'field_image_single_public',
-      2 => 'field_last_name',
-      3 => 'field_middle_name',
-      4 => 'field_salutation',
-      5 => 'field_suffix_name',
-      6 => 'group_leave_information',
-    ),
-    'format_type' => 'fieldset',
-    'format_settings' => array(
-      'label' => 'Personal Information',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'classes' => '',
-        'description' => '',
-      ),
-      'formatter' => 'collapsed',
-    ),
-  );
-  $export['group_personal_information|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */

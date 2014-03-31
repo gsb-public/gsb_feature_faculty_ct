@@ -125,7 +125,7 @@ function gsb_feature_faculty_ct_strongarm() {
           'weight' => '65',
         ),
         'gsb_working_paper_listing_eva_field_form' => array(
-          'weight' => '53',
+          'weight' => '52',
         ),
         'gsb_media_mentions_eva_field_form' => array(
           'weight' => '10',

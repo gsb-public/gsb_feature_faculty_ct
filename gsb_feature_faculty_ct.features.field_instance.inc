@@ -2161,7 +2161,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Include a period after the middle initial. | e.g. A. or Andrew',
+    'description' => 'Include a period after the middle initial.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -3519,7 +3519,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Google Scholar');
   t('Greater Stanford University Affiliations');
   t('Greater University Affiliation');
-  t('Include a period after the middle initial. | e.g. A. or Andrew');
+  t('Include a period after the middle initial.');
   t('Last Name');
   t('LinkedIn');
   t('Middle Name');

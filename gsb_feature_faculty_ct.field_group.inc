@@ -25,11 +25,16 @@ function gsb_feature_faculty_ct_field_group_info() {
     'children' => array(
       0 => 'field_body',
       1 => 'field_file_single_public',
-      2 => 'field_research_interests',
-      3 => 'field_research_statement',
-      4 => 'field_teaching_statement',
-      5 => 'group_contact_info',
-      6 => 'group_personal_information',
+      2 => 'field_first_name',
+      3 => 'field_image_single_public',
+      4 => 'field_last_name',
+      5 => 'field_middle_name',
+      6 => 'field_research_interests',
+      7 => 'field_research_statement',
+      8 => 'field_salutation',
+      9 => 'field_suffix_name',
+      10 => 'field_teaching_statement',
+      11 => 'group_contact_info',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -63,6 +68,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       4 => 'field_title_position_unlimited',
       5 => 'field_centers_research_programs',
       6 => 'field_tag',
+      7 => 'group_leave_information',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -150,12 +156,18 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
     'format_type' => 'tab',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Cases',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => 'Cases are added to the site by the Case Writing office. Contact them to edit or add a new case to your profile.
+   
+
+
+
+',
       ),
+      'formatter' => 'closed',
     ),
   );
   $export['group_cases|node|faculty|form'] = $field_group;
@@ -171,7 +183,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_about';
   $field_group->data = array(
     'label' => 'Contact Info',
-    'weight' => '64',
+    'weight' => '61',
     'children' => array(
       0 => 'field_email',
       1 => 'field_link_blog',
@@ -265,10 +277,10 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'faculty';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_personal_information';
+  $field_group->parent_name = 'group_administration';
   $field_group->data = array(
     'label' => 'Leave Information',
-    'weight' => '59',
+    'weight' => '60',
     'children' => array(
       0 => 'field_leave_status',
       1 => 'field_leave_date',
@@ -434,19 +446,20 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_main_news';
   $field_group->data = array(
-    'label' => 'Media Mentions',
+    'label' => 'Media Items',
     'weight' => '65',
     'children' => array(
       0 => 'gsb_media_mentions_eva_field_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Media Items',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'closed',
     ),
   );
   $export['group_media_mentions|node|faculty|form'] = $field_group;

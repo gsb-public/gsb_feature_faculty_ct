@@ -518,7 +518,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_centers_research_programs',
-    'label' => 'Center Affiliations',
+    'label' => 'Stanford GSB Affiliations or Initiatives',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -3085,7 +3085,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_tag',
-    'label' => 'Tag',
+    'label' => 'Keywords',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -3329,7 +3329,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Bio');
   t('Blog');
   t('CV');
-  t('Center Affiliations');
+  t('Stanford GSB Affiliations or Initiatives');
   t('Click the "Paste as plain text" icon <strong>first</strong> to enter content copied from an application or website. Use third-person narrative. | e.g. Mr. Connor has more than 20 years\' experience in corporate finance.');
   t('Conferences, Talks & Speaking Engagements');
   t('Do not include "Stanford Graduate School of Business" or "Stanford" in the organization name. Format: POSITION, ORGANIZATION | e.g. Co-director, Directors\' Consortium Executive Program');
@@ -3376,7 +3376,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Stanford GSB Affiliation');
   t('Submit');
   t('Suffix');
-  t('Tag');
+  t('Keywords');
   t('Teaching Materials');
   t('Teaching Statement');
   t('Title/Position');

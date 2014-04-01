@@ -213,11 +213,19 @@ function gsb_feature_faculty_ct_strongarm() {
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_media_mentions_media_mention_listing_entity_view' => array(
           'default' => array(
             'weight' => '16',
             'visible' => TRUE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
           ),
         ),
       ),

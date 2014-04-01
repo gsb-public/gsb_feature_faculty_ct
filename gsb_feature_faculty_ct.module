@@ -45,6 +45,23 @@ function gsb_feature_faculty_ct_form_faculty_node_form_alter(&$form, &$form_stat
 }
 
 /**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter().
+ */
+function gsb_feature_faculty_ct_field_widget_link_field_form_alter(&$element, &$form_state, $context) {
+  if ($context['instance']['field_name'] == 'field_link_other_social') {
+    $element['#after_build'][] = 'gsb_feature_faculty_ct_link_other_social_after_build';
+  }
+}
+
+/**
+ * #after_build callback for changing the link widget text for social links.
+ */
+function gsb_feature_faculty_ct_link_other_social_after_build($element, &$form_state) {
+  $element['title']['#title'] = t('Site Name');
+  return $element;
+}
+
+/**
  * #process callback: Hide elements on the faculty form.
  */
 function gsb_feature_faculty_ct_faculty_node_form_process($form) {

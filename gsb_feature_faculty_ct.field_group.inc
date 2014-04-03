@@ -479,7 +479,6 @@ function gsb_feature_faculty_ct_field_group_info() {
     'children' => array(
       0 => 'gsb_book_listing_entity_view_1',
       1 => 'gsb_publications_listing_publications_listing_entity_view',
-      2 => 'gsb_publications_listing_entity_view_1',
     ),
     'format_type' => 'div',
     'format_settings' => array(

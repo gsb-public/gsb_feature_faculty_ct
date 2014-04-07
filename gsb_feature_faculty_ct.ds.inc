@@ -66,19 +66,6 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'field_greater_university_affil';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'field_organization' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'span',
-          'ow-cl' => '',
-          'ow-def-cl' => FALSE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
     'field_role' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -98,6 +85,19 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'prefix' => ', ',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_single' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
@@ -200,19 +200,6 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'field_stanford_gsb_affiliation';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'field_organization' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'span',
-          'ow-cl' => '',
-          'ow-def-cl' => FALSE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
     'field_role' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -232,6 +219,19 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'prefix' => ', ',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_single' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
@@ -1100,13 +1100,13 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_organization',
+        0 => 'field_link_single',
         1 => 'field_role',
         2 => 'field_years',
       ),
     ),
     'fields' => array(
-      'field_organization' => 'ds_content',
+      'field_link_single' => 'ds_content',
       'field_role' => 'ds_content',
       'field_years' => 'ds_content',
     ),
@@ -1192,13 +1192,13 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_organization',
+        0 => 'field_link_single',
         1 => 'field_role',
         2 => 'field_years',
       ),
     ),
     'fields' => array(
-      'field_organization' => 'ds_content',
+      'field_link_single' => 'ds_content',
       'field_role' => 'ds_content',
       'field_years' => 'ds_content',
     ),

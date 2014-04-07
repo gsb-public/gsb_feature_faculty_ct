@@ -830,75 +830,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_greater_univ_aff_unlimited'
-  $field_instances['node-faculty-field_greater_univ_aff_unlimited'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => 'Add Another Affiliation',
-    'custom_remove' => 'Remove Affiliation',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 15,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_greater_univ_aff_unlimited',
-    'label' => 'Greater University Affiliation',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 37,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-faculty-field_greater_university_affil'
   $field_instances['node-faculty-field_greater_university_affil'] = array(
     'bundle' => 'faculty',
@@ -1441,6 +1372,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'rel_remove' => 'default',
       'title' => 'none',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -1532,6 +1464,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'rel_remove' => 'default',
       'title' => 'none',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -1617,6 +1550,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'rel_remove' => 'default',
       'title' => 'value',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => 'LinkedIn',
       'url' => 0,
@@ -1790,6 +1724,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'rel_remove' => 'default',
       'title' => 'value',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => 'Twitter',
       'url' => 0,
@@ -1804,88 +1739,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'type' => 'link_field',
       'weight' => 73,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-faculty-field_link_unlimited'
-  $field_instances['node-faculty-field_link_unlimited'] = array(
-    'bundle' => 'faculty',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 25,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_link_unlimited',
-    'label' => 'Teaching Materials',
-    'required' => 0,
-    'settings' => array(
-      0 => 'title_label_use_field_label',
-      'attributes' => array(
-        'class' => '',
-        'configurable_title' => 0,
-        'rel' => '',
-        'target' => '_blank',
-        'title' => '',
-      ),
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 1,
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'rel_remove' => 'default',
-      'title' => 'required',
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
-      'user_register_form' => FALSE,
-      'validate_url' => 1,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'link',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'link_field',
-      'weight' => 28,
     ),
     'workbench_access_field' => 0,
   );
@@ -1963,6 +1816,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'rel_remove' => 'default',
       'title' => 'none',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -3329,7 +3183,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Bio');
   t('Blog');
   t('CV');
-  t('Stanford GSB Affiliations or Initiatives');
   t('Click the "Paste as plain text" icon <strong>first</strong> to enter content copied from an application or website. Use third-person narrative. | e.g. Mr. Connor has more than 20 years\' experience in corporate finance.');
   t('Conferences, Talks & Speaking Engagements');
   t('Do not include "Stanford Graduate School of Business" or "Stanford" in the organization name. Format: POSITION, ORGANIZATION | e.g. Co-director, Directors\' Consortium Executive Program');
@@ -3349,8 +3202,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Go to <a href="http://www.linkedin.com/profile/public-profile-settings?utm_source=faculty-content-type&utm_medium=web&utm_campaign=help-text" target="_blank">Public Profile Settings</a> to copy the faculty member\'s profile link.');
   t('Google Scholar');
   t('Greater Stanford University Affiliations');
-  t('Greater University Affiliation');
   t('Include a period after the middle initial.');
+  t('Keywords');
   t('Last Name');
   t('LinkedIn');
   t('Middle Name');
@@ -3374,9 +3227,9 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Service to the Profession');
   t('Size: 270 x 270 px | Follow <a href="URL" target="_blank">instructions for optimizing photos</a> before uploading the file.');
   t('Stanford GSB Affiliation');
+  t('Stanford GSB Affiliations or Initiatives');
   t('Submit');
   t('Suffix');
-  t('Keywords');
   t('Teaching Materials');
   t('Teaching Statement');
   t('Title/Position');

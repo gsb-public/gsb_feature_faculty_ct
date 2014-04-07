@@ -39,9 +39,6 @@ function gsb_feature_faculty_ct_form_faculty_node_form_alter(&$form, &$form_stat
       ':input[name="field_leave_status[' . $language . ']"]' => array('value' => '1'),
     ),    
   );
-
-  $form['#validate'][] = 'gsb_feature_faculty_ct_form_faculty_node_validate';
-
 }
 
 /**
@@ -73,71 +70,6 @@ function gsb_feature_faculty_ct_faculty_node_form_process($form) {
     gsb_feature_base_fields_hide_fieldgroups($form, $groups);
   }
   return $form;
-}
-
-function gsb_feature_faculty_ct_form_faculty_node_validate($form, &$form_state) {
-
-  $language = $form['language']['#value'];
-
-  if ($form_state['values']['field_leave_status'][$language][0]['value'] == 1) {
-
-    if ($form_state['values']['field_leave_date'][$language][0]['value']  == null ||
-        $form_state['values']['field_leave_date'][$language][0]['value2'] == null) {
-      $errors = form_get_errors();
-      if (empty($errors)) {
-        form_set_error('field_leave_date', 'Please set a start and an end date for field On Leave');
-      }
-    }
-
-    if ($form_state['values']['field_leave_statement'][$language][0]['value'] == '') {
-      form_set_error('field_leave_statement', 'Leave Statement is required.');
-    }
-
-  } else {
-
-    $leave_date_error_keys = array(
-      'field_leave_date][und][0',
-      'field_leave_date][und][0][value',
-      'field_leave_date][und][0][value2',
-    );
-
-    $errors = form_get_errors();
-
-    if ($errors) {
-
-      // Clear errors.
-      form_clear_error();
-
-      // Clear error messages.
-      $error_messages = drupal_get_messages('error');
-
-      // Initialize an array where removed error messages are stored.
-      $removed_messages = array();
-
-      foreach ($errors as $name => $error_message) {
-        if (in_array($name, $leave_date_error_keys)) {
-          $removed_messages[] = $error_message;
-          unset($errors[$name]);
-        }
-      }
-
-      // Reinstate remaining errors.
-      foreach ($errors as $name => $error) {
-        form_set_error($name, $error);
-        // form_set_error() calls drupal_set_message(), so we have to filter out
-        // these from the error messages as well.
-        $removed_messages[] = $error;
-      }
-
-      // Reinstate remaining error messages (which, at this point, are messages that
-      // were originated outside of the validation process).
-      foreach (array_diff($error_messages['error'], $removed_messages) as $message) {
-        drupal_set_message($message, 'error');
-      }
-
-    }
-  }
-
 }
 
 /**

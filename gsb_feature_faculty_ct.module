@@ -39,6 +39,11 @@ function gsb_feature_faculty_ct_field_widget_link_field_form_alter(&$element, &$
   if ($context['instance']['field_name'] == 'field_link_other_social') {
     $element['#after_build'][] = 'gsb_feature_faculty_ct_link_other_social_after_build';
   }
+  if ($context['instance']['field_name'] == 'field_link_single' &&
+    $context['instance']['bundle'] == 'field_non_degree_course') {
+    $element['#after_build'][] = 'gsb_feature_faculty_ct_field_link_single_build';
+  }
+
 }
 
 /**
@@ -46,6 +51,15 @@ function gsb_feature_faculty_ct_field_widget_link_field_form_alter(&$element, &$
  */
 function gsb_feature_faculty_ct_link_other_social_after_build($element, &$form_state) {
   $element['title']['#title'] = t('Site Name');
+  return $element;
+}
+
+/**
+ * #after_build callback for changing the link widget text for course or program links.
+ */
+function gsb_feature_faculty_ct_field_link_single_build($element, &$form_state) {
+  $element['title']['#title'] = t('Course or Program');
+  unset($element['#title']);
   return $element;
 }
 

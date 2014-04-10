@@ -578,7 +578,7 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'lb' => 'Conferences, Talks & Speaking Engagements',
+          'lb' => 'Conferences, Talks, and Speaking Engagements',
           'lb-el' => 'h2',
           'lb-col' => TRUE,
           'ow' => TRUE,
@@ -870,7 +870,6 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'lb' => 'Programs & Non-Degree Courses',
           'lb-col' => TRUE,
           'ow' => TRUE,
           'ow-el' => 'div',

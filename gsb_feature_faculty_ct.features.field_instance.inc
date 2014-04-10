@@ -833,6 +833,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   // Exported field_instance: 'node-faculty-field_greater_university_affil'
   $field_instances['node-faculty-field_greater_university_affil'] = array(
     'bundle' => 'faculty',
+    'custom_add_another' => 'Add Another affiliation',
+    'custom_remove' => 'Remove affiliation',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',

@@ -13,7 +13,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   // Exported field_instance: 'node-faculty-field_academic_aptmts_unlimited'
   $field_instances['node-faculty-field_academic_aptmts_unlimited'] = array(
     'bundle' => 'faculty',
-    'custom_add_another' => 'Add Another Appointment',
+    'custom_add_another' => 'Add another appointment',
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
@@ -252,7 +252,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   // Exported field_instance: 'node-faculty-field_academic_degrees_unlimited'
   $field_instances['node-faculty-field_academic_degrees_unlimited'] = array(
     'bundle' => 'faculty',
-    'custom_add_another' => 'Add Another Degree',
+    'custom_add_another' => 'Add another degree',
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
@@ -1574,7 +1574,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   // Exported field_instance: 'node-faculty-field_link_other_social'
   $field_instances['node-faculty-field_link_other_social'] = array(
     'bundle' => 'faculty',
-    'custom_add_another' => 'Add Another Social Profile',
+    'custom_add_another' => 'Add another social profile',
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
@@ -1918,8 +1918,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   // Exported field_instance: 'node-faculty-field_non_degree_course'
   $field_instances['node-faculty-field_non_degree_course'] = array(
     'bundle' => 'faculty',
-    'custom_add_another' => 'Add Another Course or Program',
-    'custom_remove' => 'Remove this Course or Program',
+    'custom_add_another' => 'Add another course or program',
+    'custom_remove' => 'Remove this course or program',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -2227,7 +2227,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   // Exported field_instance: 'node-faculty-field_research_interests'
   $field_instances['node-faculty-field_research_interests'] = array(
     'bundle' => 'faculty',
-    'custom_add_another' => 'Add Another Research Interest',
+    'custom_add_another' => 'Add another research interest',
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
@@ -2567,8 +2567,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   // Exported field_instance: 'node-faculty-field_service_profession_section'
   $field_instances['node-faculty-field_service_profession_section'] = array(
     'bundle' => 'faculty',
-    'custom_add_another' => 'Add Another Category',
-    'custom_remove' => 'Remove Category and Services',
+    'custom_add_another' => 'Add another category',
+    'custom_remove' => 'Remove category and services',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -2633,8 +2633,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   // Exported field_instance: 'node-faculty-field_stanford_gsb_affiliation'
   $field_instances['node-faculty-field_stanford_gsb_affiliation'] = array(
     'bundle' => 'faculty',
-    'custom_add_another' => 'Add Another Affiliation',
-    'custom_remove' => 'Remove Affiliation',
+    'custom_add_another' => 'Add another affiliation',
+    'custom_remove' => 'Remove affiliation',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Do not include "Stanford Graduate School of Business" or "Stanford" in the organization name. Format: POSITION, ORGANIZATION | e.g. Co-director, Directors\' Consortium Executive Program',

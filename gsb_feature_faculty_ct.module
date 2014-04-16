@@ -41,6 +41,39 @@ function gsb_feature_faculty_ct_field_widget_link_field_form_alter(&$element, &$
   }
 }
 
+
+/**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter().
+ *   - Add additional process for Photo field in Faculty CT to populate Alt text field.
+ */
+function gsb_feature_faculty_ct_field_widget_image_image_form_alter(&$element, &$form_state, $context) {
+  if ($context['instance']['bundle'] == 'faculty' && $context['instance']['field_name'] == 'field_image_single_public') {
+    foreach (element_children($element) as $delta) {
+      $element[$delta]['#process'][] = 'gsb_feature_faculty_ct_photo_field_process';
+    }
+  }
+}
+
+/**
+ * Process callback to populate alt field for Image in Faculty CT.
+ */
+function gsb_feature_faculty_ct_photo_field_process($element, &$form_state, $form) {
+  $language = $form['language']['#value'];
+  $input = &$form_state['input'];
+
+  // Fields to be concatenated in Alternative text field in Image.
+  $name_fields = array('field_first_name', 'field_middle_name', 'field_last_name');
+  $name_parts = array();
+  foreach ($name_fields as $field_name) {
+    if (!empty($input[$field_name][$language][0]['value'])) {
+      $name_parts[] = $input[$field_name][$language][0]['value'];
+    }
+  }
+  $author_name = implode(' ', $name_parts);
+  $element['alt']['#default_value'] = !empty($element['alt']['#default_value']) ? $element['alt']['#default_value'] : $author_name;
+  return $element;
+}
+
 /**
  * #after_build callback for changing the link widget text for social links.
  */

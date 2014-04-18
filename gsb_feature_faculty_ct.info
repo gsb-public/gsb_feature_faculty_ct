@@ -190,3 +190,10 @@ features_exclude[field_base][field_submit] = field_submit
 features_exclude[taxonomy][academic_area] = academic_area
 features_exclude[taxonomy][centers_research_programs] = centers_research_programs
 features_exclude[taxonomy][program] = program
+
+
+; Information added by drush on 2014-04-10
+version = "3.7"
+project = "gsb_feature_faculty_ct"
+datestamp = "1397116219"
+

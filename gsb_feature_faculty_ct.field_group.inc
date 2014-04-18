@@ -202,7 +202,7 @@ function gsb_feature_faculty_ct_field_group_info() {
         'classes' => '',
         'description' => '',
       ),
-      'formatter' => 'collapsed',
+      'formatter' => 'open',
     ),
   );
   $export['group_contact_info|node|faculty|form'] = $field_group;
@@ -392,7 +392,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_main';
   $field_group->data = array(
-    'label' => 'Manage News',
+    'label' => 'News',
     'weight' => '52',
     'children' => array(
       0 => 'group_main_news',
@@ -419,7 +419,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_main';
   $field_group->data = array(
-    'label' => 'Manage Publications',
+    'label' => 'Journal Articles, Book Chapters, etc',
     'weight' => '50',
     'children' => array(
       0 => 'group_main_publications',

@@ -588,7 +588,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
-      'custom_remove' => '',
+      'custom_remove' => 'Remove this Conference, talk, or speaking engagement',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1351,7 +1351,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_link_blog',
-    'label' => 'Blog',
+    'label' => 'Blog url',
     'required' => 0,
     'settings' => array(
       0 => 'title_label_use_field_label',
@@ -1703,7 +1703,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_link_twitter',
-    'label' => 'Twitter',
+    'label' => 'Twitter url',
     'required' => 0,
     'settings' => array(
       0 => 'title_label_use_field_label',
@@ -2677,7 +2677,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_stanford_gsb_affiliation',
-    'label' => 'Stanford GSB Affiliation',
+    'label' => 'Stanford GSB Affiliations',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -3011,7 +3011,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
-      'custom_remove' => '',
+      'custom_remove' => 'Remove this teaching material',
       'user_register_form' => FALSE,
     ),
     'widget' => array(

@@ -101,34 +101,34 @@ function gsb_feature_faculty_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '6',
         ),
         'workbench_access' => array(
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '4',
+          'weight' => '5',
         ),
         'gsb_book_listing_eva_field_form' => array(
-          'weight' => '63',
+          'weight' => '95',
         ),
         'gsb_case_listing_eva_field_form' => array(
           'weight' => '64',
         ),
         'gsb_publications_listing_eva_field_form' => array(
-          'weight' => '65',
+          'weight' => '93',
         ),
         'gsb_working_paper_listing_eva_field_form' => array(
           'weight' => '52',
         ),
         'gsb_media_mentions_eva_field_form' => array(
-          'weight' => '10',
+          'weight' => '98',
         ),
       ),
       'display' => array(

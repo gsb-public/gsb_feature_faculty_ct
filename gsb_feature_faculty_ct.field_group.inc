@@ -161,12 +161,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'instance_settings' => array(
         'required_fields' => 1,
         'classes' => '',
-        'description' => 'Cases are added to the site by the Case Writing office. Contact them to edit or add a new case to your profile.
-   
-
-
-
-',
+        'description' => '<p><strong>Cases are added to the site by the Case Writing office. Contact them to edit or add a new case to your profile.</strong></p>',
       ),
       'formatter' => 'closed',
     ),

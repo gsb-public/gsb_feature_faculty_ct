@@ -71,6 +71,8 @@ function gsb_feature_faculty_ct_photo_field_process($element, &$form_state, $for
   }
   $author_name = implode(' ', $name_parts);
   $element['alt']['#default_value'] = !empty($element['alt']['#default_value']) ? $element['alt']['#default_value'] : $author_name;
+  // Hide Alternate text field.
+  $element['alt']['#access'] = FALSE;
   return $element;
 }
 

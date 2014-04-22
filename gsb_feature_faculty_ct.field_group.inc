@@ -98,7 +98,6 @@ function gsb_feature_faculty_ct_field_group_info() {
       0 => 'field_service_profession_section',
       1 => 'field_stanford_gsb_affiliation',
       2 => 'field_greater_university_affil',
-      3 => 'field_affiliations_help',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -125,8 +124,7 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Books',
     'weight' => '98',
     'children' => array(
-      0 => 'field_books_help',
-      1 => 'gsb_book_listing_eva_field_form',
+      0 => 'gsb_book_listing_eva_field_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -252,7 +250,6 @@ function gsb_feature_faculty_ct_field_group_info() {
       1 => 'field_professional_experience',
       2 => 'field_academic_aptmts_unlimited',
       3 => 'field_academic_degrees_unlimited',
-      4 => 'field_order_help_text',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -277,7 +274,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_administration';
   $field_group->data = array(
     'label' => 'Leave Information',
-    'weight' => '52',
+    'weight' => '61',
     'children' => array(
       0 => 'field_leave_status',
       1 => 'field_leave_date',
@@ -331,7 +328,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_manage_publications';
   $field_group->data = array(
     'label' => 'Main Publications',
-    'weight' => '97',
+    'weight' => '54',
     'children' => array(
       0 => 'group_books',
       1 => 'group_cases',
@@ -361,14 +358,13 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Main',
     'weight' => '2',
     'children' => array(
-      0 => 'group_help',
-      1 => 'group_about',
-      2 => 'group_administration',
-      3 => 'group_affiliations',
-      4 => 'group_experience',
-      5 => 'group_manage_news',
-      6 => 'group_manage_publications',
-      7 => 'group_teaching_and_talks',
+      0 => 'group_about',
+      1 => 'group_administration',
+      2 => 'group_affiliations',
+      3 => 'group_experience',
+      4 => 'group_manage_news',
+      5 => 'group_manage_publications',
+      6 => 'group_teaching_and_talks',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -420,8 +416,7 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Manage Publications',
     'weight' => '50',
     'children' => array(
-      0 => 'field_publications_tab_help',
-      1 => 'group_main_publications',
+      0 => 'group_main_publications',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -446,10 +441,9 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_main_news';
   $field_group->data = array(
     'label' => 'Media Items',
-    'weight' => '65',
+    'weight' => '61',
     'children' => array(
-      0 => 'field_medias_item_tab_help',
-      1 => 'gsb_media_mentions_eva_field_form',
+      0 => 'gsb_media_mentions_eva_field_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -509,8 +503,7 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Publications',
     'weight' => '97',
     'children' => array(
-      0 => 'field_publications_help',
-      1 => 'gsb_publications_listing_eva_field_form',
+      0 => 'gsb_publications_listing_eva_field_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -567,7 +560,8 @@ function gsb_feature_faculty_ct_field_group_info() {
       0 => 'field_conf_presentations_section',
       1 => 'field_non_degree_course',
       2 => 'field_teaching_materials',
-      3 => 'field_teaching_talks_help',
+      3 => 'field_prefix_non_degree_course',
+      4 => 'field_prefix_teaching_materials',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

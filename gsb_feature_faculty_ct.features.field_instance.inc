@@ -178,7 +178,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'options_select',
-      'weight' => 55,
+      'weight' => 64,
     ),
     'workbench_access_field' => 0,
   );
@@ -246,7 +246,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 56,
+      'weight' => 65,
     ),
     'workbench_access_field' => 0,
   );
@@ -319,70 +319,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 80,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-faculty-field_affiliations_help'
-  $field_instances['node-faculty-field_affiliations_help'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 78,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_affiliations_help',
-    'label' => 'Affiliations Help',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 88,
     ),
     'workbench_access_field' => 0,
   );
@@ -545,70 +481,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_books_help'
-  $field_instances['node-faculty-field_books_help'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 80,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_books_help',
-    'label' => 'Books Help',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 94,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-faculty-field_centers_research_programs'
   $field_instances['node-faculty-field_centers_research_programs'] = array(
     'bundle' => 'faculty',
@@ -666,7 +538,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 58,
+      'weight' => 67,
     ),
     'workbench_access_field' => 0,
   );
@@ -732,71 +604,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 87,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-faculty-field_deleting_items'
-  $field_instances['node-faculty-field_deleting_items'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 85,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_deleting_items',
-    'label' => 'Deleting Items',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 78,
+      'weight' => 57,
     ),
     'workbench_access_field' => 0,
   );
@@ -1032,70 +840,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_formatting_help'
-  $field_instances['node-faculty-field_formatting_help'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 88,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_formatting_help',
-    'label' => 'Formatting Help',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 82,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-faculty-field_greater_university_affil'
   $field_instances['node-faculty-field_greater_university_affil'] = array(
     'bundle' => 'faculty',
@@ -1157,7 +901,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 90,
+      'weight' => 55,
     ),
     'workbench_access_field' => 0,
   );
@@ -1270,70 +1014,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'type' => 'image_image',
       'weight' => 65,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-faculty-field_introduction'
-  $field_instances['node-faculty-field_introduction'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 72,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_introduction',
-    'label' => 'Introduction',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 75,
     ),
     'workbench_access_field' => 0,
   );
@@ -1484,7 +1164,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 50,
+      'weight' => 58,
     ),
     'workbench_access_field' => 0,
   );
@@ -1560,7 +1240,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 51,
+      'weight' => 59,
     ),
     'workbench_access_field' => 0,
   );
@@ -1632,7 +1312,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'options_buttons',
-      'weight' => 49,
+      'weight' => 57,
     ),
     'workbench_access_field' => 0,
   );
@@ -2177,127 +1857,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_media_item_help'
-  $field_instances['node-faculty-field_media_item_help'] = array(
-    'bundle' => 'faculty',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 86,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_media_item_help',
-    'label' => 'Media Item Help',
-    'required' => FALSE,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 97,
-    ),
-  );
-
-  // Exported field_instance: 'node-faculty-field_medias_item_tab_help'
-  $field_instances['node-faculty-field_medias_item_tab_help'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 87,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_medias_item_tab_help',
-    'label' => 'Media Items Tab Help',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 97,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-faculty-field_middle_name'
   $field_instances['node-faculty-field_middle_name'] = array(
     'bundle' => 'faculty',
@@ -2437,71 +1996,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 85,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-faculty-field_order_help_text'
-  $field_instances['node-faculty-field_order_help_text'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 76,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_order_help_text',
-    'label' => 'Experience Tab Help Text',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 79,
+      'weight' => 54,
     ),
     'workbench_access_field' => 0,
   );
@@ -2575,6 +2070,134 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'type' => 'telephone_default',
       'weight' => 67,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-faculty-field_prefix_non_degree_course'
+  $field_instances['node-faculty-field_prefix_non_degree_course'] = array(
+    'bundle' => 'faculty',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'markup_default',
+        'weight' => 72,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'people_fpp' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_prefix_non_degree_course',
+    'label' => 'Prefix Non-degree Course',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'markup',
+      'weight' => 53,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-faculty-field_prefix_teaching_materials'
+  $field_instances['node-faculty-field_prefix_teaching_materials'] = array(
+    'bundle' => 'faculty',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'markup_default',
+        'weight' => 73,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'people_fpp' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_prefix_teaching_materials',
+    'label' => 'Prefix Teaching Materials',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'markup',
+      'weight' => 55,
     ),
     'workbench_access_field' => 0,
   );
@@ -2653,134 +2276,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 82,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-faculty-field_publications_help'
-  $field_instances['node-faculty-field_publications_help'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 79,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_publications_help',
-    'label' => 'Publications Help',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 92,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-faculty-field_publications_tab_help'
-  $field_instances['node-faculty-field_publications_tab_help'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 82,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_publications_tab_help',
-    'label' => 'Publications Tab Help',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 96,
     ),
     'workbench_access_field' => 0,
   );
@@ -2875,71 +2370,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'options_select',
-      'weight' => 54,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-faculty-field_required_fields'
-  $field_instances['node-faculty-field_required_fields'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 83,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_required_fields',
-    'label' => 'Required Fields',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 79,
+      'weight' => 63,
     ),
     'workbench_access_field' => 0,
   );
@@ -3180,70 +2611,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_saving_your_changes'
-  $field_instances['node-faculty-field_saving_your_changes'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 84,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_saving_your_changes',
-    'label' => 'Saving and Viewing Your Changes',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 77,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-faculty-field_search_field'
   $field_instances['node-faculty-field_search_field'] = array(
     'bundle' => 'faculty',
@@ -3411,7 +2778,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 91,
+      'weight' => 56,
     ),
     'workbench_access_field' => 0,
   );
@@ -3477,7 +2844,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 89,
+      'weight' => 54,
     ),
     'workbench_access_field' => 0,
   );
@@ -3683,7 +3050,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 53,
+      'weight' => 62,
     ),
     'workbench_access_field' => 0,
   );
@@ -3747,7 +3114,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 59,
+      'weight' => 68,
     ),
     'workbench_access_field' => 0,
   );
@@ -3813,7 +3180,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 86,
+      'weight' => 56,
     ),
     'workbench_access_field' => 0,
   );
@@ -3892,70 +3259,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_teaching_talks_help'
-  $field_instances['node-faculty-field_teaching_talks_help'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 77,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_teaching_talks_help',
-    'label' => 'Teaching & Talks Help Text',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 84,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-faculty-field_title_position_unlimited'
   $field_instances['node-faculty-field_title_position_unlimited'] = array(
     'bundle' => 'faculty',
@@ -4029,199 +3332,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 57,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-faculty-field_update_your_photo'
-  $field_instances['node-faculty-field_update_your_photo'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 74,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_update_your_photo',
-    'label' => 'Photo Requirements',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 80,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-faculty-field_upload_pdfs'
-  $field_instances['node-faculty-field_upload_pdfs'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 75,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_upload_pdfs',
-    'label' => 'PDF Requirements',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 81,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-faculty-field_who_to_contact'
-  $field_instances['node-faculty-field_who_to_contact'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'markup_default',
-        'weight' => 81,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_who_to_contact',
-    'label' => 'Who to Contact',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'markup',
-      'weight' => 76,
+      'weight' => 66,
     ),
     'workbench_access_field' => 0,
   );
@@ -4232,55 +3343,43 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Academic Appointments');
   t('Academic Area');
   t('Academic Degrees');
-  t('Affiliations Help');
   t('Award, Organization, YYYY');
   t('Awards and Honors');
   t('Bio');
   t('Blog');
-  t('Books Help');
   t('CV');
   t('Cases are displayed automatically on your profile from Case Writing office. You can change their visibility on your profile on the “Publications” tab.');
   t('Click the radio button next to "Yes" to add the dates and message re: the faculty member\'s leave.');
   t('Conferences, Talks & Speaking Engagements');
   t('Date Range');
   t('Degree in Area, Minor in Area, University, YYYY');
-  t('Deleting Items');
   t('Email');
   t('Enter your email address to allow users to contact you via a webform. <strong>Your email address will not be displayed on the site.</strong>');
-  t('Experience Tab Help Text');
   t('First Name');
-  t('Formatting Help');
   t('Google Scholar');
   t('Greater Stanford University Affiliations');
   t('If you prefer to group by category, enter the categories first, then activities.  <strong>Deleting a category will also delete the service activities under it.</strong>');
-  t('Introduction');
   t('Keywords');
   t('Last Name');
   t('LinkedIn');
-  t('Media Item Help');
-  t('Media Items Tab Help');
   t('Middle Name');
   t('On Leave');
   t('Other Academic Areas');
   t('Other Social Profile(s)');
-  t('PDF Requirements');
   t('Personal Website');
   t('Phone');
   t('Photo');
-  t('Photo Requirements');
   t('Position, Organization, YYYY');
   t('Prefix');
+  t('Prefix Non-degree Course');
+  t('Prefix Teaching Materials');
   t('Professional Experience');
   t('Programs and Non-Degree Courses');
-  t('Publications Help');
-  t('Publications Tab Help');
   t('Rank');
   t('Recommended for lecturers who do not have a research statement.');
-  t('Required Fields');
   t('Research Interests');
   t('Research Statement');
   t('SUNetID');
-  t('Saving and Viewing Your Changes');
   t('Search field');
   t('Select the faculty member\'s primary academic area.');
   t('Service to the Profession');
@@ -4289,7 +3388,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Statement');
   t('Submit');
   t('Suffix');
-  t('Teaching & Talks Help Text');
   t('Teaching Materials');
   t('Teaching Statement');
   t('This field is used to display a list of faculty by a specific topic or term. Entries do not appear on the faculty member\'s profile. ');
@@ -4297,7 +3395,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Title, University, YYYY');
   t('Title/Position');
   t('Twitter');
-  t('Who to Contact');
 
   return $field_instances;
 }

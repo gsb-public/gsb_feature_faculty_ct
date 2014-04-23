@@ -210,7 +210,7 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_media_mentions_media_mention_listing_entity_view' => array(
           'default' => array(
-            'weight' => '16',
+            'weight' => '17',
             'visible' => TRUE,
           ),
           'teaser' => array(

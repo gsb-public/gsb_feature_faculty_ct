@@ -301,3 +301,40 @@ function _gsb_feature_faculty_ct_update_faculty_by_sunet($wrapper, $state) {
   }
 }
 
+/**
+ * Implements hook_field_attach_update().
+ *
+ * Alt and Title fields are not synced back to File Entity metadata.
+ * @see https://drupal.org/node/2070183
+ * @see https://drupal.org/node/2029985
+ */
+function gsb_feature_faculty_ct_field_attach_update($entity_type, $entity) {
+  if ($entity_type == 'file') {
+    return;
+  }
+
+  list(, , $bundle) = entity_extract_ids($entity_type, $entity);
+  // Examine every image field instance attached to this entity's bundle.
+  $instances = array_intersect_key(field_info_instances($entity_type, $bundle), _file_entity_get_fields_by_type('image'));
+  foreach ($instances as $field_name => $instance) {
+    if (!empty($entity->{$field_name})) {
+      foreach ($entity->{$field_name} as $langcode => $items) {
+        foreach ($items as $delta => $item) {
+          $updated = FALSE;
+          // Save alt and title text from the image field to the file entity.
+          $file = file_load($item['fid']);
+          foreach (array('alt', 'title') as $key) {
+            $field_key = 'field_file_image_' . $key . '_text';
+            if (empty($file->{$field_key})) {
+              $file->{$field_key}[LANGUAGE_NONE][0]['value'] = $item[$key];
+              $updated = TRUE;
+            }
+          }
+          if ($updated) {
+            field_attach_update('file', $file);
+          }
+        }
+      }
+    }
+  }
+}

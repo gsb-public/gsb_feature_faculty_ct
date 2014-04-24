@@ -568,6 +568,8 @@ function gsb_feature_faculty_ct_field_group_info() {
       1 => 'field_non_degree_course',
       2 => 'field_teaching_materials',
       3 => 'field_teaching_talks_help',
+      4 => 'field_prefix_non_degree_course',
+      5 => 'field_prefix_teaching_materials',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

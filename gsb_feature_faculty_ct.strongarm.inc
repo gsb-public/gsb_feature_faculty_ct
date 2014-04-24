@@ -101,22 +101,22 @@ function gsb_feature_faculty_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '7',
+          'weight' => '6',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '5',
         ),
         'workbench_access' => array(
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '5',
+          'weight' => '4',
         ),
         'gsb_book_listing_eva_field_form' => array(
-          'weight' => '54',
+          'weight' => '95',
         ),
         'gsb_case_listing_eva_field_form' => array(
           'weight' => '64',

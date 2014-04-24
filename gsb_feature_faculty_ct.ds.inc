@@ -1059,12 +1059,14 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_role',
-        1 => 'field_link_single',
-        2 => 'field_years',
+        0 => 'group_wrapper_affiliation_commas',
+        1 => 'field_role',
+        2 => 'field_link_single',
+        3 => 'field_years',
       ),
     ),
     'fields' => array(
+      'group_wrapper_affiliation_commas' => 'ds_content',
       'field_role' => 'ds_content',
       'field_link_single' => 'ds_content',
       'field_years' => 'ds_content',
@@ -1151,12 +1153,14 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_role',
-        1 => 'field_link_single',
-        2 => 'field_years',
+        0 => 'group_wrapper_affiliation_commas',
+        1 => 'field_role',
+        2 => 'field_link_single',
+        3 => 'field_years',
       ),
     ),
     'fields' => array(
+      'group_wrapper_affiliation_commas' => 'ds_content',
       'field_role' => 'ds_content',
       'field_link_single' => 'ds_content',
       'field_years' => 'ds_content',

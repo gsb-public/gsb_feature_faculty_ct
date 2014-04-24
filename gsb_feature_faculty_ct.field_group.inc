@@ -641,6 +641,30 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_affiliation_commas|field_collection_item|field_greater_university_affil|default';
+  $field_group->group_name = 'group_wrapper_affiliation_commas';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_greater_university_affil';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = '';
+  $export['group_wrapper_affiliation_commas|field_collection_item|field_greater_university_affil|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_affiliation_commas|field_collection_item|field_stanford_gsb_affiliation|default';
+  $field_group->group_name = 'group_wrapper_affiliation_commas';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_stanford_gsb_affiliation';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = '';
+  $export['group_wrapper_affiliation_commas|field_collection_item|field_stanford_gsb_affiliation|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_affiliation|node|faculty|default';
   $field_group->group_name = 'group_wrapper_affiliation';
   $field_group->entity_type = 'node';

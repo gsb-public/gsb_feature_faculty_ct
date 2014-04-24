@@ -647,7 +647,24 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->bundle = 'field_greater_university_affil';
   $field_group->mode = 'default';
   $field_group->parent_name = '';
-  $field_group->data = '';
+  $field_group->data = array(
+    'label' => 'Affiliation commas wrapper',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_role',
+      1 => 'field_years',
+      2 => 'field_link_single',
+    ),
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'classes' => '',
+      ),
+    ),
+  );
   $export['group_wrapper_affiliation_commas|field_collection_item|field_greater_university_affil|default'] = $field_group;
 
   $field_group = new stdClass();
@@ -659,7 +676,24 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->bundle = 'field_stanford_gsb_affiliation';
   $field_group->mode = 'default';
   $field_group->parent_name = '';
-  $field_group->data = '';
+  $field_group->data = array(
+    'label' => 'Affiliation commas wrapper',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_role',
+      1 => 'field_years',
+      2 => 'field_link_single',
+    ),
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'classes' => '',
+      ),
+    ),
+  );
   $export['group_wrapper_affiliation_commas|field_collection_item|field_stanford_gsb_affiliation|default'] = $field_group;
 
   $field_group = new stdClass();

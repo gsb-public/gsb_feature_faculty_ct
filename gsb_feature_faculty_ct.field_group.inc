@@ -24,17 +24,25 @@ function gsb_feature_faculty_ct_field_group_info() {
     'weight' => '46',
     'children' => array(
       0 => 'field_body',
-      1 => 'field_file_single_public',
-      2 => 'field_first_name',
-      3 => 'field_image_single_public',
-      4 => 'field_last_name',
-      5 => 'field_middle_name',
-      6 => 'field_research_interests',
-      7 => 'field_research_statement',
-      8 => 'field_salutation',
-      9 => 'field_suffix_name',
-      10 => 'field_teaching_statement',
-      11 => 'group_contact_info',
+      1 => 'field_email',
+      2 => 'field_file_single_public',
+      3 => 'field_first_name',
+      4 => 'field_image_single_public',
+      5 => 'field_last_name',
+      6 => 'field_link_blog',
+      7 => 'field_link_google_scholar',
+      8 => 'field_link_website',
+      9 => 'field_middle_name',
+      10 => 'field_phone',
+      11 => 'field_research_interests',
+      12 => 'field_research_statement',
+      13 => 'field_salutation',
+      14 => 'field_link_linkedin',
+      15 => 'field_link_other_social',
+      16 => 'field_link_twitter',
+      17 => 'field_suffix_name',
+      18 => 'field_teaching_statement',
+      19 => 'group_contact_info',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -167,41 +175,6 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
   );
   $export['group_cases|node|faculty|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_contact_info|node|faculty|form';
-  $field_group->group_name = 'group_contact_info';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'faculty';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_about';
-  $field_group->data = array(
-    'label' => 'Contact Info',
-    'weight' => '66',
-    'children' => array(
-      0 => 'field_email',
-      1 => 'field_link_blog',
-      2 => 'field_link_google_scholar',
-      3 => 'field_link_website',
-      4 => 'field_phone',
-      5 => 'field_link_linkedin',
-      6 => 'field_link_other_social',
-      7 => 'field_link_twitter',
-    ),
-    'format_type' => 'fieldset',
-    'format_settings' => array(
-      'label' => 'Contact Info',
-      'instance_settings' => array(
-        'required_fields' => 1,
-        'classes' => '',
-        'description' => '',
-      ),
-      'formatter' => 'collapsed',
-    ),
-  );
-  $export['group_contact_info|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -451,7 +424,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_main';
   $field_group->data = array(
-    'label' => 'Manage Publications',
+    'label' => 'Publications',
     'weight' => '50',
     'children' => array(
       0 => 'field_publications_tab_help',
@@ -459,12 +432,13 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
     'format_type' => 'htab',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Publications',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'closed',
     ),
   );
   $export['group_manage_publications|node|faculty|form'] = $field_group;

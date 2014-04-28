@@ -59,7 +59,6 @@ features[field_group][] = group_administration|node|faculty|form
 features[field_group][] = group_affiliations|node|faculty|form
 features[field_group][] = group_books|node|faculty|form
 features[field_group][] = group_cases|node|faculty|form
-features[field_group][] = group_contact_info|node|faculty|form
 features[field_group][] = group_courses_taught|node|faculty|default
 features[field_group][] = group_experience|node|faculty|form
 features[field_group][] = group_help|node|faculty|form

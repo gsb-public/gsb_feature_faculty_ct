@@ -540,7 +540,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 70,
+      'weight' => 78,
     ),
     'workbench_access_field' => 0,
   );
@@ -675,7 +675,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   $field_instances['node-faculty-field_conf_presentations_section'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
-    'custom_remove' => '',
+    'custom_remove' => 'Remove this conference, talk or speaking engagement',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -872,7 +872,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 68,
+      'weight' => 67,
     ),
     'workbench_access_field' => 0,
   );
@@ -1689,7 +1689,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_link_blog',
-    'label' => 'Blog',
+    'label' => 'Blog URL',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -1711,7 +1711,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'rel_remove' => 'default',
       'title' => 'none',
-      'title_label_use_field_label' => FALSE,
+      'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -1725,7 +1725,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'link_field',
-      'weight' => 70,
+      'weight' => 69,
     ),
     'workbench_access_field' => 0,
   );
@@ -1782,7 +1782,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_link_google_scholar',
-    'label' => 'Google Scholar',
+    'label' => 'Google Scholar Public Profile URL',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -1818,7 +1818,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'link_field',
-      'weight' => 71,
+      'weight' => 70,
     ),
     'workbench_access_field' => 0,
   );
@@ -1869,7 +1869,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_link_linkedin',
-    'label' => 'LinkedIn',
+    'label' => 'LinkedIn Public Profile or Influencer URL',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -1905,7 +1905,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 72,
+      'weight' => 71,
     ),
     'workbench_access_field' => 0,
   );
@@ -1992,7 +1992,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 74,
+      'weight' => 73,
     ),
     'workbench_access_field' => 0,
   );
@@ -2043,7 +2043,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_link_twitter',
-    'label' => 'Twitter',
+    'label' => 'Twitter URL',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -2079,7 +2079,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 73,
+      'weight' => 72,
     ),
     'workbench_access_field' => 0,
   );
@@ -2136,7 +2136,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_link_website',
-    'label' => 'Personal Website',
+    'label' => 'Personal Website URL',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -2172,7 +2172,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'link_field',
-      'weight' => 69,
+      'weight' => 68,
     ),
     'workbench_access_field' => 0,
   );
@@ -2517,7 +2517,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'placeholder' => '',
       ),
       'type' => 'telephone_default',
-      'weight' => 67,
+      'weight' => 66,
     ),
     'workbench_access_field' => 0,
   );
@@ -2960,7 +2960,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 240,
       ),
       'type' => 'text_textfield',
-      'weight' => 68,
+      'weight' => 76,
     ),
     'workbench_access_field' => 0,
   );
@@ -3040,7 +3040,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 67,
+      'weight' => 75,
     ),
     'workbench_access_field' => 0,
   );
@@ -3406,7 +3406,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_stanford_gsb_affiliation',
-    'label' => 'Stanford GSB Affiliation',
+    'label' => 'Stanford GSB Affiliations',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -3699,7 +3699,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   $field_instances['node-faculty-field_teaching_materials'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
-    'custom_remove' => '',
+    'custom_remove' => 'Remove this teaching material',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -3830,7 +3830,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 69,
+      'weight' => 77,
     ),
     'workbench_access_field' => 0,
   );
@@ -4179,7 +4179,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Award, Organization, YYYY');
   t('Awards and Honors');
   t('Bio');
-  t('Blog');
+  t('Blog URL');
   t('Books Help');
   t('CV');
   t('Click the radio button next to "Yes" to add the dates and message re: the faculty member\'s leave.');
@@ -4192,20 +4192,20 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Experience Tab Help Text');
   t('First Name');
   t('Formatting Help');
-  t('Google Scholar');
+  t('Google Scholar Public Profile URL');
   t('Greater Stanford University Affiliations');
   t('If you prefer to group by category, enter the categories first, then activities.  <strong>Deleting a category will also delete the service activities under it.</strong>');
   t('Introduction');
   t('Keywords');
   t('Last Name');
-  t('LinkedIn');
+  t('LinkedIn Public Profile or Influencer URL');
   t('Media Items Tab Help');
   t('Middle Name');
   t('On Leave');
   t('Other Academic Areas');
   t('Other Social Profile(s)');
   t('PDF Requirements');
-  t('Personal Website');
+  t('Personal Website URL');
   t('Phone');
   t('Photo');
   t('Photo Requirements');
@@ -4225,7 +4225,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Search field');
   t('Select the faculty member\'s primary academic area.');
   t('Service to the Profession');
-  t('Stanford GSB Affiliation');
+  t('Stanford GSB Affiliations');
   t('Stanford GSB Affiliations or Initiatives');
   t('Statement');
   t('Submit');
@@ -4237,7 +4237,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('This field is used to display a list of faculty by center or initiative. Selections do not appear on the faculty member\'s profile. ');
   t('Title, University, YYYY');
   t('Title/Position');
-  t('Twitter');
+  t('Twitter URL');
   t('Who to Contact');
 
   return $field_instances;

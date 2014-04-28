@@ -269,6 +269,40 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_help|node|faculty|form';
+  $field_group->group_name = 'group_help';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main';
+  $field_group->data = array(
+    'label' => 'Help',
+    'weight' => '53',
+    'children' => array(
+      0 => 'field_deleting_items',
+      1 => 'field_formatting_help',
+      2 => 'field_introduction',
+      3 => 'field_required_fields',
+      4 => 'field_saving_your_changes',
+      5 => 'field_update_your_photo',
+      6 => 'field_upload_pdfs',
+      7 => 'field_who_to_contact',
+    ),
+    'format_type' => 'htab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_help|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_leave_information|node|faculty|form';
   $field_group->group_name = 'group_leave_information';
   $field_group->entity_type = 'node';
@@ -361,13 +395,14 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Main',
     'weight' => '2',
     'children' => array(
-      0 => 'group_about',
-      1 => 'group_administration',
-      2 => 'group_affiliations',
-      3 => 'group_experience',
-      4 => 'group_manage_news',
-      5 => 'group_manage_publications',
-      6 => 'group_teaching_and_talks',
+      0 => 'group_help',
+      1 => 'group_about',
+      2 => 'group_administration',
+      3 => 'group_affiliations',
+      4 => 'group_experience',
+      5 => 'group_manage_news',
+      6 => 'group_manage_publications',
+      7 => 'group_teaching_and_talks',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(

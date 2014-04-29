@@ -162,7 +162,7 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_book_listing_entity_view_1' => array(
           'default' => array(
-            'weight' => '12',
+            'weight' => '14',
             'visible' => TRUE,
           ),
           'people_fpp' => array(
@@ -216,6 +216,38 @@ function gsb_feature_faculty_ct_strongarm() {
           'teaser' => array(
             'weight' => '10',
             'visible' => FALSE,
+          ),
+          'people_fpp' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+        ),
+        'gsb_publications_listing_publications_book_chapter_listing_entity_view' => array(
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'people_fpp' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'default' => array(
+            'weight' => '15',
+            'visible' => TRUE,
+          ),
+        ),
+        'gsb_publications_listing_publications_other_listing_entity_view' => array(
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'people_fpp' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'default' => array(
+            'weight' => '16',
+            'visible' => TRUE,
           ),
         ),
       ),

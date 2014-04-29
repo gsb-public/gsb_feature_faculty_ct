@@ -42,7 +42,6 @@ function gsb_feature_faculty_ct_field_group_info() {
       16 => 'field_link_twitter',
       17 => 'field_suffix_name',
       18 => 'field_teaching_statement',
-      19 => 'group_contact_info',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -397,19 +396,20 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_main';
   $field_group->data = array(
-    'label' => 'Manage News',
+    'label' => 'News',
     'weight' => '51',
     'children' => array(
       0 => 'group_main_news',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'News',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'closed',
     ),
   );
   $export['group_manage_news|node|faculty|form'] = $field_group;
@@ -514,7 +514,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_main_publications';
   $field_group->data = array(
-    'label' => 'Publications',
+    'label' => 'Journal Articles, Book Chapters, Others',
     'weight' => '97',
     'children' => array(
       0 => 'field_publications_help',
@@ -522,12 +522,13 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
     'format_type' => 'tab',
     'format_settings' => array(
-      'formatter' => 'closed',
+      'label' => 'Journal Articles, Book Chapters, Others',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'closed',
     ),
   );
   $export['group_publications|node|faculty|form'] = $field_group;

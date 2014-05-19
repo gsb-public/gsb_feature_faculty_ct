@@ -241,11 +241,11 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'hs_taxonomy',
+      'module' => 'options',
       'settings' => array(
         'maxlength_js_label' => '',
       ),
-      'type' => 'taxonomy_hs',
+      'type' => 'options_select',
       'weight' => 65,
     ),
     'workbench_access_field' => 0,

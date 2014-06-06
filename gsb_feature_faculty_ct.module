@@ -146,9 +146,10 @@ function gsb_feature_faculty_ct_node_presave($node) {
       ),
     );
     $faculty_user = user_save(drupal_anonymous_user(), $edit);
-    // Assign this user as the author of the faculty profile.
-    $node->uid = $faculty_user->uid;
   }
+
+  // Assign this user as the author of the faculty profile.
+  $node->uid = $faculty_user->uid;
 
   if (!in_array('Faculty', $faculty_user->roles)) {
     $roles = $faculty_user->roles;

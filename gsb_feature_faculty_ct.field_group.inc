@@ -282,7 +282,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_main_news';
   $field_group->data = array(
-    'label' => 'Insights by Stanford',
+    'label' => 'Insights by Stanford Business',
     'weight' => '66',
     'children' => array(
       0 => 'gsb_insights_stanford_business_eva_field_form',

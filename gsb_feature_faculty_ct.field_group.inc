@@ -275,6 +275,33 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_insights_by_stanford|node|faculty|form';
+  $field_group->group_name = 'group_insights_by_stanford';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main_news';
+  $field_group->data = array(
+    'label' => 'Insights by Stanford',
+    'weight' => '66',
+    'children' => array(
+      0 => 'gsb_insights_stanford_business_eva_field_form',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_insights_by_stanford|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_leave_information|node|faculty|form';
   $field_group->group_name = 'group_leave_information';
   $field_group->entity_type = 'node';
@@ -283,7 +310,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_administration';
   $field_group->data = array(
     'label' => 'Leave Information',
-    'weight' => '52',
+    'weight' => '60',
     'children' => array(
       0 => 'field_leave_status',
       1 => 'field_leave_date',
@@ -315,6 +342,7 @@ function gsb_feature_faculty_ct_field_group_info() {
     'weight' => '65',
     'children' => array(
       0 => 'group_media_mentions',
+      1 => 'group_insights_by_stanford',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(
@@ -367,11 +395,11 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Main',
     'weight' => '2',
     'children' => array(
-      0 => 'group_help',
-      1 => 'group_about',
-      2 => 'group_administration',
-      3 => 'group_affiliations',
-      4 => 'group_experience',
+      0 => 'group_about',
+      1 => 'group_administration',
+      2 => 'group_affiliations',
+      3 => 'group_experience',
+      4 => 'group_help',
       5 => 'group_manage_news',
       6 => 'group_manage_publications',
       7 => 'group_teaching_and_talks',

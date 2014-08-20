@@ -107,13 +107,13 @@ function gsb_feature_faculty_ct_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '5',
         ),
         'workbench_access' => array(
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '5',
+          'weight' => '4',
         ),
         'gsb_book_listing_eva_field_form' => array(
           'weight' => '95',
@@ -129,6 +129,9 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_media_mentions_eva_field_form' => array(
           'weight' => '98',
+        ),
+        'gsb_insights_stanford_business_eva_field_form' => array(
+          'weight' => '67',
         ),
       ),
       'display' => array(

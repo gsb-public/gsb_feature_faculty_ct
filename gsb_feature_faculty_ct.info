@@ -62,6 +62,7 @@ features[field_group][] = group_cases|node|faculty|form
 features[field_group][] = group_courses_taught|node|faculty|default
 features[field_group][] = group_experience|node|faculty|form
 features[field_group][] = group_help|node|faculty|form
+features[field_group][] = group_insights_by_stanford|node|faculty|form
 features[field_group][] = group_leave_information|node|faculty|form
 features[field_group][] = group_main_news|node|faculty|form
 features[field_group][] = group_main_publications|node|faculty|form

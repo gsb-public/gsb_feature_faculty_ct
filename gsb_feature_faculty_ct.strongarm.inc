@@ -131,7 +131,10 @@ function gsb_feature_faculty_ct_strongarm() {
           'weight' => '98',
         ),
         'gsb_insights_stanford_business_eva_field_form' => array(
-          'weight' => '67',
+          'weight' => '69',
+        ),
+        'gsb_school_news_entity_field_form' => array(
+          'weight' => '70',
         ),
       ),
       'display' => array(

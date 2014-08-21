@@ -72,6 +72,7 @@ features[field_group][] = group_manage_publications|node|faculty|form
 features[field_group][] = group_media_mentions|node|faculty|form
 features[field_group][] = group_publications|node|faculty|default
 features[field_group][] = group_publications|node|faculty|form
+features[field_group][] = group_school_news|node|faculty|form
 features[field_group][] = group_tags_wrapper|node|faculty|default
 features[field_group][] = group_teaching_and_talks|node|faculty|form
 features[field_group][] = group_working_papers|node|faculty|form

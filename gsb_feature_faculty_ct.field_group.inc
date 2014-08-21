@@ -285,7 +285,8 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Insights by Stanford Business',
     'weight' => '66',
     'children' => array(
-      0 => 'gsb_insights_stanford_business_eva_field_form',
+      0 => 'field_insights_tab_help',
+      1 => 'gsb_insights_stanford_business_eva_field_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -341,9 +342,9 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Main News',
     'weight' => '65',
     'children' => array(
-      0 => 'group_insights_by_stanford',
-      1 => 'group_media_mentions',
-      2 => 'group_school_news',
+      0 => 'group_school_news',
+      1 => 'group_insights_by_stanford',
+      2 => 'group_media_mentions',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(
@@ -578,6 +579,7 @@ function gsb_feature_faculty_ct_field_group_info() {
     'weight' => '67',
     'children' => array(
       0 => 'gsb_school_news_entity_field_form',
+      1 => 'field_school_news_tab_help',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

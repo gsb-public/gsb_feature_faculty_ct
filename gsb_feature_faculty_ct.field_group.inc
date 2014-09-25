@@ -285,7 +285,8 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Insights by Stanford Business',
     'weight' => '66',
     'children' => array(
-      0 => 'gsb_insights_stanford_business_eva_field_form',
+      0 => 'field_insights_tab_help',
+      1 => 'gsb_insights_stanford_business_eva_field_form',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -341,8 +342,9 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Main News',
     'weight' => '65',
     'children' => array(
-      0 => 'group_media_mentions',
-      1 => 'group_insights_by_stanford',
+      0 => 'group_insights_by_stanford',
+      1 => 'group_media_mentions',
+      2 => 'group_school_news',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(
@@ -562,6 +564,34 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
   );
   $export['group_publications|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_school_news|node|faculty|form';
+  $field_group->group_name = 'group_school_news';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_main_news';
+  $field_group->data = array(
+    'label' => 'School News',
+    'weight' => '67',
+    'children' => array(
+      0 => 'field_school_news_tab_help',
+      1 => 'gsb_school_news_entity_field_form',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_school_news|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */

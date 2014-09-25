@@ -97,6 +97,21 @@ function gsb_feature_faculty_ct_strongarm() {
       'views_content_pane' => array(
         'custom_settings' => FALSE,
       ),
+      'idea_story_latest_stories' => array(
+        'custom_settings' => FALSE,
+      ),
+      'idea_story_related' => array(
+        'custom_settings' => FALSE,
+      ),
+      'idea_story_top_stories' => array(
+        'custom_settings' => FALSE,
+      ),
+      'insight_featured_card' => array(
+        'custom_settings' => FALSE,
+      ),
+      'news_listing' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -131,7 +146,10 @@ function gsb_feature_faculty_ct_strongarm() {
           'weight' => '98',
         ),
         'gsb_insights_stanford_business_eva_field_form' => array(
-          'weight' => '67',
+          'weight' => '69',
+        ),
+        'gsb_school_news_entity_field_form' => array(
+          'weight' => '69',
         ),
       ),
       'display' => array(
@@ -250,6 +268,18 @@ function gsb_feature_faculty_ct_strongarm() {
           ),
           'default' => array(
             'weight' => '16',
+            'visible' => TRUE,
+          ),
+        ),
+        'gsb_school_news_entity_view_1' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+        ),
+        'gsb_insights_stanford_business_entity_view_1' => array(
+          'default' => array(
+            'weight' => '10',
             'visible' => TRUE,
           ),
         ),

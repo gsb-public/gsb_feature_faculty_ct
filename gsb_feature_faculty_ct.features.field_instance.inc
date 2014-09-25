@@ -178,7 +178,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'options_select',
-      'weight' => 63,
+      'weight' => 64,
     ),
     'workbench_access_field' => 0,
   );
@@ -246,7 +246,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'options_select',
-      'weight' => 64,
+      'weight' => 65,
     ),
     'workbench_access_field' => 0,
   );
@@ -690,7 +690,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 66,
+      'weight' => 67,
     ),
     'workbench_access_field' => 0,
   );
@@ -1292,6 +1292,67 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-faculty-field_insights_tab_help'
+  $field_instances['node-faculty-field_insights_tab_help'] = array(
+    'bundle' => 'faculty',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 90,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'people_fpp' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_insights_tab_help',
+    'label' => 'Insights Tab Help',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'markup',
+      'weight' => 68,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-faculty-field_introduction'
   $field_instances['node-faculty-field_introduction'] = array(
     'bundle' => 'faculty',
@@ -1575,7 +1636,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 60,
+      'weight' => 59,
     ),
     'workbench_access_field' => 0,
   );
@@ -3184,6 +3245,67 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-faculty-field_school_news_tab_help'
+  $field_instances['node-faculty-field_school_news_tab_help'] = array(
+    'bundle' => 'faculty',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 89,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'people_fpp' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_school_news_tab_help',
+    'label' => 'School News Tab Help',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'markup',
+      'weight' => 68,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-faculty-field_search_field'
   $field_instances['node-faculty-field_search_field'] = array(
     'bundle' => 'faculty',
@@ -3985,7 +4107,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 65,
+      'weight' => 66,
     ),
     'workbench_access_field' => 0,
   );
@@ -4046,7 +4168,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'markup',
-      'weight' => 16,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -4199,6 +4321,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Google Scholar Public Profile URL');
   t('Greater Stanford University Affiliations');
   t('If you prefer to group by category, enter the categories first, then activities.  <strong>Deleting a category will also delete the service activities under it.</strong>');
+  t('Insights Tab Help');
   t('Introduction');
   t('Keywords');
   t('Last Name');
@@ -4226,6 +4349,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Research Statement');
   t('SUNetID');
   t('Saving and Viewing Your Changes');
+  t('School News Tab Help');
   t('Search field');
   t('Select the faculty member\'s primary academic area.');
   t('Service to the Profession');

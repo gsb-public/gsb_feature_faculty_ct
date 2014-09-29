@@ -604,7 +604,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
-    'weight' => '25',
+    'weight' => '27',
     'children' => array(
       0 => 'field_academic_area_unlimited',
     ),

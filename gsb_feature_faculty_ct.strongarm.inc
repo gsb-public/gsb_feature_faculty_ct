@@ -273,13 +273,13 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_school_news_entity_view_1' => array(
           'default' => array(
-            'weight' => '10',
+            'weight' => '19',
             'visible' => TRUE,
           ),
         ),
         'gsb_insights_stanford_business_entity_view_1' => array(
           'default' => array(
-            'weight' => '10',
+            'weight' => '18',
             'visible' => TRUE,
           ),
         ),

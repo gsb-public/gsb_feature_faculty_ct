@@ -217,28 +217,11 @@ function _gsb_feature_faculty_ct_update_academic_areas($wrapper, $state) {
   }
   $query['secondaryAcadArea'] = implode('|', $secondary_areas);
 
-  $centers = array();
-  foreach ($wrapper->field_centers_research_programs as $center) {
-    $centers[] = $center->label();
-  }
-
   // Check for the primary academic area.
   if ($primary_area = $wrapper->field_academic_area_single->label()) {
     $query['primaryAcadArea'] = _gsb_feature_faculty_ct_adjust_academic_area_names($primary_area);
   }
   else {
-    // If any Centers have been selected, then send as the Primary
-    if (!empty($centers)) {
-      $query['primaryAcadArea'] = array_shift($centers);
-    }
-  }
-  $query['secondaryAcadArea'] = implode('|', array_merge($secondary_areas,$centers));
-
-  if ($query['secondaryAcadArea'] == '') {
-    // Provide an invalid secondary academic area to unset the value.
-    $query['secondaryAcadArea'] == 'none';
-  }
-  if ($query['primaryAcadArea'] == '') {
     // Provide an invalid primary academic area to unset the value.
     $query['primaryAcadArea'] = 'none';
   }

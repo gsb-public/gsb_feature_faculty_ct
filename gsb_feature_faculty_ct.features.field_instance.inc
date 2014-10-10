@@ -957,8 +957,27 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       'custom_add_another' => '',
       'custom_remove' => '',
       'description_field' => 0,
-      'file_directory' => 'faculty-cv',
+      'file_directory' => 'faculty-cv/[current-page:url:relative]',
       'file_extensions' => 'pdf',
+      'filefield_paths' => array(
+        'active_updating' => 0,
+        'file_name' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '[file:ffp-name-only-original].[file:ffp-extension-original]',
+        ),
+        'file_path' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => 'faculty-cv/[node:url:args:last]',
+        ),
+        'retroactive_update' => 0,
+      ),
+      'filefield_paths_enabled' => 1,
       'max_filesize' => '',
       'user_register_form' => FALSE,
     ),

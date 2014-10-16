@@ -975,6 +975,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           ),
           'value' => 'faculty-cv/[node:url:args:last]',
         ),
+        'replace_existing_files' => 1,
         'retroactive_update' => 0,
       ),
       'filefield_paths_enabled' => 1,

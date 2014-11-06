@@ -838,7 +838,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
           'custom_path' => '',
           'default_message' => '[current-user:name] sent a message using the contact form at [current-page:url].',
-          'link_text' => 'Contact person by email',
+          'link_text' => 'Email',
           'redirection_to' => 'referer',
         ),
         'type' => 'email_contact_link',
@@ -884,7 +884,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       'allow_without_formatter' => 0,
       'custom_add_another' => '',
       'custom_remove' => '',
-      'form_title' => 'Contact person by email',
+      'form_title' => 'Email',
       'user_register_form' => FALSE,
     ),
     'widget' => array(

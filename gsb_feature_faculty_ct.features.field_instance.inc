@@ -1208,7 +1208,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'custom_add_another' => '',
     'custom_remove' => '',
     'deleted' => 0,
-    'description' => '',
+    'description' => '540 x 540 px',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1294,6 +1294,26 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       'default_image' => 0,
       'file_directory' => 'person_photos',
       'file_extensions' => 'png gif jpg jpeg',
+      'filefield_paths' => array(
+        'active_updating' => 0,
+        'file_name' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '[file:ffp-name-only-original].[file:ffp-extension-original]',
+        ),
+        'file_path' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '',
+        ),
+        'replace_existing_files' => 0,
+        'retroactive_update' => 0,
+      ),
+      'filefield_paths_enabled' => 1,
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
@@ -1304,7 +1324,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'maxlength_js_label' => '',
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -1790,6 +1809,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Blog URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -1883,6 +1903,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Google Scholar Public Profile URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -1970,6 +1991,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'LinkedIn Public Profile or Influencer URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -2057,6 +2079,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Other Social Profile(s)',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -2144,6 +2167,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Twitter URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -2237,6 +2261,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'label' => 'Personal Website URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -4319,6 +4344,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('540 x 540 px');
   t('<strong>Example</strong>: +1 (650) 725-1234');
   t('Academic Appointments');
   t('Academic Area');

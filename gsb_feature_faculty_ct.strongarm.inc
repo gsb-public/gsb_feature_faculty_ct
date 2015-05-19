@@ -276,11 +276,19 @@ function gsb_feature_faculty_ct_strongarm() {
             'weight' => '19',
             'visible' => TRUE,
           ),
+          'people_fpp' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_insights_stanford_business_entity_view_1' => array(
           'default' => array(
             'weight' => '18',
             'visible' => TRUE,
+          ),
+          'people_fpp' => array(
+            'weight' => '10',
+            'visible' => FALSE,
           ),
         ),
       ),

@@ -877,6 +877,19 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_image_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
     'field_rank' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -1318,8 +1331,8 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_image_single_public',
-        1 => 'title',
+        0 => 'title',
+        1 => 'field_image_single_public',
         2 => 'group_wrapper_name',
         3 => 'group_wrapper_position',
         4 => 'field_rank',
@@ -1327,8 +1340,8 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
       ),
     ),
     'fields' => array(
-      'field_image_single_public' => 'ds_content',
       'title' => 'ds_content',
+      'field_image_single_public' => 'ds_content',
       'group_wrapper_name' => 'ds_content',
       'group_wrapper_position' => 'ds_content',
       'field_rank' => 'ds_content',
@@ -1341,6 +1354,8 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['node|faculty|people_fpp'] = $ds_layout;
 

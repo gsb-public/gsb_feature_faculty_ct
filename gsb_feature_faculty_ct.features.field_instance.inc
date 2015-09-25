@@ -1726,6 +1726,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
+        'checkall' => FALSE,
         'maxlength_js_label' => '',
       ),
       'type' => 'options_buttons',

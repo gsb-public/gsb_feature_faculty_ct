@@ -195,7 +195,8 @@ function gsb_feature_faculty_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Courses Taught',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-courses-taught field-group-div',
         'description' => '',
         'show_label' => '1',
         'label_element' => 'h2',
@@ -524,7 +525,8 @@ function gsb_feature_faculty_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Publications',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-publications field-group-div',
         'description' => '',
         'show_label' => '1',
         'label_element' => 'h2',

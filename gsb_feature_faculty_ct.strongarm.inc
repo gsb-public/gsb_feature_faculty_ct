@@ -112,6 +112,33 @@ function gsb_feature_faculty_ct_strongarm() {
       'news_listing' => array(
         'custom_settings' => FALSE,
       ),
+      'act_project_by_criteria' => array(
+        'custom_settings' => FALSE,
+      ),
+      'act_project_listing' => array(
+        'custom_settings' => FALSE,
+      ),
+      'alumni_name' => array(
+        'custom_settings' => FALSE,
+      ),
+      'alumni_reunion_agenda_list' => array(
+        'custom_settings' => FALSE,
+      ),
+      'event_contacts' => array(
+        'custom_settings' => FALSE,
+      ),
+      'alumni_featured_content' => array(
+        'custom_settings' => FALSE,
+      ),
+      'compact' => array(
+        'custom_settings' => FALSE,
+      ),
+      'expanded' => array(
+        'custom_settings' => FALSE,
+      ),
+      'main_list' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

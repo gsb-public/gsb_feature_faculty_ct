@@ -703,7 +703,8 @@ function gsb_feature_faculty_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Academic wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-academic field-group-div',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -793,7 +794,8 @@ function gsb_feature_faculty_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Stanford University Affiliations',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-affiliation field-group-div',
         'description' => '',
         'show_label' => '1',
         'label_element' => 'h2',
@@ -825,7 +827,8 @@ function gsb_feature_faculty_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Contact wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-contact field-group-div field-group-format',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -858,7 +861,7 @@ function gsb_feature_faculty_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Contact Info',
       'instance_settings' => array(
-        'classes' => '',
+        'classes' => 'group-wrapper-information field-group-fieldset',
         'description' => '',
       ),
       'formatter' => 'collapsed',
@@ -889,7 +892,8 @@ function gsb_feature_faculty_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Name wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-name field-group-div',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -983,7 +987,8 @@ function gsb_feature_faculty_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Photo label',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-photolabel field-group-div',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -1079,7 +1084,8 @@ function gsb_feature_faculty_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Research wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-research field-group-div',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -1112,7 +1118,8 @@ function gsb_feature_faculty_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Scholar wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-scholar field-group-div field-group-format',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -1146,7 +1153,8 @@ function gsb_feature_faculty_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Social wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-social field-group-div field-group-format',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',

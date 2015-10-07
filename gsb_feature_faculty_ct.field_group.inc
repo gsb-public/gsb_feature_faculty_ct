@@ -735,12 +735,17 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'formatter' => 'open',
+      'label' => 'Affiliation commas wrapper',
       'instance_settings' => array(
-        'show_label' => 1,
+        'id' => '',
+        'classes' => 'group-wrapper-affiliation-commas field-group-div',
+        'description' => '',
+        'show_label' => '0',
         'label_element' => 'h3',
-        'classes' => '',
+        'effect' => 'none',
+        'speed' => 'none',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_wrapper_affiliation_commas|field_collection_item|field_greater_university_affil|default'] = $field_group;
@@ -764,12 +769,12 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'formatter' => 'open',
+      'label' => 'Affiliation commas wrapper',
       'instance_settings' => array(
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'classes' => '',
+        'item_count' => '0',
+        'classes' => 'group-wrapper-affiliation-commas field-group-div',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_wrapper_affiliation_commas|field_collection_item|field_stanford_gsb_affiliation|default'] = $field_group;

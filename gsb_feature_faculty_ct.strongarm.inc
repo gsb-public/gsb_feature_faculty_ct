@@ -124,16 +124,16 @@ function gsb_feature_faculty_ct_strongarm() {
       'alumni_reunion_agenda_list' => array(
         'custom_settings' => FALSE,
       ),
-      'event_contacts' => array(
-        'custom_settings' => FALSE,
-      ),
-      'alumni_featured_content' => array(
-        'custom_settings' => FALSE,
-      ),
       'compact' => array(
         'custom_settings' => FALSE,
       ),
       'expanded' => array(
+        'custom_settings' => FALSE,
+      ),
+      'event_contacts' => array(
+        'custom_settings' => FALSE,
+      ),
+      'alumni_featured_content' => array(
         'custom_settings' => FALSE,
       ),
       'main_list' => array(

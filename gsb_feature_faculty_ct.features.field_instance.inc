@@ -168,7 +168,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'options_select',
-      'weight' => 64,
+      'weight' => 63,
     ),
     'workbench_access_field' => 0,
   );
@@ -236,7 +236,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'options_select',
-      'weight' => 65,
+      'weight' => 64,
     ),
     'workbench_access_field' => 0,
   );
@@ -680,7 +680,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 67,
+      'weight' => 71,
     ),
     'workbench_access_field' => 0,
   );
@@ -886,6 +886,126 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'type' => 'email_textfield',
       'weight' => 67,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-faculty-field_faculty_director_positions'
+  $field_instances['node-faculty-field_faculty_director_positions'] = array(
+    'bundle' => 'faculty',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Include positions held for Stanford or Stanford GSB centers or institutes, and Stanford GSB initiatives or labs. <strong>Do not</strong> include positions for non-degree programs.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 76,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'people_fpp' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_faculty_director_positions',
+    'label' => 'Faculty Director Positions',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'act' => 'act',
+          'full_html' => 'full_html',
+          'gsb_html_text' => 'gsb_html_text',
+          'gsb_wysiwyg_text' => 'gsb_wysiwyg_text',
+          'image_resource_caption' => 'image_resource_caption',
+          'image_text_equivalent' => 'image_text_equivalent',
+          'markdown' => 'markdown',
+          'markdown_lite_minus_resources' => 'markdown_lite_minus_resources',
+          'plain_text' => 'plain_text',
+          'sidebar' => 'sidebar',
+          'slideshow' => 'slideshow',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'act' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'gsb_html_text' => array(
+              'weight' => -9,
+            ),
+            'gsb_wysiwyg_text' => array(
+              'weight' => -10,
+            ),
+            'image_resource_caption' => array(
+              'weight' => 0,
+            ),
+            'image_text_equivalent' => array(
+              'weight' => 0,
+            ),
+            'markdown' => array(
+              'weight' => 0,
+            ),
+            'markdown_lite_minus_resources' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+            'sidebar' => array(
+              'weight' => 0,
+            ),
+            'slideshow' => array(
+              'weight' => 0,
+            ),
+          ),
+        ),
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 70,
     ),
     'workbench_access_field' => 0,
   );
@@ -1431,6 +1551,126 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'type' => 'markup',
       'weight' => 10,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-faculty-field_joint_appointment'
+  $field_instances['node-faculty-field_joint_appointment'] = array(
+    'bundle' => 'faculty',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 74,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'people_fpp' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_joint_appointment',
+    'label' => 'Joint Appointments',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'act' => 'act',
+          'full_html' => 'full_html',
+          'gsb_html_text' => 'gsb_html_text',
+          'gsb_wysiwyg_text' => 'gsb_wysiwyg_text',
+          'image_resource_caption' => 'image_resource_caption',
+          'image_text_equivalent' => 'image_text_equivalent',
+          'markdown' => 'markdown',
+          'markdown_lite_minus_resources' => 'markdown_lite_minus_resources',
+          'plain_text' => 'plain_text',
+          'sidebar' => 'sidebar',
+          'slideshow' => 'slideshow',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'act' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'gsb_html_text' => array(
+              'weight' => -9,
+            ),
+            'gsb_wysiwyg_text' => array(
+              'weight' => -10,
+            ),
+            'image_resource_caption' => array(
+              'weight' => 0,
+            ),
+            'image_text_equivalent' => array(
+              'weight' => 0,
+            ),
+            'markdown' => array(
+              'weight' => 0,
+            ),
+            'markdown_lite_minus_resources' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+            'sidebar' => array(
+              'weight' => 0,
+            ),
+            'slideshow' => array(
+              'weight' => 0,
+            ),
+          ),
+        ),
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 68,
     ),
     'workbench_access_field' => 0,
   );
@@ -2547,6 +2787,126 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-faculty-field_other_titles'
+  $field_instances['node-faculty-field_other_titles'] = array(
+    'bundle' => 'faculty',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 75,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'people_fpp' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_other_titles',
+    'label' => 'Other Stanford Schools, Fellowships, Scholars',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'act' => 'act',
+          'full_html' => 'full_html',
+          'gsb_html_text' => 'gsb_html_text',
+          'gsb_wysiwyg_text' => 'gsb_wysiwyg_text',
+          'image_resource_caption' => 'image_resource_caption',
+          'image_text_equivalent' => 'image_text_equivalent',
+          'markdown' => 'markdown',
+          'markdown_lite_minus_resources' => 'markdown_lite_minus_resources',
+          'plain_text' => 'plain_text',
+          'sidebar' => 'sidebar',
+          'slideshow' => 'slideshow',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'act' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'gsb_html_text' => array(
+              'weight' => -9,
+            ),
+            'gsb_wysiwyg_text' => array(
+              'weight' => -10,
+            ),
+            'image_resource_caption' => array(
+              'weight' => 0,
+            ),
+            'image_text_equivalent' => array(
+              'weight' => 0,
+            ),
+            'markdown' => array(
+              'weight' => 0,
+            ),
+            'markdown_lite_minus_resources' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+            'sidebar' => array(
+              'weight' => 0,
+            ),
+            'slideshow' => array(
+              'weight' => 0,
+            ),
+          ),
+        ),
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 69,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-faculty-field_phone'
   $field_instances['node-faculty-field_phone'] = array(
     'bundle' => 'faculty',
@@ -2961,7 +3321,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'markup',
-      'weight' => 14,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -3120,6 +3480,75 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 75,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-faculty-field_sad'
+  $field_instances['node-faculty-field_sad'] = array(
+    'bundle' => 'faculty',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => array(
+      0 => array(
+        'value' => 'no',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'list_default',
+        'weight' => 73,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'people_fpp' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_sad',
+    'label' => 'Senior Associate Dean',
+    'required' => 1,
+    'settings' => array(
+      'checkall' => array(
+        'checkall' => 0,
+        'checkall-check-all' => 1,
+        'checkall-toggle' => 1,
+        'checkall-uncheck-all' => 1,
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'checkall' => FALSE,
+      ),
+      'type' => 'options_buttons',
+      'weight' => 67,
     ),
     'workbench_access_field' => 0,
   );
@@ -3846,7 +4275,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 68,
+      'weight' => 72,
     ),
     'workbench_access_field' => 0,
   );
@@ -4052,6 +4481,126 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-faculty-field_title_appointment'
+  $field_instances['node-faculty-field_title_appointment'] = array(
+    'bundle' => 'faculty',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 72,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'people_fpp' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_title_appointment',
+    'label' => 'Endowed Title OR Appointment',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'act' => 'act',
+          'full_html' => 'full_html',
+          'gsb_html_text' => 'gsb_html_text',
+          'gsb_wysiwyg_text' => 'gsb_wysiwyg_text',
+          'image_resource_caption' => 'image_resource_caption',
+          'image_text_equivalent' => 'image_text_equivalent',
+          'markdown' => 'markdown',
+          'markdown_lite_minus_resources' => 'markdown_lite_minus_resources',
+          'plain_text' => 'plain_text',
+          'sidebar' => 'sidebar',
+          'slideshow' => 'slideshow',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'act' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'gsb_html_text' => array(
+              'weight' => -9,
+            ),
+            'gsb_wysiwyg_text' => array(
+              'weight' => -10,
+            ),
+            'image_resource_caption' => array(
+              'weight' => 0,
+            ),
+            'image_text_equivalent' => array(
+              'weight' => 0,
+            ),
+            'markdown' => array(
+              'weight' => 0,
+            ),
+            'markdown_lite_minus_resources' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+            'sidebar' => array(
+              'weight' => 0,
+            ),
+            'slideshow' => array(
+              'weight' => 0,
+            ),
+          ),
+        ),
+      ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 66,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-faculty-field_title_position_unlimited'
   $field_instances['node-faculty-field_title_position_unlimited'] = array(
     'bundle' => 'faculty',
@@ -4125,7 +4674,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 66,
+      'weight' => 65,
     ),
     'workbench_access_field' => 0,
   );
@@ -4186,7 +4735,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'markup',
-      'weight' => 15,
+      'weight' => 16,
     ),
     'workbench_access_field' => 0,
   );
@@ -4333,15 +4882,19 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Degree in Area, Minor in Area, University, YYYY');
   t('Deleting Items');
   t('Email');
+  t('Endowed Title OR Appointment');
   t('Enter your email address to allow users to contact you via a webform. <strong>Your email address will not be displayed on the site.</strong>');
   t('Experience Tab Help Text');
+  t('Faculty Director Positions');
   t('First Name');
   t('Formatting Help');
   t('Google Scholar Public Profile URL');
   t('Greater Stanford University Affiliations');
   t('If you prefer to group by category, enter the categories first, then activities.  <strong>Deleting a category will also delete the service activities under it.</strong>');
+  t('Include positions held for Stanford or Stanford GSB centers or institutes, and Stanford GSB initiatives or labs. <strong>Do not</strong> include positions for non-degree programs.');
   t('Insights Tab Help');
   t('Introduction');
+  t('Joint Appointments');
   t('Keywords');
   t('Last Name');
   t('LinkedIn Public Profile or Influencer URL');
@@ -4350,6 +4903,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('On Leave');
   t('Other Academic Areas');
   t('Other Social Profile(s)');
+  t('Other Stanford Schools, Fellowships, Scholars');
   t('PDF Requirements');
   t('Personal Website URL');
   t('Phone');
@@ -4371,6 +4925,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('School News Tab Help');
   t('Search field');
   t('Select the faculty member\'s primary academic area.');
+  t('Senior Associate Dean');
   t('Service to the Profession');
   t('Stanford GSB Affiliations');
   t('Stanford GSB Affiliations or Initiatives');

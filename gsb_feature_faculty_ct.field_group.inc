@@ -75,7 +75,12 @@ function gsb_feature_faculty_ct_field_group_info() {
       4 => 'field_title_position_unlimited',
       5 => 'field_centers_research_programs',
       6 => 'field_tag',
-      7 => 'group_leave_information',
+      7 => 'field_title_appointment',
+      8 => 'field_sad',
+      9 => 'field_joint_appointment',
+      10 => 'field_other_titles',
+      11 => 'field_faculty_director_positions',
+      12 => 'group_leave_information',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

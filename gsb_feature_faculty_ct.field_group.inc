@@ -191,7 +191,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Courses Taught',
-    'weight' => '11',
+    'weight' => '15',
     'children' => array(
       0 => 'field_non_degree_course',
       1 => 'gsb_course_listing_entity_view_1',
@@ -519,7 +519,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Publications',
-    'weight' => '9',
+    'weight' => '13',
     'children' => array(
       0 => 'gsb_book_listing_entity_view_1',
       1 => 'gsb_publications_listing_publications_listing_entity_view',
@@ -611,7 +611,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
-    'weight' => '27',
+    'weight' => '32',
     'children' => array(
       0 => 'field_academic_area_unlimited',
     ),
@@ -696,7 +696,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Academic wrapper',
-    'weight' => '8',
+    'weight' => '12',
     'children' => array(
       0 => 'field_awards_honors',
       1 => 'field_body',
@@ -795,7 +795,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Stanford University Affiliations',
-    'weight' => '15',
+    'weight' => '19',
     'children' => array(
       0 => 'field_stanford_gsb_affiliation',
       1 => 'field_greater_university_affil',
@@ -1084,7 +1084,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Research wrapper',
-    'weight' => '7',
+    'weight' => '11',
     'children' => array(
       0 => 'field_research_interests',
       1 => 'field_research_statement',

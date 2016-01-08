@@ -10,7 +10,7 @@
 function gsb_feature_faculty_ct_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-faculty-field_academic_aptmts_unlimited'
+  // Exported field_instance: 'node-faculty-field_academic_aptmts_unlimited'.
   $field_instances['node-faculty-field_academic_aptmts_unlimited'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => 'Add another appointment',
@@ -82,7 +82,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_academic_area_single'
+  // Exported field_instance: 'node-faculty-field_academic_area_single'.
   $field_instances['node-faculty-field_academic_area_single'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -102,7 +102,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'tid_or_name' => 'name',
         ),
         'type' => 'gsb_field_formatter_path_term_separator',
-        'weight' => 6,
+        'weight' => 9,
       ),
       'featured' => array(
         'label' => 'above',
@@ -173,7 +173,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_academic_area_unlimited'
+  // Exported field_instance: 'node-faculty-field_academic_area_unlimited'.
   $field_instances['node-faculty-field_academic_area_unlimited'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -241,7 +241,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_academic_degrees_unlimited'
+  // Exported field_instance: 'node-faculty-field_academic_degrees_unlimited'.
   $field_instances['node-faculty-field_academic_degrees_unlimited'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => 'Add another degree',
@@ -313,7 +313,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_affiliations_help'
+  // Exported field_instance: 'node-faculty-field_affiliations_help'.
   $field_instances['node-faculty-field_affiliations_help'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -325,7 +325,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 40,
+        'weight' => 45,
       ),
       'featured' => array(
         'label' => 'above',
@@ -374,7 +374,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_awards_honors'
+  // Exported field_instance: 'node-faculty-field_awards_honors'.
   $field_instances['node-faculty-field_awards_honors'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -452,7 +452,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_body'
+  // Exported field_instance: 'node-faculty-field_body'.
   $field_instances['node-faculty-field_body'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -562,7 +562,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_books_help'
+  // Exported field_instance: 'node-faculty-field_books_help'.
   $field_instances['node-faculty-field_books_help'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -574,7 +574,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 42,
+        'weight' => 47,
       ),
       'featured' => array(
         'label' => 'above',
@@ -623,7 +623,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_centers_research_programs'
+  // Exported field_instance: 'node-faculty-field_centers_research_programs'.
   $field_instances['node-faculty-field_centers_research_programs'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -636,7 +636,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 32,
+        'weight' => 37,
       ),
       'featured' => array(
         'label' => 'above',
@@ -685,7 +685,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_conf_presentations_section'
+  // Exported field_instance: 'node-faculty-field_conf_presentations_section'.
   $field_instances['node-faculty-field_conf_presentations_section'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -702,7 +702,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 14,
+        'weight' => 18,
       ),
       'featured' => array(
         'label' => 'above',
@@ -751,7 +751,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_deleting_items'
+  // Exported field_instance: 'node-faculty-field_deleting_items'.
   $field_instances['node-faculty-field_deleting_items'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -763,7 +763,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 47,
+        'weight' => 52,
       ),
       'featured' => array(
         'label' => 'above',
@@ -812,7 +812,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_email'
+  // Exported field_instance: 'node-faculty-field_email'.
   $field_instances['node-faculty-field_email'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -890,7 +890,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_faculty_director_positions'
+  // Exported field_instance: 'node-faculty-field_faculty_director_positions'.
   $field_instances['node-faculty-field_faculty_director_positions'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -906,7 +906,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 76,
+        'weight' => 10,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1010,7 +1010,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_file_single_public'
+  // Exported field_instance: 'node-faculty-field_file_single_public'.
   $field_instances['node-faculty-field_file_single_public'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -1107,7 +1107,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_first_name'
+  // Exported field_instance: 'node-faculty-field_first_name'.
   $field_instances['node-faculty-field_first_name'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -1185,7 +1185,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_formatting_help'
+  // Exported field_instance: 'node-faculty-field_formatting_help'.
   $field_instances['node-faculty-field_formatting_help'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -1197,7 +1197,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 49,
+        'weight' => 54,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1246,7 +1246,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_greater_university_affil'
+  // Exported field_instance: 'node-faculty-field_greater_university_affil'.
   $field_instances['node-faculty-field_greater_university_affil'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => 'Add another affiliation',
@@ -1312,7 +1312,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_image_single_public'
+  // Exported field_instance: 'node-faculty-field_image_single_public'.
   $field_instances['node-faculty-field_image_single_public'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -1433,7 +1433,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_insights_tab_help'
+  // Exported field_instance: 'node-faculty-field_insights_tab_help'.
   $field_instances['node-faculty-field_insights_tab_help'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -1445,7 +1445,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 51,
+        'weight' => 56,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1494,7 +1494,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_introduction'
+  // Exported field_instance: 'node-faculty-field_introduction'.
   $field_instances['node-faculty-field_introduction'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -1506,7 +1506,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 35,
+        'weight' => 40,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1555,7 +1555,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_joint_appointment'
+  // Exported field_instance: 'node-faculty-field_joint_appointment'.
   $field_instances['node-faculty-field_joint_appointment'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -1565,13 +1565,13 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 74,
+        'weight' => 7,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1675,7 +1675,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_last_name'
+  // Exported field_instance: 'node-faculty-field_last_name'.
   $field_instances['node-faculty-field_last_name'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -1753,7 +1753,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_leave_date'
+  // Exported field_instance: 'node-faculty-field_leave_date'.
   $field_instances['node-faculty-field_leave_date'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -1765,7 +1765,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 33,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1826,7 +1826,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_leave_statement'
+  // Exported field_instance: 'node-faculty-field_leave_statement'.
   $field_instances['node-faculty-field_leave_statement'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -1902,7 +1902,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_leave_status'
+  // Exported field_instance: 'node-faculty-field_leave_status'.
   $field_instances['node-faculty-field_leave_status'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -1919,7 +1919,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 34,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1975,7 +1975,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_link_blog'
+  // Exported field_instance: 'node-faculty-field_link_blog'.
   $field_instances['node-faculty-field_link_blog'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -2069,7 +2069,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_link_google_scholar'
+  // Exported field_instance: 'node-faculty-field_link_google_scholar'.
   $field_instances['node-faculty-field_link_google_scholar'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -2163,7 +2163,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_link_linkedin'
+  // Exported field_instance: 'node-faculty-field_link_linkedin'.
   $field_instances['node-faculty-field_link_linkedin'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -2251,7 +2251,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_link_other_social'
+  // Exported field_instance: 'node-faculty-field_link_other_social'.
   $field_instances['node-faculty-field_link_other_social'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => 'Add another social profile',
@@ -2339,7 +2339,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_link_twitter'
+  // Exported field_instance: 'node-faculty-field_link_twitter'.
   $field_instances['node-faculty-field_link_twitter'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -2427,7 +2427,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_link_website'
+  // Exported field_instance: 'node-faculty-field_link_website'.
   $field_instances['node-faculty-field_link_website'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -2521,7 +2521,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_medias_item_tab_help'
+  // Exported field_instance: 'node-faculty-field_medias_item_tab_help'.
   $field_instances['node-faculty-field_medias_item_tab_help'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -2533,7 +2533,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 48,
+        'weight' => 53,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2582,7 +2582,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_middle_name'
+  // Exported field_instance: 'node-faculty-field_middle_name'.
   $field_instances['node-faculty-field_middle_name'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -2660,7 +2660,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_non_degree_course'
+  // Exported field_instance: 'node-faculty-field_non_degree_course'.
   $field_instances['node-faculty-field_non_degree_course'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => 'Add another course or program',
@@ -2726,7 +2726,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_order_help_text'
+  // Exported field_instance: 'node-faculty-field_order_help_text'.
   $field_instances['node-faculty-field_order_help_text'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -2738,7 +2738,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 43,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2787,7 +2787,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_other_titles'
+  // Exported field_instance: 'node-faculty-field_other_titles'.
   $field_instances['node-faculty-field_other_titles'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -2797,13 +2797,13 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 75,
+        'weight' => 8,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2907,7 +2907,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_phone'
+  // Exported field_instance: 'node-faculty-field_phone'.
   $field_instances['node-faculty-field_phone'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -2980,7 +2980,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_professional_experience'
+  // Exported field_instance: 'node-faculty-field_professional_experience'.
   $field_instances['node-faculty-field_professional_experience'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -3058,7 +3058,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_publications_help'
+  // Exported field_instance: 'node-faculty-field_publications_help'.
   $field_instances['node-faculty-field_publications_help'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -3070,7 +3070,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 41,
+        'weight' => 46,
       ),
       'featured' => array(
         'label' => 'above',
@@ -3119,7 +3119,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_publications_tab_help'
+  // Exported field_instance: 'node-faculty-field_publications_tab_help'.
   $field_instances['node-faculty-field_publications_tab_help'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -3131,7 +3131,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 44,
+        'weight' => 49,
       ),
       'featured' => array(
         'label' => 'above',
@@ -3180,7 +3180,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_rank'
+  // Exported field_instance: 'node-faculty-field_rank'.
   $field_instances['node-faculty-field_rank'] = array(
     'bundle' => 'faculty',
     'default_value' => NULL,
@@ -3265,7 +3265,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_required_fields'
+  // Exported field_instance: 'node-faculty-field_required_fields'.
   $field_instances['node-faculty-field_required_fields'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -3277,7 +3277,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 45,
+        'weight' => 50,
       ),
       'featured' => array(
         'label' => 'above',
@@ -3326,7 +3326,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_research_interests'
+  // Exported field_instance: 'node-faculty-field_research_interests'.
   $field_instances['node-faculty-field_research_interests'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => 'Add another research interest',
@@ -3404,7 +3404,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_research_statement'
+  // Exported field_instance: 'node-faculty-field_research_statement'.
   $field_instances['node-faculty-field_research_statement'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -3484,7 +3484,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_sad'
+  // Exported field_instance: 'node-faculty-field_sad'.
   $field_instances['node-faculty-field_sad'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -3498,13 +3498,10 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_default',
-        'weight' => 73,
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 31,
       ),
       'featured' => array(
         'label' => 'above',
@@ -3553,7 +3550,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_salutation'
+  // Exported field_instance: 'node-faculty-field_salutation'.
   $field_instances['node-faculty-field_salutation'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -3631,7 +3628,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_saving_your_changes'
+  // Exported field_instance: 'node-faculty-field_saving_your_changes'.
   $field_instances['node-faculty-field_saving_your_changes'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -3643,7 +3640,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 46,
+        'weight' => 51,
       ),
       'featured' => array(
         'label' => 'above',
@@ -3692,7 +3689,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_school_news_tab_help'
+  // Exported field_instance: 'node-faculty-field_school_news_tab_help'.
   $field_instances['node-faculty-field_school_news_tab_help'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -3704,7 +3701,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 50,
+        'weight' => 55,
       ),
       'featured' => array(
         'label' => 'above',
@@ -3753,7 +3750,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_search_field'
+  // Exported field_instance: 'node-faculty-field_search_field'.
   $field_instances['node-faculty-field_search_field'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -3765,7 +3762,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 36,
       ),
       'featured' => array(
         'label' => 'above',
@@ -3885,7 +3882,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_service_profession_section'
+  // Exported field_instance: 'node-faculty-field_service_profession_section'.
   $field_instances['node-faculty-field_service_profession_section'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => 'Add another category',
@@ -3902,7 +3899,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 16,
+        'weight' => 20,
       ),
       'featured' => array(
         'label' => 'above',
@@ -3951,7 +3948,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_stanford_gsb_affiliation'
+  // Exported field_instance: 'node-faculty-field_stanford_gsb_affiliation'.
   $field_instances['node-faculty-field_stanford_gsb_affiliation'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => 'Add another affiliation',
@@ -4017,7 +4014,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_submit'
+  // Exported field_instance: 'node-faculty-field_submit'.
   $field_instances['node-faculty-field_submit'] = array(
     'bundle' => 'faculty',
     'deleted' => 0,
@@ -4027,7 +4024,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 34,
+        'weight' => 39,
       ),
       'featured' => array(
         'label' => 'above',
@@ -4076,7 +4073,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_suffix_name'
+  // Exported field_instance: 'node-faculty-field_suffix_name'.
   $field_instances['node-faculty-field_suffix_name'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -4148,7 +4145,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_sunetid'
+  // Exported field_instance: 'node-faculty-field_sunetid'.
   $field_instances['node-faculty-field_sunetid'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -4161,7 +4158,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 35,
       ),
       'featured' => array(
         'label' => 'above',
@@ -4223,7 +4220,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_tag'
+  // Exported field_instance: 'node-faculty-field_tag'.
   $field_instances['node-faculty-field_tag'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -4236,7 +4233,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 33,
+        'weight' => 38,
       ),
       'featured' => array(
         'label' => 'above',
@@ -4287,7 +4284,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_teaching_materials'
+  // Exported field_instance: 'node-faculty-field_teaching_materials'.
   $field_instances['node-faculty-field_teaching_materials'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -4304,7 +4301,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 13,
+        'weight' => 17,
       ),
       'featured' => array(
         'label' => 'above',
@@ -4353,7 +4350,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_teaching_statement'
+  // Exported field_instance: 'node-faculty-field_teaching_statement'.
   $field_instances['node-faculty-field_teaching_statement'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -4427,7 +4424,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_teaching_talks_help'
+  // Exported field_instance: 'node-faculty-field_teaching_talks_help'.
   $field_instances['node-faculty-field_teaching_talks_help'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -4439,7 +4436,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 44,
       ),
       'featured' => array(
         'label' => 'above',
@@ -4488,7 +4485,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_title_appointment'
+  // Exported field_instance: 'node-faculty-field_title_appointment'.
   $field_instances['node-faculty-field_title_appointment'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -4498,13 +4495,13 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 72,
+        'weight' => 5,
       ),
       'featured' => array(
         'label' => 'above',
@@ -4608,7 +4605,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_title_position_unlimited'
+  // Exported field_instance: 'node-faculty-field_title_position_unlimited'.
   $field_instances['node-faculty-field_title_position_unlimited'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -4624,7 +4621,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'featured' => array(
         'label' => 'above',
@@ -4686,7 +4683,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_update_your_photo'
+  // Exported field_instance: 'node-faculty-field_update_your_photo'.
   $field_instances['node-faculty-field_update_your_photo'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -4698,7 +4695,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 41,
       ),
       'featured' => array(
         'label' => 'above',
@@ -4747,7 +4744,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_upload_pdfs'
+  // Exported field_instance: 'node-faculty-field_upload_pdfs'.
   $field_instances['node-faculty-field_upload_pdfs'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -4759,7 +4756,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 37,
+        'weight' => 42,
       ),
       'featured' => array(
         'label' => 'above',
@@ -4808,7 +4805,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_who_to_contact'
+  // Exported field_instance: 'node-faculty-field_who_to_contact'.
   $field_instances['node-faculty-field_who_to_contact'] = array(
     'bundle' => 'faculty',
     'custom_add_another' => '',
@@ -4820,7 +4817,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 43,
+        'weight' => 48,
       ),
       'featured' => array(
         'label' => 'above',

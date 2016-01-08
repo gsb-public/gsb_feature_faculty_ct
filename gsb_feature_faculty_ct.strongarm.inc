@@ -182,7 +182,7 @@ function gsb_feature_faculty_ct_strongarm() {
       'display' => array(
         'gsb_case_listing_case_listing_entity_view' => array(
           'default' => array(
-            'weight' => '12',
+            'weight' => '16',
             'visible' => TRUE,
           ),
           'people_fpp' => array(
@@ -196,7 +196,7 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_working_paper_listing_case_listing_entity_view' => array(
           'default' => array(
-            'weight' => '10',
+            'weight' => '14',
             'visible' => TRUE,
           ),
           'people_fpp' => array(
@@ -258,7 +258,7 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_media_mentions_media_mention_listing_entity_view' => array(
           'default' => array(
-            'weight' => '17',
+            'weight' => '21',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -300,7 +300,7 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_school_news_entity_view_1' => array(
           'default' => array(
-            'weight' => '19',
+            'weight' => '23',
             'visible' => TRUE,
           ),
           'people_fpp' => array(
@@ -310,7 +310,7 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_insights_stanford_business_entity_view_1' => array(
           'default' => array(
-            'weight' => '18',
+            'weight' => '22',
             'visible' => TRUE,
           ),
           'people_fpp' => array(

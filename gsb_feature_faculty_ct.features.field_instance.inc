@@ -1595,7 +1595,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_joint_appointment',
-    'label' => 'Joint Appointments',
+    'label' => 'Fellow, Scholar, & Joint Appointments',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -2827,7 +2827,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_other_titles',
-    'label' => 'Other Stanford Schools, Fellowships, Scholars',
+    'label' => 'Other Titles',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -4887,6 +4887,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Enter your email address to allow users to contact you via a webform. <strong>Your email address will not be displayed on the site.</strong>');
   t('Experience Tab Help Text');
   t('Faculty Director Positions');
+  t('Fellow, Scholar, & Joint Appointments');
   t('First Name');
   t('Formatting Help');
   t('Google Scholar Public Profile URL');
@@ -4895,7 +4896,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Include positions held for Stanford or Stanford GSB centers or institutes, and Stanford GSB initiatives or labs. <strong>Do not</strong> include positions for non-degree programs.');
   t('Insights Tab Help');
   t('Introduction');
-  t('Joint Appointments');
   t('Keywords');
   t('Last Name');
   t('LinkedIn Public Profile or Influencer URL');
@@ -4904,7 +4904,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('On Leave');
   t('Other Academic Areas');
   t('Other Social Profile(s)');
-  t('Other Stanford Schools, Fellowships, Scholars');
+  t('Other Titles');
   t('PDF Requirements');
   t('Personal Website URL');
   t('Phone');

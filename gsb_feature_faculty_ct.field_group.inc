@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function gsb_feature_faculty_ct_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -53,7 +53,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_about|node|faculty|form'] = $field_group;
+  $field_groups['group_about|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -92,7 +92,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_administration|node|faculty|form'] = $field_group;
+  $field_groups['group_administration|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -122,7 +122,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_affiliations|node|faculty|form'] = $field_group;
+  $field_groups['group_affiliations|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -150,7 +150,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_books|node|faculty|form'] = $field_group;
+  $field_groups['group_books|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -178,7 +178,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_cases|node|faculty|form'] = $field_group;
+  $field_groups['group_cases|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -211,7 +211,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_courses_taught|node|faculty|default'] = $field_group;
+  $field_groups['group_courses_taught|node|faculty|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -242,7 +242,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_experience|node|faculty|form'] = $field_group;
+  $field_groups['group_experience|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -276,7 +276,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_help|node|faculty|form'] = $field_group;
+  $field_groups['group_help|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -304,7 +304,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_insights_by_stanford|node|faculty|form'] = $field_group;
+  $field_groups['group_insights_by_stanford|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -333,7 +333,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_leave_information|node|faculty|form'] = $field_group;
+  $field_groups['group_leave_information|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -360,7 +360,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_main_news|node|faculty|form'] = $field_group;
+  $field_groups['group_main_news|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -388,7 +388,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_main_publications|node|faculty|form'] = $field_group;
+  $field_groups['group_main_publications|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -420,7 +420,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_main|node|faculty|form'] = $field_group;
+  $field_groups['group_main|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -448,7 +448,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_manage_news|node|faculty|form'] = $field_group;
+  $field_groups['group_manage_news|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -477,7 +477,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_manage_publications|node|faculty|form'] = $field_group;
+  $field_groups['group_manage_publications|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -506,7 +506,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_media_mentions|node|faculty|form'] = $field_group;
+  $field_groups['group_media_mentions|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -541,7 +541,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_publications|node|faculty|default'] = $field_group;
+  $field_groups['group_publications|node|faculty|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -570,7 +570,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_publications|node|faculty|form'] = $field_group;
+  $field_groups['group_publications|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -598,7 +598,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_school_news|node|faculty|form'] = $field_group;
+  $field_groups['group_school_news|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -625,7 +625,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_tags_wrapper|node|faculty|default'] = $field_group;
+  $field_groups['group_tags_wrapper|node|faculty|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -656,7 +656,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_teaching_and_talks|node|faculty|form'] = $field_group;
+  $field_groups['group_teaching_and_talks|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -683,7 +683,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_working_papers|node|faculty|form'] = $field_group;
+  $field_groups['group_working_papers|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -719,7 +719,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_academic|node|faculty|default'] = $field_group;
+  $field_groups['group_wrapper_academic|node|faculty|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -753,7 +753,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_affiliation_commas|field_collection_item|field_greater_university_affil|default'] = $field_group;
+  $field_groups['group_wrapper_affiliation_commas|field_collection_item|field_greater_university_affil|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -782,7 +782,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_affiliation_commas|field_collection_item|field_stanford_gsb_affiliation|default'] = $field_group;
+  $field_groups['group_wrapper_affiliation_commas|field_collection_item|field_stanford_gsb_affiliation|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -815,7 +815,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_affiliation|node|faculty|default'] = $field_group;
+  $field_groups['group_wrapper_affiliation|node|faculty|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -848,7 +848,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_contact|node|faculty|default'] = $field_group;
+  $field_groups['group_wrapper_contact|node|faculty|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -877,7 +877,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'collapsed',
     ),
   );
-  $export['group_wrapper_information|node|faculty|default'] = $field_group;
+  $field_groups['group_wrapper_information|node|faculty|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -913,7 +913,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_name|node|faculty|default'] = $field_group;
+  $field_groups['group_wrapper_name|node|faculty|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -944,7 +944,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_name|node|faculty|people_fpp'] = $field_group;
+  $field_groups['group_wrapper_name|node|faculty|people_fpp'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -975,7 +975,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_name|node|faculty|teaser'] = $field_group;
+  $field_groups['group_wrapper_name|node|faculty|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1008,7 +1008,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_photolabel|node|faculty|default'] = $field_group;
+  $field_groups['group_wrapper_photolabel|node|faculty|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1040,7 +1040,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_position|node|faculty|people_fpp'] = $field_group;
+  $field_groups['group_wrapper_position|node|faculty|people_fpp'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1071,7 +1071,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_position|node|faculty|teaser'] = $field_group;
+  $field_groups['group_wrapper_position|node|faculty|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1105,7 +1105,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_research|node|faculty|default'] = $field_group;
+  $field_groups['group_wrapper_research|node|faculty|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1139,7 +1139,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_scholar|node|faculty|default'] = $field_group;
+  $field_groups['group_wrapper_scholar|node|faculty|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1174,7 +1174,42 @@ function gsb_feature_faculty_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_social|node|faculty|default'] = $field_group;
+  $field_groups['group_wrapper_social|node|faculty|default'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('About');
+  t('Academic wrapper');
+  t('Administration');
+  t('Affiliation commas wrapper');
+  t('Affiliations');
+  t('Books');
+  t('Cases');
+  t('Contact Info');
+  t('Contact wrapper');
+  t('Courses Taught');
+  t('Experience');
+  t('Help');
+  t('Insights by Stanford Business');
+  t('Journal Articles, Book Chapters, Others');
+  t('Leave Information');
+  t('Main');
+  t('Main News');
+  t('Main Publications');
+  t('Media Items');
+  t('Name wrapper');
+  t('News');
+  t('Photo label');
+  t('Position wrapper');
+  t('Publications');
+  t('Research wrapper');
+  t('Scholar wrapper');
+  t('School News');
+  t('Social wrapper');
+  t('Stanford University Affiliations');
+  t('Tags wrapper');
+  t('Teaching & Talks');
+  t('Working Papers');
+
+  return $field_groups;
 }

@@ -882,6 +882,42 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_info|node|faculty|faculty_leadership';
+  $field_group->group_name = 'group_wrapper_info';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'faculty_leadership';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Info wrapper',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_faculty_director_positions',
+      1 => 'field_joint_appointment',
+      2 => 'field_title_appointment',
+      3 => 'senior_associate_dean_title',
+      4 => 'title',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Info wrapper',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-wrapper-info field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_wrapper_info|node|faculty|faculty_leadership'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_name|node|faculty|default';
   $field_group->group_name = 'group_wrapper_name';
   $field_group->entity_type = 'node';
@@ -1190,6 +1226,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   t('Courses Taught');
   t('Experience');
   t('Help');
+  t('Info wrapper');
   t('Insights by Stanford Business');
   t('Journal Articles, Book Chapters, Others');
   t('Leave Information');

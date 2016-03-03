@@ -918,6 +918,110 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_info|node|faculty|faculty_one';
+  $field_group->group_name = 'group_wrapper_info';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'faculty_one';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Info wrapper',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_joint_appointment',
+      1 => 'field_title_appointment',
+      2 => 'senior_associate_dean_title',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Info wrapper',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-wrapper-info field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_wrapper_info|node|faculty|faculty_one'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_info|node|faculty|faculty_two';
+  $field_group->group_name = 'group_wrapper_info';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'faculty_two';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Info wrapper',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_joint_appointment',
+      1 => 'field_title_appointment',
+      2 => 'senior_associate_dean_title',
+      3 => 'title',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Info wrapper',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-wrapper-info field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_wrapper_info|node|faculty|faculty_two'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_info|node|faculty|guest_speakers_advisors';
+  $field_group->group_name = 'group_wrapper_info';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'guest_speakers_advisors';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Info wrapper',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_joint_appointment',
+      1 => 'field_title_appointment',
+      2 => 'senior_associate_dean_title',
+      3 => 'title',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Info wrapper',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-wrapper-info field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_wrapper_info|node|faculty|guest_speakers_advisors'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_name|node|faculty|default';
   $field_group->group_name = 'group_wrapper_name';
   $field_group->entity_type = 'node';

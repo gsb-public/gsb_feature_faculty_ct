@@ -1075,7 +1075,7 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'faculty_one';
   $ds_fieldsetting->settings = array(
     'senior_associate_dean_title' => array(
-      'weight' => '3',
+      'weight' => '4',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -1168,7 +1168,7 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'faculty_two';
   $ds_fieldsetting->settings = array(
     'senior_associate_dean_title' => array(
-      'weight' => '3',
+      'weight' => '4',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -1185,7 +1185,7 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
       ),
     ),
     'title' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -1261,7 +1261,7 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'guest_speakers_advisors';
   $ds_fieldsetting->settings = array(
     'senior_associate_dean_title' => array(
-      'weight' => '3',
+      'weight' => '4',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -1278,7 +1278,7 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
       ),
     ),
     'title' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -1902,14 +1902,16 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'field_image_single_public',
         1 => 'title',
-        2 => 'field_title_appointment',
-        3 => 'senior_associate_dean_title',
-        4 => 'field_joint_appointment',
+        2 => 'group_wrapper_info',
+        3 => 'field_title_appointment',
+        4 => 'senior_associate_dean_title',
+        5 => 'field_joint_appointment',
       ),
     ),
     'fields' => array(
       'field_image_single_public' => 'ds_content',
       'title' => 'ds_content',
+      'group_wrapper_info' => 'ds_content',
       'field_title_appointment' => 'ds_content',
       'senior_associate_dean_title' => 'ds_content',
       'field_joint_appointment' => 'ds_content',
@@ -1938,14 +1940,16 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_image_single_public',
-        1 => 'title',
-        2 => 'field_title_appointment',
-        3 => 'senior_associate_dean_title',
-        4 => 'field_joint_appointment',
+        1 => 'group_wrapper_info',
+        2 => 'title',
+        3 => 'field_title_appointment',
+        4 => 'senior_associate_dean_title',
+        5 => 'field_joint_appointment',
       ),
     ),
     'fields' => array(
       'field_image_single_public' => 'ds_content',
+      'group_wrapper_info' => 'ds_content',
       'title' => 'ds_content',
       'field_title_appointment' => 'ds_content',
       'senior_associate_dean_title' => 'ds_content',
@@ -1975,14 +1979,16 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_image_single_public',
-        1 => 'title',
-        2 => 'field_title_appointment',
-        3 => 'senior_associate_dean_title',
-        4 => 'field_joint_appointment',
+        1 => 'group_wrapper_info',
+        2 => 'title',
+        3 => 'field_title_appointment',
+        4 => 'senior_associate_dean_title',
+        5 => 'field_joint_appointment',
       ),
     ),
     'fields' => array(
       'field_image_single_public' => 'ds_content',
+      'group_wrapper_info' => 'ds_content',
       'title' => 'ds_content',
       'field_title_appointment' => 'ds_content',
       'senior_associate_dean_title' => 'ds_content',

@@ -240,15 +240,15 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_one' => array(
-            'weight' => '34',
+            'weight' => '35',
             'visible' => FALSE,
           ),
           'faculty_two' => array(
-            'weight' => '34',
+            'weight' => '35',
             'visible' => FALSE,
           ),
           'guest_speakers_advisors' => array(
-            'weight' => '34',
+            'weight' => '35',
             'visible' => FALSE,
           ),
         ),
@@ -270,15 +270,15 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_one' => array(
-            'weight' => '32',
+            'weight' => '33',
             'visible' => FALSE,
           ),
           'faculty_two' => array(
-            'weight' => '32',
+            'weight' => '33',
             'visible' => FALSE,
           ),
           'guest_speakers_advisors' => array(
-            'weight' => '32',
+            'weight' => '33',
             'visible' => FALSE,
           ),
         ),
@@ -300,15 +300,15 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_one' => array(
-            'weight' => '29',
+            'weight' => '30',
             'visible' => FALSE,
           ),
           'faculty_two' => array(
-            'weight' => '29',
+            'weight' => '30',
             'visible' => FALSE,
           ),
           'guest_speakers_advisors' => array(
-            'weight' => '29',
+            'weight' => '30',
             'visible' => FALSE,
           ),
         ),
@@ -330,15 +330,15 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_one' => array(
-            'weight' => '22',
+            'weight' => '23',
             'visible' => FALSE,
           ),
           'faculty_two' => array(
-            'weight' => '22',
+            'weight' => '23',
             'visible' => FALSE,
           ),
           'guest_speakers_advisors' => array(
-            'weight' => '22',
+            'weight' => '23',
             'visible' => FALSE,
           ),
         ),
@@ -360,15 +360,15 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_one' => array(
-            'weight' => '28',
+            'weight' => '29',
             'visible' => FALSE,
           ),
           'faculty_two' => array(
-            'weight' => '28',
+            'weight' => '29',
             'visible' => FALSE,
           ),
           'guest_speakers_advisors' => array(
-            'weight' => '28',
+            'weight' => '29',
             'visible' => FALSE,
           ),
         ),
@@ -412,15 +412,15 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_one' => array(
-            'weight' => '43',
+            'weight' => '44',
             'visible' => FALSE,
           ),
           'faculty_two' => array(
-            'weight' => '43',
+            'weight' => '44',
             'visible' => FALSE,
           ),
           'guest_speakers_advisors' => array(
-            'weight' => '43',
+            'weight' => '44',
             'visible' => FALSE,
           ),
         ),
@@ -442,15 +442,15 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_one' => array(
-            'weight' => '31',
+            'weight' => '32',
             'visible' => FALSE,
           ),
           'faculty_two' => array(
-            'weight' => '31',
+            'weight' => '32',
             'visible' => FALSE,
           ),
           'guest_speakers_advisors' => array(
-            'weight' => '31',
+            'weight' => '32',
             'visible' => FALSE,
           ),
         ),
@@ -472,15 +472,15 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_one' => array(
-            'weight' => '33',
+            'weight' => '34',
             'visible' => FALSE,
           ),
           'faculty_two' => array(
-            'weight' => '33',
+            'weight' => '34',
             'visible' => FALSE,
           ),
           'guest_speakers_advisors' => array(
-            'weight' => '33',
+            'weight' => '34',
             'visible' => FALSE,
           ),
         ),
@@ -498,15 +498,15 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_one' => array(
-            'weight' => '45',
+            'weight' => '46',
             'visible' => FALSE,
           ),
           'faculty_two' => array(
-            'weight' => '45',
+            'weight' => '46',
             'visible' => FALSE,
           ),
           'guest_speakers_advisors' => array(
-            'weight' => '45',
+            'weight' => '46',
             'visible' => FALSE,
           ),
         ),
@@ -524,15 +524,15 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_one' => array(
-            'weight' => '44',
+            'weight' => '45',
             'visible' => FALSE,
           ),
           'faculty_two' => array(
-            'weight' => '44',
+            'weight' => '45',
             'visible' => FALSE,
           ),
           'guest_speakers_advisors' => array(
-            'weight' => '44',
+            'weight' => '45',
             'visible' => FALSE,
           ),
         ),

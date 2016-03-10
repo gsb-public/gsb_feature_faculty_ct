@@ -1096,7 +1096,15 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
-        'conditions' => array(),
+        'conditions' => array(
+          0 => array(
+            'condition' => 'hide_no_string',
+            'configuration' => array(
+              'target' => 'field_sad',
+              'string' => 'yes',
+            ),
+          ),
+        ),
       ),
     ),
     'title' => array(
@@ -1189,7 +1197,15 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
           'ow-at' => '',
           'ow-def-at' => TRUE,
         ),
-        'conditions' => array(),
+        'conditions' => array(
+          0 => array(
+            'condition' => 'hide_no_string',
+            'configuration' => array(
+              'target' => 'field_sad',
+              'string' => 'yes',
+            ),
+          ),
+        ),
       ),
     ),
     'title' => array(
@@ -1282,7 +1298,15 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
-        'conditions' => array(),
+        'conditions' => array(
+          0 => array(
+            'condition' => 'hide_no_string',
+            'configuration' => array(
+              'target' => 'field_sad',
+              'string' => 'yes',
+            ),
+          ),
+        ),
       ),
     ),
     'title' => array(

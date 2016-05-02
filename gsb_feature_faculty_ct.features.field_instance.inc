@@ -40,6 +40,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 25,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -139,6 +145,15 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 22,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 12,
       ),
       'faculty_two' => array(
         'label' => 'inline',
@@ -248,6 +263,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 24,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 56,
+      ),
       'faculty_two' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -343,6 +364,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 21,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -435,6 +462,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 60,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 70,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -523,6 +556,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 28,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 18,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -625,6 +664,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 18,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -756,6 +801,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 62,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 72,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -841,6 +892,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 52,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 62,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -932,6 +989,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 39,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 29,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1016,6 +1079,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 67,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 77,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -1109,6 +1178,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 70,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 38,
       ),
       'faculty_two' => array(
         'label' => 'hidden',
@@ -1207,6 +1282,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'faculty_one' => array(
         'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 13,
@@ -1356,6 +1437,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 73,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 39,
+      ),
       'faculty_two' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -1476,6 +1563,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 37,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 27,
+      ),
       'faculty_two' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -1574,6 +1667,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 71,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 79,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1663,6 +1762,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 81,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 46,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -1762,6 +1867,17 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'image_style' => '170x170',
         ),
         'type' => 'image',
+        'weight' => 0,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+          'image_link' => 'content',
+          'image_style' => '170x170',
+        ),
+        'type' => 'gsb_field_formatter_image',
         'weight' => 0,
       ),
       'faculty_two' => array(
@@ -1914,6 +2030,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 74,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 81,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1998,6 +2120,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 55,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 65,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -2093,6 +2221,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         ),
         'type' => 'text_default',
         'weight' => 5,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
       ),
       'faculty_two' => array(
         'label' => 'hidden',
@@ -2244,6 +2378,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 41,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 31,
+      ),
       'faculty_two' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -2341,6 +2481,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 48,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 58,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -2447,6 +2593,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 15,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
       'faculty_two' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -2544,6 +2696,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 49,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 59,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2639,6 +2797,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 80,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 45,
       ),
       'faculty_two' => array(
         'label' => 'hidden',
@@ -2758,6 +2922,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 76,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 41,
+      ),
       'faculty_two' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -2876,6 +3046,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 77,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 42,
+      ),
       'faculty_two' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -2987,6 +3163,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 79,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 44,
       ),
       'faculty_two' => array(
         'label' => 'hidden',
@@ -3100,6 +3282,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 78,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 43,
+      ),
       'faculty_two' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -3211,6 +3399,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 75,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 40,
       ),
       'faculty_two' => array(
         'label' => 'hidden',
@@ -3326,6 +3520,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 69,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 78,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3414,6 +3614,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 40,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 30,
       ),
       'faculty_two' => array(
         'label' => 'hidden',
@@ -3518,6 +3724,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 26,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -3602,6 +3814,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 58,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 68,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -3691,6 +3909,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 12,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
       ),
       'faculty_two' => array(
         'label' => 'hidden',
@@ -3837,6 +4061,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 68,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 37,
+      ),
       'faculty_two' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -3932,6 +4162,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 27,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -4031,6 +4267,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 61,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 71,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -4115,6 +4357,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 64,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 74,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -4202,6 +4450,15 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 14,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'list_default',
+        'weight' => 2,
       ),
       'faculty_two' => array(
         'label' => 'hidden',
@@ -4310,6 +4567,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 65,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 75,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -4398,6 +4661,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 19,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -4500,6 +4769,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 17,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -4606,6 +4881,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 16,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 55,
+      ),
       'faculty_two' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -4694,6 +4975,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 36,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 25,
       ),
       'faculty_two' => array(
         'label' => 'hidden',
@@ -4793,6 +5080,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 66,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 76,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -4878,6 +5171,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 72,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 80,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -4962,6 +5261,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 51,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 61,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -5124,6 +5429,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 42,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 33,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -5214,6 +5525,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 31,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 21,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -5296,6 +5613,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 54,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 64,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -5385,6 +5708,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 43,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 32,
       ),
       'faculty_two' => array(
         'label' => 'hidden',
@@ -5478,6 +5807,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 50,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 60,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -5578,6 +5913,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 53,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 63,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -5670,6 +6011,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 38,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 28,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -5758,6 +6105,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 20,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
       ),
       'faculty_two' => array(
         'label' => 'above',
@@ -5853,6 +6206,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 59,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 69,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -5947,6 +6306,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         ),
         'type' => 'text_default',
         'weight' => 3,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'faculty_two' => array(
         'label' => 'hidden',
@@ -6095,6 +6460,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 47,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 57,
+      ),
       'faculty_two' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -6193,6 +6564,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 56,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 66,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -6278,6 +6655,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 57,
       ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 67,
+      ),
       'faculty_two' => array(
         'label' => 'above',
         'settings' => array(),
@@ -6362,6 +6745,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 63,
+      ),
+      'faculty_teaching_programs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 73,
       ),
       'faculty_two' => array(
         'label' => 'above',

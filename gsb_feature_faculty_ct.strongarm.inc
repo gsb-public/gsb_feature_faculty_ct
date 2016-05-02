@@ -181,6 +181,18 @@ function gsb_feature_faculty_ct_strongarm() {
       'program_contact' => array(
         'custom_settings' => FALSE,
       ),
+      'faculty_teaching_programs' => array(
+        'custom_settings' => TRUE,
+      ),
+      'field_program_participants_desc' => array(
+        'custom_settings' => FALSE,
+      ),
+      'field_program_participants_intro' => array(
+        'custom_settings' => FALSE,
+      ),
+      'program_explore_other' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -251,6 +263,10 @@ function gsb_feature_faculty_ct_strongarm() {
             'weight' => '35',
             'visible' => FALSE,
           ),
+          'faculty_teaching_programs' => array(
+            'weight' => '26',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_working_paper_listing_case_listing_entity_view' => array(
           'default' => array(
@@ -279,6 +295,10 @@ function gsb_feature_faculty_ct_strongarm() {
           ),
           'guest_speakers_advisors' => array(
             'weight' => '33',
+            'visible' => FALSE,
+          ),
+          'faculty_teaching_programs' => array(
+            'weight' => '23',
             'visible' => FALSE,
           ),
         ),
@@ -311,6 +331,10 @@ function gsb_feature_faculty_ct_strongarm() {
             'weight' => '30',
             'visible' => FALSE,
           ),
+          'faculty_teaching_programs' => array(
+            'weight' => '20',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_course_listing_entity_view_1' => array(
           'default' => array(
@@ -339,6 +363,10 @@ function gsb_feature_faculty_ct_strongarm() {
           ),
           'guest_speakers_advisors' => array(
             'weight' => '23',
+            'visible' => FALSE,
+          ),
+          'faculty_teaching_programs' => array(
+            'weight' => '15',
             'visible' => FALSE,
           ),
         ),
@@ -371,6 +399,10 @@ function gsb_feature_faculty_ct_strongarm() {
             'weight' => '29',
             'visible' => FALSE,
           ),
+          'faculty_teaching_programs' => array(
+            'weight' => '19',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_publications_listing_eva_field_form' => array(
           'default' => array(
@@ -390,6 +422,10 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'guest_speakers_advisors' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'faculty_teaching_programs' => array(
             'weight' => '10',
             'visible' => FALSE,
           ),
@@ -423,6 +459,10 @@ function gsb_feature_faculty_ct_strongarm() {
             'weight' => '44',
             'visible' => FALSE,
           ),
+          'faculty_teaching_programs' => array(
+            'weight' => '34',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_publications_listing_publications_book_chapter_listing_entity_view' => array(
           'teaser' => array(
@@ -451,6 +491,10 @@ function gsb_feature_faculty_ct_strongarm() {
           ),
           'guest_speakers_advisors' => array(
             'weight' => '32',
+            'visible' => FALSE,
+          ),
+          'faculty_teaching_programs' => array(
+            'weight' => '22',
             'visible' => FALSE,
           ),
         ),
@@ -483,6 +527,10 @@ function gsb_feature_faculty_ct_strongarm() {
             'weight' => '34',
             'visible' => FALSE,
           ),
+          'faculty_teaching_programs' => array(
+            'weight' => '24',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_school_news_entity_view_1' => array(
           'default' => array(
@@ -509,6 +557,14 @@ function gsb_feature_faculty_ct_strongarm() {
             'weight' => '46',
             'visible' => FALSE,
           ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'faculty_teaching_programs' => array(
+            'weight' => '36',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_insights_stanford_business_entity_view_1' => array(
           'default' => array(
@@ -533,6 +589,14 @@ function gsb_feature_faculty_ct_strongarm() {
           ),
           'guest_speakers_advisors' => array(
             'weight' => '45',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'faculty_teaching_programs' => array(
+            'weight' => '35',
             'visible' => FALSE,
           ),
         ),

@@ -1105,6 +1105,7 @@ function gsb_feature_faculty_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Name wrapper',
       'instance_settings' => array(
+        'id' => '',
         'classes' => 'person-name',
         'description' => '',
         'show_label' => '0',

@@ -1178,6 +1178,28 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|faculty|faculty_teaching_programs';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'faculty';
+  $ds_fieldsetting->view_mode = 'faculty_teaching_programs';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '51',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => 'span',
+        'class' => '',
+        'ft' => array(),
+        'conditions' => array(),
+      ),
+    ),
+  );
+  $export['node|faculty|faculty_teaching_programs'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|faculty|faculty_two';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'faculty';
@@ -1469,6 +1491,11 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
+      ),
+    ),
+    'field_image_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
       ),
     ),
     'field_rank' => array(
@@ -1963,6 +1990,43 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|faculty|faculty_teaching_programs';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'faculty';
+  $ds_layout->view_mode = 'faculty_teaching_programs';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'field_image_single_public',
+        1 => 'group_wrapper_name',
+        2 => 'field_rank',
+        3 => 'field_academic_area_single',
+        4 => 'title',
+      ),
+    ),
+    'fields' => array(
+      'field_image_single_public' => 'ds_content',
+      'group_wrapper_name' => 'ds_content',
+      'field_rank' => 'ds_content',
+      'field_academic_area_single' => 'ds_content',
+      'title' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
+  );
+  $export['node|faculty|faculty_teaching_programs'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'node|faculty|faculty_two';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'faculty';
@@ -2108,6 +2172,9 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|faculty|teaser'] = $ds_layout;
 

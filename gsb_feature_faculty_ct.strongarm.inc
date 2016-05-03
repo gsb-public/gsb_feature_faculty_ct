@@ -264,7 +264,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_teaching_programs' => array(
-            'weight' => '26',
+            'weight' => '33',
             'visible' => FALSE,
           ),
         ),
@@ -298,7 +298,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_teaching_programs' => array(
-            'weight' => '23',
+            'weight' => '30',
             'visible' => FALSE,
           ),
         ),
@@ -332,7 +332,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_teaching_programs' => array(
-            'weight' => '20',
+            'weight' => '27',
             'visible' => FALSE,
           ),
         ),
@@ -366,7 +366,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_teaching_programs' => array(
-            'weight' => '15',
+            'weight' => '22',
             'visible' => FALSE,
           ),
         ),
@@ -400,7 +400,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_teaching_programs' => array(
-            'weight' => '19',
+            'weight' => '26',
             'visible' => FALSE,
           ),
         ),
@@ -460,7 +460,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_teaching_programs' => array(
-            'weight' => '34',
+            'weight' => '41',
             'visible' => FALSE,
           ),
         ),
@@ -494,7 +494,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_teaching_programs' => array(
-            'weight' => '22',
+            'weight' => '29',
             'visible' => FALSE,
           ),
         ),
@@ -528,7 +528,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_teaching_programs' => array(
-            'weight' => '24',
+            'weight' => '31',
             'visible' => FALSE,
           ),
         ),
@@ -562,7 +562,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_teaching_programs' => array(
-            'weight' => '36',
+            'weight' => '43',
             'visible' => FALSE,
           ),
         ),
@@ -596,7 +596,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'faculty_teaching_programs' => array(
-            'weight' => '35',
+            'weight' => '42',
             'visible' => FALSE,
           ),
         ),

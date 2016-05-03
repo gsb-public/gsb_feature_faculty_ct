@@ -1184,7 +1184,7 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'faculty_teaching_programs';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '51',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -1998,19 +1998,17 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'title',
-        1 => 'field_image_single_public',
-        2 => 'group_wrapper_name',
-        3 => 'field_rank',
-        4 => 'field_academic_area_single',
+        0 => 'field_image_single_public',
+        1 => 'title',
+        2 => 'field_rank',
+        3 => 'field_academic_area_single',
       ),
     ),
     'fields' => array(
       'field_image_single_public' => 'ds_content',
-      'group_wrapper_name' => 'ds_content',
+      'title' => 'ds_content',
       'field_rank' => 'ds_content',
       'field_academic_area_single' => 'ds_content',
-      'title' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

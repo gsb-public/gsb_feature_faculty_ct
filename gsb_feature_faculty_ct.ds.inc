@@ -2002,7 +2002,7 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
         1 => 'field_image_single_public',
         2 => 'group_wrapper_name',
         3 => 'field_rank',
-        4 => 'field_academic_area_single',,
+        4 => 'field_academic_area_single',
       ),
     ),
     'fields' => array(

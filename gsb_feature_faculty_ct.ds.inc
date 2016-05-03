@@ -1998,11 +1998,11 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_image_single_public',
-        1 => 'group_wrapper_name',
-        2 => 'field_rank',
-        3 => 'field_academic_area_single',
-        4 => 'title',
+        0 => 'title',
+        1 => 'field_image_single_public',
+        2 => 'group_wrapper_name',
+        3 => 'field_rank',
+        4 => 'field_academic_area_single',,
       ),
     ),
     'fields' => array(

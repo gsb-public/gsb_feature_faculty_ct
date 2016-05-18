@@ -1019,26 +1019,6 @@ function gsb_feature_faculty_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_faculty_director_positions' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-          'fi' => TRUE,
-          'fi-el' => 'div',
-          'fi-cl' => '',
-          'fi-at' => '',
-          'fi-def-at' => FALSE,
-          'fi-odd-even' => FALSE,
-          'fi-first-last' => FALSE,
-        ),
-      ),
-    ),
     'field_joint_appointment' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -1924,7 +1904,6 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
         3 => 'field_title_appointment',
         4 => 'senior_associate_dean_title',
         5 => 'field_joint_appointment',
-        6 => 'field_faculty_director_positions',
       ),
     ),
     'fields' => array(
@@ -1934,7 +1913,6 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
       'field_title_appointment' => 'ds_content',
       'senior_associate_dean_title' => 'ds_content',
       'field_joint_appointment' => 'ds_content',
-      'field_faculty_director_positions' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

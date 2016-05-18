@@ -892,11 +892,10 @@ function gsb_feature_faculty_ct_field_group_info() {
     'label' => 'Info wrapper',
     'weight' => '1',
     'children' => array(
-      0 => 'field_faculty_director_positions',
-      1 => 'field_joint_appointment',
-      2 => 'field_title_appointment',
-      3 => 'senior_associate_dean_title',
-      4 => 'title',
+      0 => 'field_joint_appointment',
+      1 => 'field_title_appointment',
+      2 => 'senior_associate_dean_title',
+      3 => 'title',
     ),
     'format_type' => 'div',
     'format_settings' => array(

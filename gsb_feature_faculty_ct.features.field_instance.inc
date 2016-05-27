@@ -953,7 +953,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 71,
+      'weight' => 72,
     ),
     'workbench_access_field' => 0,
   );
@@ -1323,7 +1323,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_faculty_director_positions',
-    'label' => 'Faculty Director Positions',
+    'label' => 'Additional Administrative Titles',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -1336,6 +1336,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'image_text_equivalent' => 'image_text_equivalent',
           'markdown' => 'markdown',
           'markdown_lite_minus_resources' => 'markdown_lite_minus_resources',
+          'paragraphed_plain_text' => 0,
           'plain_text' => 'plain_text',
           'sidebar' => 'sidebar',
           'slideshow' => 'slideshow',
@@ -1368,6 +1369,9 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
             'markdown_lite_minus_resources' => array(
               'weight' => 0,
             ),
+            'paragraphed_plain_text' => array(
+              'weight' => 0,
+            ),
             'plain_text' => array(
               'weight' => 10,
             ),
@@ -1398,7 +1402,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 70,
+      'weight' => 71,
     ),
     'workbench_access_field' => 0,
   );
@@ -2265,7 +2269,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_joint_appointment',
-    'label' => 'Fellow, Scholar, & Joint Appointments',
+    'label' => 'Joint Appointment or Hoover Fellow Positions',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -2278,6 +2282,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'image_text_equivalent' => 'image_text_equivalent',
           'markdown' => 'markdown',
           'markdown_lite_minus_resources' => 'markdown_lite_minus_resources',
+          'paragraphed_plain_text' => 0,
           'plain_text' => 'plain_text',
           'sidebar' => 'sidebar',
           'slideshow' => 'slideshow',
@@ -2310,6 +2315,9 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
             'markdown_lite_minus_resources' => array(
               'weight' => 0,
             ),
+            'paragraphed_plain_text' => array(
+              'weight' => 0,
+            ),
             'plain_text' => array(
               'weight' => 10,
             ),
@@ -2340,7 +2348,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 68,
+      'weight' => 69,
     ),
     'workbench_access_field' => 0,
   );
@@ -3884,7 +3892,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter all other faculty or scholar positions, by courtesy faculty appointments, or faculty appointments at other institutions.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -3960,6 +3968,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'image_text_equivalent' => 'image_text_equivalent',
           'markdown' => 'markdown',
           'markdown_lite_minus_resources' => 'markdown_lite_minus_resources',
+          'paragraphed_plain_text' => 0,
           'plain_text' => 'plain_text',
           'sidebar' => 'sidebar',
           'slideshow' => 'slideshow',
@@ -3992,6 +4001,9 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
             'markdown_lite_minus_resources' => array(
               'weight' => 0,
             ),
+            'paragraphed_plain_text' => array(
+              'weight' => 0,
+            ),
             'plain_text' => array(
               'weight' => 10,
             ),
@@ -4022,7 +4034,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 69,
+      'weight' => 70,
     ),
     'workbench_access_field' => 0,
   );
@@ -4938,7 +4950,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'checkall' => FALSE,
       ),
       'type' => 'options_buttons',
-      'weight' => 67,
+      'weight' => 68,
     ),
     'workbench_access_field' => 0,
   );
@@ -5972,7 +5984,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 72,
+      'weight' => 73,
     ),
     'workbench_access_field' => 0,
   );
@@ -6425,7 +6437,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 66,
+      'weight' => 67,
     ),
     'workbench_access_field' => 0,
   );
@@ -6815,6 +6827,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Academic Appointments');
   t('Academic Area');
   t('Academic Degrees');
+  t('Additional Administrative Titles');
   t('Affiliations Help');
   t('Award, Organization, YYYY');
   t('Awards and Honors');
@@ -6829,10 +6842,9 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Deleting Items');
   t('Email');
   t('Endowed Title OR Appointment');
+  t('Enter all other faculty or scholar positions, by courtesy faculty appointments, or faculty appointments at other institutions.');
   t('Enter your email address to allow users to contact you via a webform. <strong>Your email address will not be displayed on the site.</strong>');
   t('Experience Tab Help Text');
-  t('Faculty Director Positions');
-  t('Fellow, Scholar, & Joint Appointments');
   t('First Name');
   t('Formatting Help');
   t('Google Scholar Public Profile URL');
@@ -6841,6 +6853,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Include positions held for Stanford or Stanford GSB centers or institutes, and Stanford GSB initiatives or labs. <strong>Do not</strong> include positions for non-degree programs.');
   t('Insights Tab Help');
   t('Introduction');
+  t('Joint Appointment or Hoover Fellow Positions');
   t('Keywords');
   t('Last Name');
   t('LinkedIn Public Profile or Influencer URL');

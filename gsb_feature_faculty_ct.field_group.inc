@@ -75,12 +75,10 @@ function gsb_feature_faculty_ct_field_group_info() {
       4 => 'field_title_position_unlimited',
       5 => 'field_centers_research_programs',
       6 => 'field_tag',
-      7 => 'field_title_appointment',
-      8 => 'field_sad',
-      9 => 'field_joint_appointment',
-      10 => 'field_other_titles',
-      11 => 'field_faculty_director_positions',
-      12 => 'group_leave_information',
+      7 => 'field_faculty_director_positions',
+      8 => 'field_other_titles',
+      9 => 'group_leave_information',
+      10 => 'group_titles_and_appointments',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -657,6 +655,36 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
   );
   $field_groups['group_teaching_and_talks|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_titles_and_appointments|node|faculty|form';
+  $field_group->group_name = 'group_titles_and_appointments';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_administration';
+  $field_group->data = array(
+    'label' => 'Title & Appointments',
+    'weight' => '66',
+    'children' => array(
+      0 => 'field_joint_appointment',
+      1 => 'field_sad',
+      2 => 'field_title_appointment',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-titles-and-appointments field-group-fieldset',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_titles_and_appointments|node|faculty|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1350,6 +1378,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   t('Stanford University Affiliations');
   t('Tags wrapper');
   t('Teaching & Talks');
+  t('Title & Appointments');
   t('Working Papers');
 
   return $field_groups;

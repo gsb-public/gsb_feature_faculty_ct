@@ -88,6 +88,7 @@ features[field_group][] = group_tags_wrapper|node|faculty|default
 features[field_group][] = group_teaching_and_talks|node|faculty|form
 features[field_group][] = group_titles_and_appointments|node|faculty|form
 features[field_group][] = group_working_papers|node|faculty|form
+features[field_group][] = group_wrapper_aat|node|faculty|default
 features[field_group][] = group_wrapper_academic|node|faculty|default
 features[field_group][] = group_wrapper_affiliation_commas|field_collection_item|field_greater_university_affil|default
 features[field_group][] = group_wrapper_affiliation_commas|field_collection_item|field_stanford_gsb_affiliation|default

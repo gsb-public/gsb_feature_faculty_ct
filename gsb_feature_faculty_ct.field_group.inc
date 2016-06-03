@@ -956,8 +956,9 @@ function gsb_feature_faculty_ct_field_group_info() {
     'children' => array(
       0 => 'field_joint_appointment',
       1 => 'field_title_appointment',
-      2 => 'senior_associate_dean_title',
-      3 => 'title',
+      2 => 'gsb_program_faculty_director_titles',
+      3 => 'senior_associate_dean_title',
+      4 => 'title',
     ),
     'format_type' => 'div',
     'format_settings' => array(

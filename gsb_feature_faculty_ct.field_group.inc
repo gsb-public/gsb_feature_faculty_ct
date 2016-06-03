@@ -188,16 +188,15 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Teaching',
-    'weight' => '17',
+    'label' => 'Courses Taught',
+    'weight' => '16',
     'children' => array(
       0 => 'field_non_degree_course',
       1 => 'gsb_course_listing_entity_view_1',
-      2 => 'gsb_program_faculty_courses',
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'label' => 'Teaching',
+      'label' => 'Courses Taught',
       'instance_settings' => array(
         'id' => '',
         'classes' => 'group-courses-taught field-group-div',
@@ -518,7 +517,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Publications',
-    'weight' => '15',
+    'weight' => '14',
     'children' => array(
       0 => 'gsb_book_listing_entity_view_1',
       1 => 'gsb_publications_listing_publications_listing_entity_view',
@@ -610,7 +609,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
-    'weight' => '35',
+    'weight' => '33',
     'children' => array(
       0 => 'field_academic_area_unlimited',
     ),
@@ -717,39 +716,6 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_wrapper_aat|node|faculty|default';
-  $field_group->group_name = 'group_wrapper_aat';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'faculty';
-  $field_group->mode = 'default';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Additional Administrative Titles',
-    'weight' => '10',
-    'children' => array(
-      0 => 'field_faculty_director_positions',
-      1 => 'gsb_program_faculty_director_titles',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Additional Administrative Titles',
-      'instance_settings' => array(
-        'id' => '',
-        'classes' => 'group-wrapper-aat field-group-div',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'none',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $field_groups['group_wrapper_aat|node|faculty|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_academic|node|faculty|default';
   $field_group->group_name = 'group_wrapper_academic';
   $field_group->entity_type = 'node';
@@ -758,7 +724,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Academic wrapper',
-    'weight' => '14',
+    'weight' => '13',
     'children' => array(
       0 => 'field_awards_honors',
       1 => 'field_body',
@@ -857,7 +823,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Stanford University Affiliations',
-    'weight' => '21',
+    'weight' => '20',
     'children' => array(
       0 => 'field_stanford_gsb_affiliation',
       1 => 'field_greater_university_affil',
@@ -1286,7 +1252,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Research wrapper',
-    'weight' => '13',
+    'weight' => '12',
     'children' => array(
       0 => 'field_research_interests',
       1 => 'field_research_statement',
@@ -1382,7 +1348,6 @@ function gsb_feature_faculty_ct_field_group_info() {
   // Included for use with string extractors like potx.
   t('About');
   t('Academic wrapper');
-  t('Additional Administrative Titles');
   t('Administration');
   t('Affiliation commas wrapper');
   t('Affiliations');
@@ -1390,6 +1355,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   t('Cases');
   t('Contact Info');
   t('Contact wrapper');
+  t('Courses Taught');
   t('Experience');
   t('Help');
   t('Info wrapper');
@@ -1411,7 +1377,6 @@ function gsb_feature_faculty_ct_field_group_info() {
   t('Social wrapper');
   t('Stanford University Affiliations');
   t('Tags wrapper');
-  t('Teaching');
   t('Teaching & Talks');
   t('Title & Appointments');
   t('Working Papers');

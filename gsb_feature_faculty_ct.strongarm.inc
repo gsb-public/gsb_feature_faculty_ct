@@ -600,6 +600,26 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
         ),
+        'gsb_program_faculty_courses' => array(
+          'default' => array(
+            'weight' => '12',
+            'visible' => TRUE,
+          ),
+          'faculty_leadership' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+        ),
+        'gsb_program_faculty_director_titles' => array(
+          'default' => array(
+            'weight' => '11',
+            'visible' => TRUE,
+          ),
+          'faculty_leadership' => array(
+            'weight' => '6',
+            'visible' => TRUE,
+          ),
+        ),
       ),
     ),
   );

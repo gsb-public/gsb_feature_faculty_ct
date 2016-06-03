@@ -1904,6 +1904,7 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
         3 => 'field_title_appointment',
         4 => 'senior_associate_dean_title',
         5 => 'field_joint_appointment',
+        6 => 'gsb_program_faculty_director_titles',
       ),
     ),
     'fields' => array(
@@ -1913,6 +1914,7 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
       'field_title_appointment' => 'ds_content',
       'senior_associate_dean_title' => 'ds_content',
       'field_joint_appointment' => 'ds_content',
+      'gsb_program_faculty_director_titles' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

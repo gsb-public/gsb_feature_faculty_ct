@@ -72,13 +72,11 @@ function gsb_feature_faculty_ct_field_group_info() {
       1 => 'field_academic_area_unlimited',
       2 => 'field_rank',
       3 => 'field_sunetid',
-      4 => 'field_title_position_unlimited',
-      5 => 'field_centers_research_programs',
-      6 => 'field_tag',
-      7 => 'field_faculty_director_positions',
-      8 => 'field_other_titles',
-      9 => 'group_leave_information',
-      10 => 'group_titles_and_appointments',
+      4 => 'field_centers_research_programs',
+      5 => 'field_tag',
+      6 => 'group_leave_information',
+      7 => 'group_titles_and_appointments',
+      8 => 'group_other_titles',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -509,6 +507,36 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_other_titles|node|faculty|form';
+  $field_group->group_name = 'group_other_titles';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_administration';
+  $field_group->data = array(
+    'label' => 'Other Titles',
+    'weight' => '67',
+    'children' => array(
+      0 => 'field_faculty_director_positions',
+      1 => 'field_other_titles',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Other Titles',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-other-titles field-group-fieldset',
+        'description' => 'Titles entered into these fields display only on the faculty member\'s profile.',
+      ),
+      'formatter' => 'collapsible',
+    ),
+  );
+  $field_groups['group_other_titles|node|faculty|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_publications|node|faculty|default';
   $field_group->group_name = 'group_publications';
   $field_group->entity_type = 'node';
@@ -675,13 +703,14 @@ function gsb_feature_faculty_ct_field_group_info() {
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Title & Appointments',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => 'group-titles-and-appointments field-group-fieldset',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-titles-and-appointments field-group-fieldset',
+        'description' => 'Titles entered in these fields display throughout the site.',
       ),
+      'formatter' => 'collapsible',
     ),
   );
   $field_groups['group_titles_and_appointments|node|faculty|form'] = $field_group;
@@ -1369,6 +1398,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   t('Media Items');
   t('Name wrapper');
   t('News');
+  t('Other Titles');
   t('Photo label');
   t('Position wrapper');
   t('Publications');

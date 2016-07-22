@@ -27,17 +27,22 @@ function gsb_feature_faculty_ct_image_default_styles() {
 
   // Exported image style: 270x270.
   $styles['270x270'] = array(
+    'label' => '270x270',
     'effects' => array(
-      6 => array(
+      2 => array(
+        'name' => 'tinypng',
+        'data' => array(),
+        'weight' => -10,
+      ),
+      1 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 270,
           'height' => 270,
         ),
-        'weight' => 1,
+        'weight' => -9,
       ),
     ),
-    'label' => '270x270',
   );
 
   return $styles;

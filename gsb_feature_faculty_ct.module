@@ -245,12 +245,11 @@ function _gsb_feature_faculty_ct_update_academic_areas($wrapper, $state) {
   }
 
   // Build the URL.
-  $url = url($service_url . '/ManageAcademicAreas', array('query' => $query));
-  $result = drupal_http_request($url);
+  $url = $service_url . '/ManageAcademicAreas';
+  $result = _gsb_feature_faculty_ct_curl($url, $query);
 
   // Parse the result status.
-  $xml = @simplexml_load_string($result->data);
-  if ($result->code !== '200' || (string) $xml !== '1') {
+  if ($result->code !== 200 || $result->data[0] !== '-1') {
     watchdog('gsb_feature_faculty_ct', 'Faculty update failed with status @status for user: @user', array('@user' => $query['uid'], '@status' => $result->code), WATCHDOG_WARNING);
   }
 }
@@ -318,12 +317,11 @@ function _gsb_feature_faculty_ct_update_faculty_by_sunet($wrapper, $state) {
   $query['rank'] = $wrapper->field_rank->value();
 
   // Build the URL.
-  $url = url($service_url . '/UpdateFacultyBySunet', array('query' => $query));
-  $result = drupal_http_request($url);
+  $url = $service_url . '/UpdateFacultyBySunet';
+  $result = _gsb_feature_faculty_ct_curl($url, $query);
 
   // Parse the result status.
-  $xml = @simplexml_load_string($result->data);
-  if ($result->code !== '200' || (string) $xml !== '1') {
+  if ($result->code !== 200 || $result->data[0] !== '-1') {
     watchdog('gsb_feature_faculty_ct', 'Faculty update failed with status @status for sunet: @sunet', array('@sunet' => $query['sunet'], '@status' => $result->code), WATCHDOG_WARNING);
   }
 }
@@ -364,4 +362,55 @@ function gsb_feature_faculty_ct_field_attach_update($entity_type, $entity) {
       }
     }
   }
+}
+
+/**
+ * Executes curl get request and returnS $results object with:
+ *   $results->errno
+ *   $results->errmsg
+ *   $results->code
+ *   $results->data
+ */
+function _gsb_feature_faculty_ct_curl($url, $fields) {
+
+  //url-ify the data for the POST
+  $fields_string = '';
+  foreach($fields as $key => $value) {
+    $fields_string .= $key.'='.$value.'&';
+  }
+  $fields_string = rtrim($fields_string, '&');
+
+  //open connection
+  $session = curl_init();
+
+  $url .= '?' . $fields_string;
+
+  curl_setopt_array($session, array(
+    CURLOPT_RETURNTRANSFER => 1,
+    CURLOPT_URL => $url,
+    CURLOPT_HEADER => 0,
+    CURLOPT_SSL_VERIFYHOST => 0,
+    CURLOPT_SSL_VERIFYPEER => 0
+  ));
+
+  $body = curl_exec($session);
+
+  $xml = simplexml_load_string($body);
+  $data = json_decode(json_encode((array)$xml), TRUE);
+
+  $errno = curl_errno($session);
+  $errmsg = curl_error($session);
+
+  $code = curl_getinfo($session, CURLINFO_HTTP_CODE);
+
+  $results = new stdClass();
+  $results->errno = $errno;
+  $results->errmsg = $errmsg;
+  $results->code = $code;
+  $results->data = $data;
+
+  //close connection
+  curl_close($session);
+
+  return $results;
 }

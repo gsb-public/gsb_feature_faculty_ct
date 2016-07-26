@@ -159,8 +159,8 @@ function gsb_feature_faculty_ct_node_presave($node) {
 
   if (isset($node->workbench_moderation_state_new) && $wrapper->field_rank->value() != 'Instructor') {
     _gsb_feature_faculty_ct_update_academic_areas($wrapper, $node->workbench_moderation_state_new);
-    _gsb_feature_faculty_ct_update_faculty_by_sunet($wrapper, $node->workbench_moderation_state_new);
   }
+  _gsb_feature_faculty_ct_update_faculty_by_sunet($wrapper, $node->workbench_moderation_state_new);
 }
 
 /**

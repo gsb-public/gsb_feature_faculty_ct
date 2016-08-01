@@ -1274,6 +1274,34 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_rank_and_area|node|faculty|faculty_teaching_programs';
+  $field_group->group_name = 'group_wrapper_rank_and_area';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'faculty_teaching_programs';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Rank and Area',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_academic_area_single',
+      1 => 'field_rank',
+    ),
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
+    'format_settings' => array(
+      'label' => 'Rank and Area',
+      'instance_settings' => array(
+        'item_count' => '0',
+        'classes' => 'group-wrapper-rank-and-area field-group-gsb_field_formatter_group_comma_separator',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_wrapper_rank_and_area|node|faculty|faculty_teaching_programs'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_research|node|faculty|default';
   $field_group->group_name = 'group_wrapper_research';
   $field_group->entity_type = 'node';
@@ -1402,6 +1430,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   t('Photo label');
   t('Position wrapper');
   t('Publications');
+  t('Rank and Area');
   t('Research wrapper');
   t('Scholar wrapper');
   t('School News');

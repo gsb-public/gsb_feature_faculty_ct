@@ -193,6 +193,12 @@ function gsb_feature_faculty_ct_strongarm() {
       'program_explore_other' => array(
         'custom_settings' => FALSE,
       ),
+      'print' => array(
+        'custom_settings' => FALSE,
+      ),
+      'field_program_who_should_attend' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -236,7 +242,7 @@ function gsb_feature_faculty_ct_strongarm() {
       'display' => array(
         'gsb_case_listing_case_listing_entity_view' => array(
           'default' => array(
-            'weight' => '17',
+            'weight' => '18',
             'visible' => TRUE,
           ),
           'people_fpp' => array(
@@ -270,7 +276,7 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_working_paper_listing_case_listing_entity_view' => array(
           'default' => array(
-            'weight' => '15',
+            'weight' => '16',
             'visible' => TRUE,
           ),
           'people_fpp' => array(
@@ -432,7 +438,7 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_media_mentions_media_mention_listing_entity_view' => array(
           'default' => array(
-            'weight' => '22',
+            'weight' => '23',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -534,7 +540,7 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_school_news_entity_view_1' => array(
           'default' => array(
-            'weight' => '24',
+            'weight' => '25',
             'visible' => TRUE,
           ),
           'people_fpp' => array(
@@ -568,7 +574,7 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_insights_stanford_business_entity_view_1' => array(
           'default' => array(
-            'weight' => '23',
+            'weight' => '24',
             'visible' => TRUE,
           ),
           'people_fpp' => array(
@@ -616,7 +622,7 @@ function gsb_feature_faculty_ct_strongarm() {
         ),
         'gsb_program_faculty_director_titles' => array(
           'default' => array(
-            'weight' => '11',
+            'weight' => '10',
             'visible' => TRUE,
           ),
           'faculty_leadership' => array(

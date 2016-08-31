@@ -183,9 +183,9 @@ function gsb_feature_faculty_ct_workbench_moderation_moderate_form_submit(&$form
 
   $wrapper = entity_metadata_wrapper('node', $node);
   if ($wrapper->field_rank->value() != 'Instructor') {
-    _gsb_feature_faculty_ct_update_academic_areas($wrapper, $form_state['values']['state']);
-    _gsb_feature_faculty_ct_update_faculty_by_sunet($wrapper, $form_state['values']['state']);
+    _gsb_feature_faculty_ct_update_academic_areas($wrapper);
   }
+  _gsb_feature_faculty_ct_update_faculty_by_sunet($wrapper, $form_state['values']['state']);
 }
 
 /**
@@ -193,17 +193,10 @@ function gsb_feature_faculty_ct_workbench_moderation_moderate_form_submit(&$form
  *
  * @param \EntityDrupalWrapper $wrapper
  *   The faculty node.
- * @param string $state
- *   The state of the node, e.g., 'draft', 'published'.
  */
-function _gsb_feature_faculty_ct_update_academic_areas($wrapper, $state) {
+function _gsb_feature_faculty_ct_update_academic_areas($wrapper) {
   if (!$service_url = variable_get('gsb_feature_faculty_ct_service_url', '')) {
     watchdog('gsb_feature_faculty_ct', 'No external service URL is set.');
-    return;
-  }
-
-  // Only published faculty nodes should be updated.
-  if ($state != workbench_moderation_state_published()) {
     return;
   }
 

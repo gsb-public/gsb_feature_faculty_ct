@@ -239,6 +239,9 @@ function _gsb_feature_faculty_ct_update_academic_areas($wrapper) {
     $query['primaryAcadArea'] = 'none';
   }
 
+  $query['secondaryAcadArea'] = drupal_encode_path($query['secondaryAcadArea']);
+  $query['primaryAcadArea'] = drupal_encode_path($query['primaryAcadArea']);
+
   // Build the URL.
   $url = $service_url . '/ManageAcademicAreas';
   $result = _gsb_feature_faculty_ct_curl($url, $query);

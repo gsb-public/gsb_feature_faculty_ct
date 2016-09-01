@@ -309,6 +309,7 @@ function _gsb_feature_faculty_ct_update_faculty_by_sunet($wrapper, $state) {
     $query['showPhone'] = 1;
   }
   $query['rank'] = $wrapper->field_rank->value();
+  $query['rank'] = drupal_encode_path($query['rank']);
 
   // Build the URL.
   $url = $service_url . '/UpdateFacultyBySunet';

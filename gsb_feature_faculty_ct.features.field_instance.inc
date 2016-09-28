@@ -2897,130 +2897,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-faculty-field_link_google_scholar'.
-  $field_instances['node-faculty-field_link_google_scholar'] = array(
-    'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'link',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'link_label',
-        'weight' => 59,
-      ),
-      'faculty_leadership' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 76,
-      ),
-      'faculty_one' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 76,
-      ),
-      'faculty_teaching_programs' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 51,
-      ),
-      'faculty_two' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 76,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'guest_speakers_advisors' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 76,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 23,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 24,
-      ),
-      'tiny' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_link_google_scholar',
-    'label' => 'Google Scholar Public Profile URL',
-    'required' => 0,
-    'settings' => array(
-      'absolute_url' => 1,
-      'attributes' => array(
-        'class' => '',
-        'configurable_title' => 0,
-        'rel' => '',
-        'target' => '_blank',
-        'title' => '',
-      ),
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 0,
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'rel_remove' => 'default',
-      'title' => 'none',
-      'title_label_use_field_label' => 0,
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
-      'user_register_form' => FALSE,
-      'validate_url' => 1,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'link',
-      'settings' => array(
-        'maxlength_js_label' => '',
-      ),
-      'type' => 'link_field',
-      'weight' => 70,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-faculty-field_link_linkedin'.
   $field_instances['node-faculty-field_link_linkedin'] = array(
     'bundle' => 'faculty',
@@ -6742,7 +6618,6 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Experience Tab Help Text');
   t('First Name');
   t('Formatting Help');
-  t('Google Scholar Public Profile URL');
   t('Greater Stanford University Affiliations');
   t('If you prefer to group by category, enter the categories first, then activities.  <strong>Deleting a category will also delete the service activities under it.</strong>');
   t('Include positions held for Stanford or Stanford GSB centers or institutes, and Stanford GSB initiatives or labs. <strong>Do not</strong> include positions for non-degree programs.');

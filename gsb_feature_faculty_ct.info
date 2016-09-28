@@ -136,7 +136,6 @@ features[field_instance][] = node-faculty-field_leave_date
 features[field_instance][] = node-faculty-field_leave_statement
 features[field_instance][] = node-faculty-field_leave_status
 features[field_instance][] = node-faculty-field_link_blog
-features[field_instance][] = node-faculty-field_link_google_scholar
 features[field_instance][] = node-faculty-field_link_linkedin
 features[field_instance][] = node-faculty-field_link_other_social
 features[field_instance][] = node-faculty-field_link_twitter

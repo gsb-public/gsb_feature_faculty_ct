@@ -29,18 +29,18 @@ function gsb_feature_faculty_ct_image_default_styles() {
   $styles['270x270'] = array(
     'label' => '270x270',
     'effects' => array(
-      2 => array(
-        'name' => 'tinypng',
+      3 => array(
+        'name' => 'kraken_optimize',
         'data' => array(),
         'weight' => -10,
       ),
-      1 => array(
+      2 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 270,
           'height' => 270,
         ),
-        'weight' => -9,
+        'weight' => -8,
       ),
     ),
   );

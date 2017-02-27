@@ -1380,8 +1380,7 @@ function gsb_feature_faculty_ct_field_group_info() {
     'weight' => '56',
     'children' => array(
       0 => 'field_file_single_public',
-      1 => 'field_link_google_scholar',
-      2 => 'field_link_website',
+      1 => 'field_link_website',
     ),
     'format_type' => 'div',
     'format_settings' => array(

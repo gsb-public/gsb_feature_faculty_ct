@@ -1841,7 +1841,11 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'gsb_field_formatter',
         'settings' => array(
-          'conditions' => array(),
+          'conditions' => array(
+            0 => array(
+              'condition' => '',
+            ),
+          ),
           'image_link' => '',
           'image_style' => '270x270',
         ),

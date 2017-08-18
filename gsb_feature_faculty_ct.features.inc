@@ -42,6 +42,11 @@ function gsb_feature_faculty_ct_image_default_styles() {
         ),
         'weight' => -8,
       ),
+      11 => array(
+        'name' => 'bypass_image_toolkit',
+        'data' => array(),
+        'weight' => 3,
+      ),
     ),
   );
 

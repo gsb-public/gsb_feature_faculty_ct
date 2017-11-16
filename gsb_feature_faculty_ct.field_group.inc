@@ -41,6 +41,9 @@ function gsb_feature_faculty_ct_field_group_info() {
       15 => 'field_link_twitter',
       16 => 'field_suffix_name',
       17 => 'field_teaching_statement',
+      18 => 'field_has_twitter_handle',
+      19 => 'field_has_blog',
+      20 => 'field_twitter_handle',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -130,7 +133,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_main_publications';
   $field_group->data = array(
     'label' => 'Books',
-    'weight' => '98',
+    'weight' => '96',
     'children' => array(
       0 => 'field_books_help',
       1 => 'gsb_book_listing_eva_field_form',
@@ -158,7 +161,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_main_publications';
   $field_group->data = array(
     'label' => 'Cases',
-    'weight' => '100',
+    'weight' => '98',
     'children' => array(
       0 => 'gsb_case_listing_eva_field_form',
     ),
@@ -580,7 +583,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_main_publications';
   $field_group->data = array(
     'label' => 'Journal Articles, Book Chapters, Others',
-    'weight' => '97',
+    'weight' => '95',
     'children' => array(
       0 => 'field_publications_help',
       1 => 'gsb_publications_listing_eva_field_form',
@@ -726,7 +729,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_main_publications';
   $field_group->data = array(
     'label' => 'Working Papers',
-    'weight' => '99',
+    'weight' => '97',
     'children' => array(
       0 => 'gsb_working_paper_listing_eva_field_form',
     ),

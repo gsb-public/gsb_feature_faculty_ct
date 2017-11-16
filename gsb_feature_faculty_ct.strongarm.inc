@@ -209,34 +209,37 @@ function gsb_feature_faculty_ct_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '6',
         ),
         'workbench_access' => array(
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '4',
+          'weight' => '5',
         ),
         'gsb_book_listing_eva_field_form' => array(
           'weight' => '95',
         ),
         'gsb_case_listing_eva_field_form' => array(
-          'weight' => '64',
+          'weight' => '99',
         ),
         'gsb_publications_listing_eva_field_form' => array(
           'weight' => '93',
         ),
         'gsb_working_paper_listing_eva_field_form' => array(
-          'weight' => '52',
+          'weight' => '99',
         ),
         'gsb_media_mentions_eva_field_form' => array(
-          'weight' => '98',
+          'weight' => '99',
         ),
         'gsb_insights_stanford_business_eva_field_form' => array(
           'weight' => '69',
         ),
         'gsb_school_news_entity_field_form' => array(
           'weight' => '69',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '8',
         ),
       ),
       'display' => array(

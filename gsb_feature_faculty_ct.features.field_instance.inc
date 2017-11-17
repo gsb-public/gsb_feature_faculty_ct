@@ -127,6 +127,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'limit_depth' => 0,
+          'link_to_term' => TRUE,
           'path_prefix' => 'faculty-research/faculty/academic-areas/',
           'separator' => ', ',
           'tid_or_name' => 'name',
@@ -1840,11 +1841,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 73,
       ),
       'faculty_leadership' => array(
@@ -1933,11 +1931,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 72,
       ),
       'faculty_leadership' => array(
@@ -2974,7 +2969,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'link_label',
+        'type' => 'link_default',
         'weight' => 69,
       ),
       'faculty_leadership' => array(
@@ -3329,11 +3324,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'link',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'link_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 67,
       ),
       'faculty_leadership' => array(
@@ -6513,13 +6505,14 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'text',
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
+          'text' => 'Twitter',
         ),
-        'type' => 'text_default',
-        'weight' => 74,
+        'type' => 'gsb_field_formatter_twitter_handle',
+        'weight' => 67,
       ),
       'faculty_leadership' => array(
         'label' => 'above',

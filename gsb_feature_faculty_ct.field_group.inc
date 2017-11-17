@@ -1419,6 +1419,7 @@ function gsb_feature_faculty_ct_field_group_info() {
       1 => 'field_link_linkedin',
       2 => 'field_link_other_social',
       3 => 'field_link_twitter',
+      4 => 'field_twitter_handle',
     ),
     'format_type' => 'div',
     'format_settings' => array(

@@ -6551,10 +6551,15 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'weight' => 0,
       ),
       'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+          'text' => 'Twitter',
+          'view_mode' => 'people_fpp',
+        ),
+        'type' => 'gsb_field_formatter_twitter_handle',
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -6708,12 +6713,8 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'people_fpp' => array(
         'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-          'text' => 'Twitter',
-        ),
-        'type' => 'gsb_field_formatter_twitter_handle',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 14,
       ),
       'teaser' => array(
@@ -6893,7 +6894,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'weight' => 0,
       ),
       'people_fpp' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,

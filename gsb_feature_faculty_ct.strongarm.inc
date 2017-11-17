@@ -199,6 +199,12 @@ function gsb_feature_faculty_ct_strongarm() {
       'field_program_who_should_attend' => array(
         'custom_settings' => FALSE,
       ),
+      'seed_research_project' => array(
+        'custom_settings' => FALSE,
+      ),
+      'page_featured_programs' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

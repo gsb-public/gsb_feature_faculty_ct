@@ -622,6 +622,10 @@ function gsb_feature_faculty_ct_strongarm() {
             'weight' => '5',
             'visible' => FALSE,
           ),
+          'people_fpp' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_program_faculty_director_titles' => array(
           'default' => array(
@@ -634,6 +638,10 @@ function gsb_feature_faculty_ct_strongarm() {
           ),
           'faculty_teaching_programs' => array(
             'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'people_fpp' => array(
+            'weight' => '0',
             'visible' => FALSE,
           ),
         ),

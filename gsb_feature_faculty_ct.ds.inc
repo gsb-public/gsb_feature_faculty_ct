@@ -2097,6 +2097,7 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
         3 => 'group_wrapper_position',
         4 => 'field_rank',
         5 => 'field_academic_area_single',
+        6 => 'field_twitter_handle',
       ),
     ),
     'fields' => array(
@@ -2106,6 +2107,7 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
       'group_wrapper_position' => 'ds_content',
       'field_rank' => 'ds_content',
       'field_academic_area_single' => 'ds_content',
+      'field_twitter_handle' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -2116,6 +2118,7 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|faculty|people_fpp'] = $ds_layout;
 

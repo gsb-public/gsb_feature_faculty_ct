@@ -77,8 +77,8 @@ function gsb_feature_faculty_ct_field_group_info() {
       4 => 'field_centers_research_programs',
       5 => 'field_tag',
       6 => 'group_leave_information',
-      7 => 'group_titles_and_appointments',
-      8 => 'group_other_titles',
+      7 => 'group_other_titles',
+      8 => 'group_titles_and_appointments',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -1259,6 +1259,7 @@ function gsb_feature_faculty_ct_field_group_info() {
     'children' => array(
       0 => 'field_academic_area_single',
       1 => 'field_rank',
+      2 => 'field_twitter_handle',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(

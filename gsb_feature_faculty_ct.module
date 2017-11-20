@@ -30,6 +30,55 @@ function gsb_feature_faculty_ct_form_faculty_node_form_alter(&$form, &$form_stat
       ':input[name="field_leave_status[' . $language . ']"]' => array('value' => '1'),
     ),    
   );
+
+  $form['field_link_blog']['#states'] = array(
+    'required' => array(
+      ':input[name="field_has_blog[' . $language . ']"]' => array('value' => '1'),
+    ),
+  );
+
+  $form['field_twitter_handle']['#states'] = array(
+    'required' => array(
+      ':input[name="field_has_twitter_handle[' . $language . ']"]' => array('value' => '1'),
+    ),
+  );
+
+  $form['#attached']['js'] = array(
+    array(
+      'type' => 'file',
+      'data' => drupal_get_path('module', 'gsb_feature_faculty_ct') . '/js/gsb_feature_faculty_ct.js',
+    ),
+  );
+
+  // Perform additional validation.
+  $form['#validate'][] = 'gsb_feature_faculty_ct_form_validate';
+}
+
+/**
+ * Validate callback
+ *  - Conditionally validate field.
+ */
+function gsb_feature_faculty_ct_form_validate($form, &$form_state) {
+  $language = $form['language']['#value'];
+  $values = $form_state['values'];
+
+  if ($values['field_has_blog'][$language][0]['value'] == 1) {
+    if (empty($values['field_link_blog']['und'][0]['title'])) {
+      $field_label = $form['field_link_blog'][$language]['#title']. t(' Name');
+      form_set_error('field_link_blog]['.$language.'][0][title', $field_label . ' field is required.');
+    }
+    if (empty($values['field_link_blog']['und'][0]['url'])) {
+      $field_label = $form['field_link_blog'][$language]['#title'];
+      form_set_error('field_link_blog]['.$language.'][0][url', $field_label . ' field is required.');
+    }
+  }
+
+  if ($values['field_has_twitter_handle'][$language][0]['value'] == 1) {
+    if (empty($values['field_twitter_handle']['und'][0]['value'])) {
+      $field_label = $form['field_twitter_handle'][$language]['#title'];
+      form_set_error('field_twitter_handle]['.$language.'][0][url', $field_label . ' field is required.');
+    }
+  }
 }
 
 /**

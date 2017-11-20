@@ -3016,9 +3016,12 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'people_fpp' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 24,
+        'module' => 'link',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'link_default',
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',

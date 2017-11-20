@@ -76,7 +76,7 @@ function gsb_feature_faculty_ct_form_validate($form, &$form_state) {
   if ($values['field_has_twitter_handle'][$language][0]['value'] == 1) {
     if (empty($values['field_twitter_handle']['und'][0]['value'])) {
       $field_label = $form['field_twitter_handle'][$language]['#title'];
-      form_set_error('field_twitter_handle]['.$language.'][0][url', $field_label . ' field is required.');
+      form_set_error('field_twitter_handle]['.$language.'][0][value', $field_label . ' field is required.');
     }
   }
 }

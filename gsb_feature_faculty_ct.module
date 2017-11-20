@@ -72,12 +72,24 @@ function gsb_feature_faculty_ct_form_validate($form, &$form_state) {
       form_set_error('field_link_blog]['.$language.'][0][url', $field_label . ' field is required.');
     }
   }
+  else {
+    $form_state['values']['field_link_blog']['und'][0]['title'] = '';
+    $form_state['values']['field_link_blog']['und'][0]['url'] = '';
+  }
 
   if ($values['field_has_twitter_handle'][$language][0]['value'] == 1) {
     if (empty($values['field_twitter_handle']['und'][0]['value'])) {
       $field_label = $form['field_twitter_handle'][$language]['#title'];
       form_set_error('field_twitter_handle]['.$language.'][0][value', $field_label . ' field is required.');
     }
+    else {
+      if (substr($values['field_twitter_handle']['und'][0]['value'], 0, 1) == '@') {
+        $form_state['values']['field_twitter_handle']['und'][0]['value'] = substr($values['field_twitter_handle']['und'][0]['value'], 1);
+      }
+    }
+  }
+  else {
+    $form_state['values']['field_twitter_handle']['und'][0]['value'] = '';
   }
 }
 

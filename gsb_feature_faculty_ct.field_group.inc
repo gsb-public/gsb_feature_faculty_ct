@@ -1258,8 +1258,9 @@ function gsb_feature_faculty_ct_field_group_info() {
     'weight' => '2',
     'children' => array(
       0 => 'field_academic_area_single',
-      1 => 'field_rank',
-      2 => 'field_twitter_handle',
+      1 => 'field_link_blog',
+      2 => 'field_rank',
+      3 => 'field_twitter_handle',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(

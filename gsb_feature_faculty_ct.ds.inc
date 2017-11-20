@@ -2091,23 +2091,25 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'title',
-        1 => 'field_image_single_public',
+        0 => 'field_image_single_public',
+        1 => 'title',
         2 => 'group_wrapper_name',
         3 => 'group_wrapper_position',
         4 => 'field_rank',
         5 => 'field_academic_area_single',
         6 => 'field_twitter_handle',
+        7 => 'field_link_blog',
       ),
     ),
     'fields' => array(
-      'title' => 'ds_content',
       'field_image_single_public' => 'ds_content',
+      'title' => 'ds_content',
       'group_wrapper_name' => 'ds_content',
       'group_wrapper_position' => 'ds_content',
       'field_rank' => 'ds_content',
       'field_academic_area_single' => 'ds_content',
       'field_twitter_handle' => 'ds_content',
+      'field_link_blog' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

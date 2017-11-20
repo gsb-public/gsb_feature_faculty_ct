@@ -255,7 +255,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => TRUE,
           ),
           'people_fpp' => array(
-            'weight' => '10',
+            'weight' => '64',
             'visible' => FALSE,
           ),
           'teaser' => array(
@@ -289,7 +289,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => TRUE,
           ),
           'people_fpp' => array(
-            'weight' => '10',
+            'weight' => '65',
             'visible' => FALSE,
           ),
           'teaser' => array(
@@ -323,7 +323,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => TRUE,
           ),
           'people_fpp' => array(
-            'weight' => '10',
+            'weight' => '60',
             'visible' => FALSE,
           ),
           'teaser' => array(
@@ -357,7 +357,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => TRUE,
           ),
           'people_fpp' => array(
-            'weight' => '10',
+            'weight' => '61',
             'visible' => FALSE,
           ),
           'teaser' => array(
@@ -391,7 +391,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => TRUE,
           ),
           'people_fpp' => array(
-            'weight' => '10',
+            'weight' => '63',
             'visible' => FALSE,
           ),
           'teaser' => array(
@@ -455,7 +455,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'people_fpp' => array(
-            'weight' => '10',
+            'weight' => '58',
             'visible' => FALSE,
           ),
           'faculty_leadership' => array(
@@ -485,7 +485,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'people_fpp' => array(
-            'weight' => '10',
+            'weight' => '67',
             'visible' => FALSE,
           ),
           'default' => array(
@@ -519,7 +519,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'people_fpp' => array(
-            'weight' => '10',
+            'weight' => '66',
             'visible' => FALSE,
           ),
           'default' => array(
@@ -553,7 +553,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => TRUE,
           ),
           'people_fpp' => array(
-            'weight' => '10',
+            'weight' => '62',
             'visible' => FALSE,
           ),
           'faculty_leadership' => array(
@@ -587,7 +587,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => TRUE,
           ),
           'people_fpp' => array(
-            'weight' => '10',
+            'weight' => '59',
             'visible' => FALSE,
           ),
           'faculty_leadership' => array(
@@ -629,7 +629,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'people_fpp' => array(
-            'weight' => '0',
+            'weight' => '29',
             'visible' => FALSE,
           ),
         ),
@@ -647,7 +647,7 @@ function gsb_feature_faculty_ct_strongarm() {
             'visible' => FALSE,
           ),
           'people_fpp' => array(
-            'weight' => '0',
+            'weight' => '28',
             'visible' => FALSE,
           ),
         ),

@@ -4,9 +4,13 @@
 
         attach: function (context, settings) {
 
+            var blogUrlLabel = 'edit-field-link-blog-und-0'
+            $('label[for="' + blogUrlLabel + '"]').html('');
+
             $('input').each(function() {
+
                 if (this.id == 'edit-field-link-blog-und-0-title') {
-                    $('label[for="' + this.id + '"]').html('Name <span class="form-required">*</span>');
+                    $('label[for="' + this.id + '"]').html('Blog Name <span class="form-required">*</span>');
                 }
             });
 

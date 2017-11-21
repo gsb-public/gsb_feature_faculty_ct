@@ -6505,7 +6505,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter handle without @ symbol.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -6955,6 +6955,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   t('Email');
   t('Endowed Title OR Appointment');
   t('Enter all other faculty or scholar positions, by courtesy faculty appointments, or faculty appointments at other institutions.');
+  t('Enter handle without @ symbol.');
   t('Enter your email address to allow users to contact you via a webform. <strong>Your email address will not be displayed on the site.</strong>');
   t('Experience Tab Help Text');
   t('First Name');

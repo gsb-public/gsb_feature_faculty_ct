@@ -85,6 +85,7 @@ features[field_group][] = group_other_titles|node|faculty|form
 features[field_group][] = group_publications|node|faculty|default
 features[field_group][] = group_publications|node|faculty|form
 features[field_group][] = group_school_news|node|faculty|form
+features[field_group][] = group_subname_wrapper|node|faculty|people_fpp
 features[field_group][] = group_tags_wrapper|node|faculty|default
 features[field_group][] = group_teaching_and_talks|node|faculty|form
 features[field_group][] = group_titles_and_appointments|node|faculty|form

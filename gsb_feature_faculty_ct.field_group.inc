@@ -632,6 +632,40 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_subname_wrapper|node|faculty|people_fpp';
+  $field_group->group_name = 'group_subname_wrapper';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'faculty';
+  $field_group->mode = 'people_fpp';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'SubName wrapper',
+    'weight' => '86',
+    'children' => array(
+      0 => 'field_link_blog',
+      1 => 'field_twitter_handle',
+      2 => 'group_wrapper_position',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'SubName wrapper',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'person-subname',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_subname_wrapper|node|faculty|people_fpp'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_tags_wrapper|node|faculty|default';
   $field_group->group_name = 'group_tags_wrapper';
   $field_group->entity_type = 'node';
@@ -1252,15 +1286,13 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'faculty';
   $field_group->mode = 'people_fpp';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_subname_wrapper';
   $field_group->data = array(
     'label' => 'Position wrapper',
-    'weight' => '2',
+    'weight' => '16',
     'children' => array(
       0 => 'field_academic_area_single',
-      1 => 'field_link_blog',
-      2 => 'field_rank',
-      3 => 'field_twitter_handle',
+      1 => 'field_rank',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
@@ -1474,6 +1506,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   t('School News');
   t('Social wrapper');
   t('Stanford University Affiliations');
+  t('SubName wrapper');
   t('Tags wrapper');
   t('Teaching');
   t('Teaching & Talks');

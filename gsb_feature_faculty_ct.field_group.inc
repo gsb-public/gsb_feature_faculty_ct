@@ -518,7 +518,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_administration';
   $field_group->data = array(
     'label' => 'Other Titles',
-    'weight' => '67',
+    'weight' => '66',
     'children' => array(
       0 => 'field_faculty_director_positions',
       1 => 'field_other_titles',
@@ -732,11 +732,12 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_administration';
   $field_group->data = array(
     'label' => 'Title & Appointments',
-    'weight' => '66',
+    'weight' => '65',
     'children' => array(
       0 => 'field_joint_appointment',
       1 => 'field_sad',
       2 => 'field_title_appointment',
+      3 => 'field_endowed_title_appointment',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

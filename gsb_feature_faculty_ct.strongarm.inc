@@ -209,19 +209,19 @@ function gsb_feature_faculty_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '7',
+          'weight' => '6',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '5',
         ),
         'workbench_access' => array(
           'weight' => '1',
         ),
         'redirect' => array(
-          'weight' => '5',
+          'weight' => '4',
         ),
         'gsb_book_listing_eva_field_form' => array(
           'weight' => '95',
@@ -245,7 +245,7 @@ function gsb_feature_faculty_ct_strongarm() {
           'weight' => '69',
         ),
         'xmlsitemap' => array(
-          'weight' => '8',
+          'weight' => '7',
         ),
       ),
       'display' => array(

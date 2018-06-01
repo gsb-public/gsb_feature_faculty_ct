@@ -736,8 +736,7 @@ function gsb_feature_faculty_ct_field_group_info() {
     'children' => array(
       0 => 'field_joint_appointment',
       1 => 'field_sad',
-      2 => 'field_title_appointment',
-      3 => 'field_endowed_title_appointment',
+      2 => 'field_endowed_title_appointment',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

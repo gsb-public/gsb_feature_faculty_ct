@@ -1360,7 +1360,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 71,
+      'weight' => 69,
     ),
     'workbench_access_field' => 0,
   );
@@ -2640,7 +2640,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 69,
+      'weight' => 71,
     ),
     'workbench_access_field' => 0,
   );
@@ -5241,7 +5241,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'checkall' => FALSE,
       ),
       'type' => 'options_buttons',
-      'weight' => 68,
+      'weight' => 70,
     ),
     'workbench_access_field' => 0,
   );

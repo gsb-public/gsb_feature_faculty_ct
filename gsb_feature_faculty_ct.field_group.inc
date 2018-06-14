@@ -41,8 +41,8 @@ function gsb_feature_faculty_ct_field_group_info() {
       15 => 'field_link_twitter',
       16 => 'field_suffix_name',
       17 => 'field_teaching_statement',
-      18 => 'field_has_twitter_handle',
-      19 => 'field_has_blog',
+      18 => 'field_has_blog',
+      19 => 'field_has_twitter_handle',
       20 => 'field_twitter_handle',
     ),
     'format_type' => 'htab',
@@ -254,7 +254,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = 'group_main';
   $field_group->data = array(
     'label' => 'Help',
-    'weight' => '53',
+    'weight' => '54',
     'children' => array(
       0 => 'field_deleting_items',
       1 => 'field_formatting_help',
@@ -674,7 +674,7 @@ function gsb_feature_faculty_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
-    'weight' => '33',
+    'weight' => '34',
     'children' => array(
       0 => 'field_academic_area_unlimited',
     ),

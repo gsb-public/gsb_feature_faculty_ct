@@ -449,7 +449,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 46,
+        'weight' => 47,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -788,7 +788,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 48,
+        'weight' => 49,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -880,7 +880,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 39,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -1067,7 +1067,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 53,
+        'weight' => 54,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -1257,8 +1257,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
   // Exported field_instance: 'node-faculty-field_endowed_title_appointment'.
   $field_instances['node-faculty-field_endowed_title_appointment'] = array(
     'bundle' => 'faculty',
-    'custom_add_another' => '',
-    'custom_remove' => '',
+    'cardinality' => 1,
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -1278,7 +1277,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'link_default',
+        'type' => 'link_title_plain',
         'weight' => 3,
       ),
       'faculty_one' => array(
@@ -1287,7 +1286,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'link_default',
+        'type' => 'link_title_plain',
         'weight' => 0,
       ),
       'faculty_teaching_programs' => array(
@@ -1302,7 +1301,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'link_default',
+        'type' => 'link_title_plain',
         'weight' => 3,
       ),
       'featured' => array(
@@ -1317,7 +1316,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'link_default',
+        'type' => 'link_title_plain',
         'weight' => 3,
       ),
       'people_fpp' => array(
@@ -1333,20 +1332,16 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
-    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_endowed_title_appointment',
     'label' => 'Endowed Title OR Appointment',
-    'required' => 0,
+    'required' => FALSE,
     'settings' => array(
-      'absolute_url' => 0,
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
-        'configurable_class' => 0,
-        'configurable_title' => 0,
         'rel' => '',
         'target' => 'default',
-        'title' => '',
       ),
       'custom_add_another' => '',
       'custom_remove' => '',
@@ -1354,27 +1349,20 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'rel_remove' => 'default',
       'title' => 'optional',
-      'title_label_use_field_label' => 0,
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
-      'url' => 'optional',
+      'url' => 0,
       'user_register_form' => FALSE,
       'validate_url' => 1,
     ),
     'widget' => array(
-      'active' => 0,
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 69,
+      'weight' => 72,
     ),
-    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-faculty-field_faculty_director_positions'.
@@ -1393,7 +1381,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 16,
       ),
       'faculty_leadership' => array(
         'label' => 'hidden',
@@ -1526,7 +1514,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 69,
+      'weight' => 70,
     ),
     'workbench_access_field' => 0,
   );
@@ -1778,7 +1766,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 55,
+        'weight' => 56,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -1852,7 +1840,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'markup',
-      'weight' => 15,
+      'weight' => 16,
     ),
     'workbench_access_field' => 0,
   );
@@ -1874,7 +1862,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -1966,7 +1954,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 60,
+        'weight' => 61,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -2056,7 +2044,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 59,
+        'weight' => 60,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -2321,7 +2309,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 57,
+        'weight' => 58,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -2412,7 +2400,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 41,
+        'weight' => 42,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -2652,7 +2640,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 71,
+      'weight' => 74,
     ),
     'workbench_access_field' => 0,
   );
@@ -2777,7 +2765,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 34,
+        'weight' => 35,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -2991,7 +2979,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 35,
+        'weight' => 36,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -3216,7 +3204,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 58,
+        'weight' => 59,
       ),
       'faculty_leadership' => array(
         'label' => 'hidden',
@@ -3319,7 +3307,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'link_field',
-      'weight' => 9,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
@@ -3811,7 +3799,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 54,
+        'weight' => 55,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -4106,7 +4094,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 44,
+        'weight' => 45,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -4562,7 +4550,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 47,
+        'weight' => 48,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -4653,7 +4641,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 50,
+        'weight' => 51,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -4862,7 +4850,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 51,
+        'weight' => 52,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -5176,7 +5164,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 32,
+        'weight' => 33,
       ),
       'faculty_leadership' => array(
         'label' => 'hidden',
@@ -5250,7 +5238,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'checkall' => FALSE,
       ),
       'type' => 'options_buttons',
-      'weight' => 70,
+      'weight' => 73,
     ),
     'workbench_access_field' => 0,
   );
@@ -5375,7 +5363,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 52,
+        'weight' => 53,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -5466,7 +5454,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 56,
+        'weight' => 57,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -5557,7 +5545,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 37,
+        'weight' => 38,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -5702,7 +5690,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'concat_field_default',
-      'weight' => 3,
+      'weight' => 4,
     ),
     'workbench_access_field' => 0,
   );
@@ -5909,7 +5897,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 40,
+        'weight' => 41,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -6103,7 +6091,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 37,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -6208,7 +6196,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 40,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -6501,7 +6489,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 45,
+        'weight' => 46,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -6593,7 +6581,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 32,
       ),
       'faculty_leadership' => array(
         'label' => 'hidden',
@@ -6680,7 +6668,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -6858,7 +6846,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 42,
+        'weight' => 43,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -6932,7 +6920,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'markup',
-      'weight' => 13,
+      'weight' => 14,
     ),
     'workbench_access_field' => 0,
   );
@@ -6949,7 +6937,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 43,
+        'weight' => 44,
       ),
       'faculty_leadership' => array(
         'label' => 'above',
@@ -7023,7 +7011,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'markup',
-      'weight' => 14,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -7040,7 +7028,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 49,
+        'weight' => 50,
       ),
       'faculty_leadership' => array(
         'label' => 'above',

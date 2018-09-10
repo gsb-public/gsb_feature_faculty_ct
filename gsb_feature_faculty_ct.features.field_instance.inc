@@ -1288,7 +1288,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'link_title_plain',
+        'type' => 'link_default',
         'weight' => 0,
       ),
       'faculty_teaching_programs' => array(

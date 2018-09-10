@@ -1941,8 +1941,8 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
         1 => 'field_image_single_public',
         2 => 'title',
         3 => 'senior_associate_dean_title',
-        4 => 'group_wrapper_info',
-        5 => 'field_joint_appointment',
+        4 => 'field_joint_appointment',
+        5 => 'group_wrapper_info',
       ),
     ),
     'fields' => array(
@@ -1950,8 +1950,8 @@ function gsb_feature_faculty_ct_ds_layout_settings_info() {
       'field_image_single_public' => 'ds_content',
       'title' => 'ds_content',
       'senior_associate_dean_title' => 'ds_content',
-      'group_wrapper_info' => 'ds_content',
       'field_joint_appointment' => 'ds_content',
+      'group_wrapper_info' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

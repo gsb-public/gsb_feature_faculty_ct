@@ -1279,7 +1279,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'link_title_plain',
+        'type' => 'link_default',
         'weight' => 3,
       ),
       'faculty_one' => array(
@@ -1303,7 +1303,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'link_title_plain',
+        'type' => 'link_default',
         'weight' => 3,
       ),
       'featured' => array(
@@ -1318,7 +1318,7 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'link_title_plain',
+        'type' => 'link_default',
         'weight' => 3,
       ),
       'people_fpp' => array(

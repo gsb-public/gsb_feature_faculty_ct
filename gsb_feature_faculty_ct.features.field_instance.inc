@@ -1275,20 +1275,20 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'faculty_leadership' => array(
         'label' => 'hidden',
-        'module' => 'link',
+        'module' => 'gsb_feature_faculty_ct',
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'link_default',
+        'type' => 'gsb_feature_faculty_ct_title_text',
         'weight' => 3,
       ),
       'faculty_one' => array(
         'label' => 'hidden',
-        'module' => 'link',
+        'module' => 'gsb_feature_faculty_ct',
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'link_default',
+        'type' => 'gsb_feature_faculty_ct_title_text',
         'weight' => 0,
       ),
       'faculty_teaching_programs' => array(
@@ -1299,11 +1299,11 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'faculty_two' => array(
         'label' => 'hidden',
-        'module' => 'link',
+        'module' => 'gsb_feature_faculty_ct',
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'link_default',
+        'type' => 'gsb_feature_faculty_ct_title_text',
         'weight' => 3,
       ),
       'featured' => array(
@@ -1314,11 +1314,11 @@ function gsb_feature_faculty_ct_field_default_field_instances() {
       ),
       'guest_speakers_advisors' => array(
         'label' => 'hidden',
-        'module' => 'link',
+        'module' => 'gsb_feature_faculty_ct',
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'link_default',
+        'type' => 'gsb_feature_faculty_ct_title_text',
         'weight' => 3,
       ),
       'people_fpp' => array(

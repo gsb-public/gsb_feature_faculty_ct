@@ -29,21 +29,21 @@ function gsb_feature_faculty_ct_image_default_styles() {
   $styles['270x270'] = array(
     'label' => '270x270',
     'effects' => array(
-      3 => array(
-        'name' => 'kraken_optimize',
-        'data' => array(),
-        'weight' => -10,
-      ),
-      2 => array(
+      1 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 270,
           'height' => 270,
         ),
-        'weight' => -8,
+        'weight' => 1,
       ),
-      11 => array(
+      2 => array(
         'name' => 'bypass_image_toolkit',
+        'data' => array(),
+        'weight' => 2,
+      ),
+      3 => array(
+        'name' => 'kraken_optimize',
         'data' => array(),
         'weight' => 3,
       ),
